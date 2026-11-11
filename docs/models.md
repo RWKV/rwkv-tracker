@@ -2,7 +2,7 @@
 
 All Hugging Face models matching `rwkv`, ordered by last modification.
 
-**Records:** 961 · **Snapshot:** 2026-11-11T02:32:13.021921Z · **[Source](https://huggingface.co/models?sort=modified&search=rwkv)**
+**Records:** 961 · **Snapshot:** 2026-11-11T02:56:02.817745Z · **[Source](https://huggingface.co/models?sort=modified&search=rwkv)**
 
 | Project | Updated | Downloads | Likes |
 |---|---|---|---|

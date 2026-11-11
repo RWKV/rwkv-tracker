@@ -15,6 +15,12 @@
     input, select { font: inherit; padding: .6rem; border: 1px solid #8888; border-radius: .35rem; background: Canvas; color: CanvasText; }
     input { flex: 1; min-width: 12rem; }
     .history, .activity { margin: 2rem 0; }
+    .activity-details > summary { padding: .65rem 1rem; border: 1px solid #8886; border-radius: .5rem; cursor: pointer; }
+    .activity-details > summary:hover { background: #8881; }
+    .activity-details > summary:focus-visible { outline: 2px solid #4a86e8; outline-offset: 2px; }
+    .activity-heading { font-size: 1.5rem; font-weight: 600; }
+    .activity-hint { margin-left: .75rem; opacity: .75; font-size: .9rem; }
+    .activity-details[open] > summary { margin-bottom: 1rem; }
     .activity-scroll { overflow-x: auto; }
     .activity-table { min-width: 48rem; }
     .activity-table th:first-child, .activity-table td:first-child,
@@ -26,7 +32,7 @@
     .chart-card { min-width: 0; margin: 0; padding: 1rem; border: 1px solid #8886; border-radius: .5rem; }
     .chart-card h3 { margin: 0 0 .35rem; }
     .chart-note { min-height: 2.4em; margin: 0 0 .5rem; opacity: .75; font-size: .9rem; }
-    .chart svg { display: block; width: 100%; height: auto; }
+    .chart svg, .chart-image { display: block; width: 100%; height: auto; }
     .chart text { fill: CanvasText; font-family: inherit; font-size: 11px; }
     .chart .grid { stroke: #8884; stroke-width: 1; }
     .chart .axis { stroke: #8888; stroke-width: 1; }
@@ -52,17 +58,24 @@
     <section id="summary" aria-label="Dataset summary"></section>
     <p id="status">Loading data…</p>
     <section class="activity" aria-labelledby="activity-title">
-      <h2 id="activity-title">Latest activity</h2>
-      <div class="activity-scroll">
-        <table class="activity-table">
-          <thead><tr><th scope="col">Date</th><th scope="col">Type</th><th scope="col">Activity</th><th scope="col">Details</th></tr></thead>
-          <tbody id="activity"><tr><td class="activity-empty" colspan="4">No activity available</td></tr></tbody>
-        </table>
-      </div>
+      <details class="activity-details">
+        <summary><span id="activity-title" class="activity-heading">Latest activity</span><small class="activity-hint">100 most recent events</small></summary>
+        <div class="activity-scroll">
+          <table class="activity-table">
+            <thead><tr><th scope="col">Date</th><th scope="col">Type</th><th scope="col">Activity</th><th scope="col">Details</th></tr></thead>
+            <tbody id="activity"><tr><td class="activity-empty" colspan="4">No activity available</td></tr></tbody>
+          </table>
+        </div>
+      </details>
     </section>
     <section class="history" aria-labelledby="history-title">
       <h2 id="history-title">History</h2>
       <div class="chart-grid">
+        <article class="chart-card">
+          <h3>All activity</h3>
+          <p class="chart-note">Repository, agent, model, paper, commit, and change activity over the last 30 UTC days.</p>
+          <img class="chart-image" src="docs/activity.svg" width="960" height="360" loading="lazy" alt="Line chart of daily repository, agent, model, paper, commit, and change activity over the last 30 UTC days.">
+        </article>
         <article class="chart-card">
           <h3>Tracked projects</h3>
           <p class="chart-note">Total repositories, agents, models, and papers in each daily snapshot.</p>

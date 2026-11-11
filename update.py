@@ -569,6 +569,81 @@ def activity_history(projects, commits, papers, changes):
     )
 
 
+ACTIVITY_TYPES = ("repository", "agent", "model", "paper", "commit", "change")
+ACTIVITY_COLORS = {
+    "repository": "#4a86e8",
+    "agent": "#d54f8a",
+    "model": "#8864c7",
+    "paper": "#b7791f",
+    "commit": "#2e9e5b",
+    "change": "#d64550",
+}
+
+
+def activity_daily(events, now, days=30):
+    start = now.date() - timedelta(days=days - 1)
+    counts = {
+        start + timedelta(days=offset): {kind: 0 for kind in ACTIVITY_TYPES}
+        for offset in range(days)
+    }
+    for event in events:
+        timestamp = parse_time(event["timestamp"])
+        kind = event["type"]
+        if timestamp and start <= timestamp.date() <= now.date() and kind in ACTIVITY_TYPES:
+            counts[timestamp.date()][kind] += 1
+    return [
+        {"date": day.isoformat(), "counts": counts[day]}
+        for day in sorted(counts)
+    ]
+
+
+def render_activity_svg(daily):
+    width, height = 960, 360
+    left, right, top, bottom = 65, 25, 105, 285
+    plot_width, plot_height = width - left - right, bottom - top
+    maximum = max((count for row in daily for count in row["counts"].values()), default=0)
+    y_max = max(1, maximum)
+    x = lambda index: left + (index / (len(daily) - 1) if len(daily) > 1 else 0.5) * plot_width
+    y = lambda value: bottom - value / y_max * plot_height
+    parts = [
+        f'<svg xmlns="http://www.w3.org/2000/svg" width="{width}" height="{height}" viewBox="0 0 {width} {height}" role="img" aria-labelledby="activity-title activity-desc">',
+        '<title id="activity-title">Daily RWKV activity by category</title>',
+        f'<desc id="activity-desc">Six line series for repositories, agents, models, papers, commits, and changes from {daily[0]["date"]} through {daily[-1]["date"]}.</desc>',
+        '''<style>
+text { font-family: system-ui, sans-serif; font-size: 12px; fill: #24292f; }
+.grid { stroke: #d0d7de; stroke-width: 1; }
+.axis { stroke: #8c959f; stroke-width: 1; }
+@media (prefers-color-scheme: dark) { text { fill: #f0f6fc; } .grid { stroke: #30363d; } }
+</style>''',
+        '<text x="20" y="25" style="font-size:18px;font-weight:600">Activity over time</text>',
+    ]
+    for index, kind in enumerate(ACTIVITY_TYPES):
+        column, row = index % 3, index // 3
+        legend_x, legend_y = 70 + column * 285, 52 + row * 25
+        total = sum(day["counts"][kind] for day in daily)
+        parts.append(f'<line x1="{legend_x}" y1="{legend_y}" x2="{legend_x + 22}" y2="{legend_y}" stroke="{ACTIVITY_COLORS[kind]}" stroke-width="3"/>')
+        parts.append(f'<text x="{legend_x + 30}" y="{legend_y + 4}">{kind.capitalize()} ({total:,})</text>')
+    for tick in range(5):
+        value = y_max * tick / 4
+        tick_y = y(value)
+        parts.append(f'<line class="grid" x1="{left}" y1="{tick_y:.2f}" x2="{width - right}" y2="{tick_y:.2f}"/>')
+        parts.append(f'<text x="{left - 10}" y="{tick_y + 4:.2f}" text-anchor="end">{value:.1f}</text>')
+    parts.append(f'<line class="axis" x1="{left}" y1="{bottom}" x2="{width - right}" y2="{bottom}"/>')
+    tick_indices = sorted({0, len(daily) // 4, len(daily) // 2, 3 * len(daily) // 4, len(daily) - 1})
+    for index in tick_indices:
+        anchor = "start" if index == 0 else "end" if index == len(daily) - 1 else "middle"
+        parts.append(f'<text x="{x(index):.2f}" y="312" text-anchor="{anchor}">{daily[index]["date"]}</text>')
+    for kind in ACTIVITY_TYPES:
+        path = " ".join(
+            f"{'M' if index == 0 else 'L'}{x(index):.2f},{y(day['counts'][kind]):.2f}"
+            for index, day in enumerate(daily)
+        )
+        parts.append(f'<path data-type="{kind}" d="{path}" fill="none" stroke="{ACTIVITY_COLORS[kind]}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>')
+    parts.append('<text x="20" y="342" style="font-size:11px">Events per UTC day · trailing 30 days</text>')
+    parts.append('</svg>')
+    return "\n".join(parts) + "\n"
+
+
 def render_activity_table(events, limit):
     lines = [
         "| Date (UTC) | Type | Activity | Details |",
@@ -644,6 +719,12 @@ def render_readme(data, history_state, activity):
         f"| Agent projects | {counts['agent']:,} | [agents.md](docs/agents.md) |",
         f"| arXiv papers | {counts['paper']:,} | [papers.md](docs/papers.md) |",
         "",
+        "## Activity over time",
+        "",
+        "![Daily activity for repositories, agents, models, papers, commits, and changes](docs/activity.svg)",
+        "",
+        "Each line counts one activity category per UTC day over the trailing 30 days. [Daily series data](history/activity-daily.jsonl).",
+        "",
         "## Latest activity",
         "",
         "The 25 most recent events across all sources. GitHub Pages shows the latest 100; the [activity JSONL](history/activity.jsonl) contains the complete derived feed.",
@@ -711,10 +792,13 @@ def main():
     daily = daily_history(projects, changes, parse_time(history_state["history_start"]), now)
     papers_observed = paper_history(papers, now)
     activity = activity_history(projects, commits, papers_observed, changes)
+    activity_by_day = activity_daily(activity, now)
     outputs = {
         snapshot_path: json.dumps(data, ensure_ascii=False, indent=2) + "\n",
         Path("README.md"): render_readme(data, history_state, activity),
+        Path("docs/activity.svg"): render_activity_svg(activity_by_day),
         HISTORY_DIR / "activity.jsonl": jsonl(activity),
+        HISTORY_DIR / "activity-daily.jsonl": jsonl(activity_by_day),
         HISTORY_DIR / "daily.jsonl": jsonl(daily),
         HISTORY_DIR / "changes.jsonl": jsonl(changes),
         HISTORY_DIR / "commits.jsonl": jsonl(commits),

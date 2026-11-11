@@ -1,6 +1,6 @@
 {
   "history_start": "2026-11-04T01:40:02.878390Z",
-  "last_success_started_at": "2026-11-11T02:32:13.021921Z",
+  "last_success_started_at": "2026-11-11T02:56:02.817745Z",
   "scanned_repositories": [
     "00ffcc/chunkRWKV6",
     "00ffcc/conRWKV",
@@ -634,6 +634,7 @@
     "harrisonvanderbyl/rwkv.cuh",
     "harrisonvanderbyl/rwkv.hpp",
     "harrisonvanderbyl/rwkv_chatbot",
+    "harrisonvanderbyl/rwkv_paper_tracker",
     "harrisonvanderbyl/rwkvserver",
     "harrisonvanderbyl/rwkvstic",
     "hbyecoding/U-RWKV",

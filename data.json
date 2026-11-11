@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-11T02:32:13.021921Z",
+  "generated_at": "2026-11-11T02:56:02.817745Z",
   "sources": {
     "repository": "https://github.com/search?o=desc&p=1&q=rwkv&s=updated&type=Repositories",
     "agent": "https://agent.objects.rwkvos.com/en",
@@ -18,16 +18,16 @@
   "projects": [
     {
       "kind": "repository",
-      "id": "m8than/rwkv-tracker",
-      "name": "m8than/rwkv-tracker",
-      "url": "https://github.com/m8than/rwkv-tracker",
+      "id": "harrisonvanderbyl/rwkv_paper_tracker",
+      "name": "harrisonvanderbyl/rwkv_paper_tracker",
+      "url": "https://github.com/harrisonvanderbyl/rwkv_paper_tracker",
       "description": "",
-      "updated_at": "2026-11-11T02:25:05Z",
-      "pushed_at": "2026-11-11T02:27:46Z",
-      "created_at": "2026-11-11T02:12:43Z",
+      "updated_at": "2026-11-11T02:44:13Z",
+      "pushed_at": "2026-11-11T02:44:09Z",
+      "created_at": "2026-11-11T02:44:03Z",
       "stars": 0,
       "forks": 0,
-      "language": "Python",
+      "language": "TypeScript",
       "archived": false
     },
     {
@@ -36,11 +36,25 @@
       "name": "binary-husky/gpt_academic",
       "url": "https://github.com/binary-husky/gpt_academic",
       "description": "为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。",
-      "updated_at": "2026-11-11T02:24:05Z",
+      "updated_at": "2026-11-11T02:34:46Z",
       "pushed_at": "2026-01-25T12:33:10Z",
       "created_at": "2023-03-20T09:05:13Z",
-      "stars": 71642,
+      "stars": 71643,
       "forks": 8319,
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "kind": "repository",
+      "id": "m8than/rwkv-tracker",
+      "name": "m8than/rwkv-tracker",
+      "url": "https://github.com/m8than/rwkv-tracker",
+      "description": "",
+      "updated_at": "2026-11-11T02:25:05Z",
+      "pushed_at": "2026-11-11T02:34:43Z",
+      "created_at": "2026-11-11T02:12:43Z",
+      "stars": 0,
+      "forks": 0,
       "language": "Python",
       "archived": false
     },
@@ -3852,7 +3866,7 @@
       "url": "https://github.com/Pedrubik2000/anki-rwkv-forecast",
       "description": "[Unmaintained] Anki add-on: how close review cards are to being due under RWKV-Instant (JSchoreels FSRS-7 fork)",
       "updated_at": "2026-10-08T00:55:24Z",
-      "pushed_at": "2026-10-08T00:55:20Z",
+      "pushed_at": "2026-11-11T02:36:57Z",
       "created_at": "2026-10-05T19:07:04Z",
       "stars": 0,
       "forks": 0,

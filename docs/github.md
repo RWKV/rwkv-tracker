@@ -2,12 +2,13 @@
 
 All non-fork GitHub repositories matching `rwkv`, ordered by repository update time.
 
-**Records:** 1,012 · **Snapshot:** 2026-11-11T02:32:13.021921Z · **[Source](https://github.com/search?o=desc&p=1&q=rwkv&s=updated&type=Repositories)**
+**Records:** 1,013 · **Snapshot:** 2026-11-11T02:56:02.817745Z · **[Source](https://github.com/search?o=desc&p=1&q=rwkv&s=updated&type=Repositories)**
 
 | Project | Updated | Stars | Forks | Language |
 |---|---|---|---|---|
+| [harrisonvanderbyl/rwkv_paper_tracker](https://github.com/harrisonvanderbyl/rwkv_paper_tracker) | 2026-11-11 | 0 | 0 | TypeScript |
+| [binary-husky/gpt_academic](https://github.com/binary-husky/gpt_academic) | 2026-11-11 | 71,643 | 8319 | Python |
 | [m8than/rwkv-tracker](https://github.com/m8than/rwkv-tracker) | 2026-11-11 | 0 | 0 | Python |
-| [binary-husky/gpt_academic](https://github.com/binary-husky/gpt_academic) | 2026-11-11 | 71,642 | 8319 | Python |
 | [JSchoreels/anki-rwkv](https://github.com/JSchoreels/anki-rwkv) | 2026-11-11 | 2 | 0 | Python |
 | [DavidCaastro/redukt](https://github.com/DavidCaastro/redukt) | 2026-11-11 | 0 | 0 | Rust |
 | [Fantasia-Infinity/RWKV-AgenticLearning](https://github.com/Fantasia-Infinity/RWKV-AgenticLearning) | 2026-11-10 | 0 | 0 | HTML |

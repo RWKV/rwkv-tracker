@@ -2,16 +2,22 @@
 
 A daily summary of RWKV projects, model updates, agent projects, papers, and development activity.
 
-**Last fetched:** 2026-11-11T02:32:13.021921Z · **[Complete JSON data](data.json)**
+**Last fetched:** 2026-11-11T02:56:02.817745Z · **[Complete JSON data](data.json)**
 
 ## Overview
 
 | Type | Records | Complete Markdown list |
 |---|---:|---|
-| GitHub projects | 1,012 | [github.md](docs/github.md) |
+| GitHub projects | 1,013 | [github.md](docs/github.md) |
 | Model updates | 961 | [models.md](docs/models.md) |
 | Agent projects | 47 | [agents.md](docs/agents.md) |
 | arXiv papers | 146 | [papers.md](docs/papers.md) |
+
+## Activity over time
+
+![Daily activity for repositories, agents, models, papers, commits, and changes](docs/activity.svg)
+
+Each line counts one activity category per UTC day over the trailing 30 days. [Daily series data](history/activity-daily.jsonl).
 
 ## Latest activity
 
@@ -19,11 +25,17 @@ The 25 most recent events across all sources. GitHub Pages shows the latest 100;
 
 | Date (UTC) | Type | Activity | Details |
 |---|---|---|---|
+| 2026-11-11 02:52 | Change | [harrisonvanderbyl/rwkv_paper_tracker](https://github.com/harrisonvanderbyl/rwkv_paper_tracker) | Added · repository · harrisonvanderbyl/rwkv_paper_tracker |
+| 2026-11-11 02:52 | Change | [binary-husky/gpt_academic](https://github.com/binary-husky/gpt_academic) | Changed stars, updated_at · repository · binary-husky/gpt_academic |
+| 2026-11-11 02:44 | Repository | [harrisonvanderbyl/rwkv_paper_tracker](https://github.com/harrisonvanderbyl/rwkv_paper_tracker) | Repository metadata last updated |
+| 2026-11-11 02:43 | Commit | [harrisonvanderbyl/rwkv_paper_tracker](https://github.com/harrisonvanderbyl/rwkv_paper_tracker/commit/25c96f6f7bfc3f4824d368865c6809c3ba302351) | initialized |
+| 2026-11-11 02:36 | Commit | [Pedrubik2000/anki-rwkv-forecast](https://github.com/Pedrubik2000/anki-rwkv-forecast/commit/10eab07fe4d6c7a658702831881e17d1dc0f7f62) | 1.1.0: RWKV recall dot graph on the deck list (deck_list_graph) |
+| 2026-11-11 02:34 | Repository | [binary-husky/gpt_academic](https://github.com/binary-husky/gpt_academic) | Repository metadata last updated |
+| 2026-11-11 02:34 | Commit | [m8than/rwkv-tracker](https://github.com/m8than/rwkv-tracker/commit/5198171ee4eef03ca98078f0567ca5398e454602) | Summarize projects and add latest activity |
 | 2026-11-11 02:32 | Change | [m8than/rwkv-tracker](https://github.com/m8than/rwkv-tracker) | Added · repository · m8than/rwkv-tracker |
 | 2026-11-11 02:32 | Change | [binary-husky/gpt_academic](https://github.com/binary-husky/gpt_academic) | Changed stars, updated_at · repository · binary-husky/gpt_academic |
 | 2026-11-11 02:27 | Commit | [m8than/rwkv-tracker](https://github.com/m8than/rwkv-tracker/commit/82a907173d0bc308524c997afe0675f3e5e8ae63) | Update RWKV tracker |
 | 2026-11-11 02:25 | Repository | [m8than/rwkv-tracker](https://github.com/m8than/rwkv-tracker) | Repository metadata last updated |
-| 2026-11-11 02:24 | Repository | [binary-husky/gpt_academic](https://github.com/binary-husky/gpt_academic) | Repository metadata last updated |
 | 2026-11-11 01:44 | Commit | [m8than/rwkv-tracker](https://github.com/m8than/rwkv-tracker/commit/ced52c6c9dcb4d46be3bf84022a70c6667f30f5a) | Add activity history papers and charts |
 | 2026-11-11 01:25 | Commit | [m8than/rwkv-tracker](https://github.com/m8than/rwkv-tracker/commit/1ab83de74d8ace3cf28f70aadf60b6a9adbf0fe7) | Build daily RWKV ecosystem tracker |
 | 2026-11-11 01:01 | Repository | [JSchoreels/anki-rwkv](https://github.com/JSchoreels/anki-rwkv) | Repository metadata last updated |
@@ -38,12 +50,6 @@ The 25 most recent events across all sources. GitHub Pages shows the latest 100;
 | 2026-11-10 19:31 | Repository | [josStorer/RWKV-Runner](https://github.com/josStorer/RWKV-Runner) | Repository metadata last updated |
 | 2026-11-10 19:12 | Commit | [DavidCaastro/redukt](https://github.com/DavidCaastro/redukt/commit/9f5340c4e6f30be27052a32ce019e15586fab095) | docs(results): run-a-r108 — CPU 100 KB 0.9925/0.9951 with header reset, Windows == Linux sha256; GPU curve pending kernel v3 |
 | 2026-11-10 18:57 | Commit | [JSchoreels/anki-rwkv](https://github.com/JSchoreels/anki-rwkv/commit/1e112512784201d880c5faedb15cb76ab511c240) | Pages: factory status idle, finished 001116 |
-| 2026-11-10 17:55 | Repository | [BlinkDL/ChatRWKV](https://github.com/BlinkDL/ChatRWKV) | Repository metadata last updated |
-| 2026-11-10 17:15 | Repository | [BlinkDL/RWKV-LM](https://github.com/BlinkDL/RWKV-LM) | Repository metadata last updated |
-| 2026-11-10 16:15 | Commit | [DavidCaastro/redukt](https://github.com/DavidCaastro/redukt/commit/26cb75da78e24ba66aa95856c690f3fe5672554c) | docs(results): run-c-r109b — plugin lockstep with header reset period matches CPU F32 (0.7529 vs 0.7531), batch == single |
-| 2026-11-10 16:09 | Commit | [JSchoreels/anki-rwkv](https://github.com/JSchoreels/anki-rwkv/commit/106f59b3df7431c1ef1b6e137c4d01155bc78dfb) | Pages: factory status running 001116, finished 001115 |
-| 2026-11-10 16:08 | Commit | [JSchoreels/anki-rwkv](https://github.com/JSchoreels/anki-rwkv/commit/ecb1b460ba9223f53610dfcdce1e626d28ab584a) | Pages: factory status idle, finished 001114 |
-| 2026-11-10 15:59 | Repository | [Alic-Li/rwkv_lightning_cuda](https://github.com/Alic-Li/rwkv_lightning_cuda) | Repository metadata last updated |
 
 ## Main model
 
