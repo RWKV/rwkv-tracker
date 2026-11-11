@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RWKV project tracker</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; }
+    body { max-width: 1200px; margin: auto; padding: 2rem 1rem; }
+    header, #summary { display: flex; flex-wrap: wrap; gap: 1rem; align-items: center; }
+    h1 { width: 100%; margin-bottom: 0; }
+    a { color: #4a86e8; }
+    .count { padding: .65rem 1rem; border: 1px solid #8886; border-radius: .5rem; }
+    .controls { display: flex; gap: .75rem; margin: 1.5rem 0; }
+    input, select { font: inherit; padding: .6rem; border: 1px solid #8888; border-radius: .35rem; background: Canvas; color: CanvasText; }
+    input { flex: 1; min-width: 12rem; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { text-align: left; padding: .6rem; border-bottom: 1px solid #8884; vertical-align: top; }
+    th:nth-child(n+3), td:nth-child(n+3) { text-align: right; white-space: nowrap; }
+    td small { display: block; max-width: 42rem; opacity: .75; margin-top: .25rem; }
+    #status { opacity: .75; }
+    .fresh { color: #2e9e5b; font-weight: 600; }
+    @media (max-width: 650px) { th:nth-child(4), td:nth-child(4) { display: none; } }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>RWKV project tracker</h1>
+    <p>A daily snapshot of RWKV repositories, agent projects, and model weights.</p>
+    <a href="data.json">Download JSON</a> · <a href="https://github.com/BlinkDL/RWKV-LM">RWKV-LM</a>
+  </header>
+  <main>
+    <section id="summary" aria-label="Dataset summary"></section>
+    <p id="status">Loading data…</p>
+    <div class="controls">
+      <input id="search" type="search" placeholder="Filter by name or description" aria-label="Filter projects">
+      <select id="kind" aria-label="Project type">
+        <option value="">All types</option>
+        <option value="repository">Repositories</option>
+        <option value="agent">Agent projects</option>
+        <option value="model">Models</option>
+      </select>
+    </div>
+    <table>
+      <thead><tr><th>Project</th><th>Type</th><th>Updated</th><th>Stars</th><th>Downloads</th></tr></thead>
+      <tbody id="projects"></tbody>
+    </table>
+  </main>
+  <script>
+    const esc = value => String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+    const date = value => value ? value.slice(0, 10) : "—";
+    let projects = [];
+
+    function render() {
+      const query = document.querySelector("#search").value.toLowerCase();
+      const kind = document.querySelector("#kind").value;
+      const shown = projects.filter(p => (!kind || p.kind === kind) &&
+        `${p.id} ${p.name || ""} ${p.description || ""}`.toLowerCase().includes(query));
+      document.querySelector("#projects").innerHTML = shown.map(p => `<tr>
+        <td><a href="${esc(p.url)}">${esc(p.name || p.id)}</a>${p.main ? ' <span title="Main RWKV model">★</span>' : ""}<small>${esc(p.description)}</small></td>
+        <td>${esc(p.kind)}</td><td>${date(p.updated_at)}</td>
+        <td>${p.stars == null ? "—" : esc(p.stars.toLocaleString())}</td>
+        <td>${p.downloads == null ? "—" : esc(p.downloads.toLocaleString())}</td>
+      </tr>`).join("");
+      document.querySelector("#status").textContent = `${shown.length.toLocaleString()} of ${projects.length.toLocaleString()} projects`;
+    }
+
+    fetch("data.json").then(response => {
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      return response.json();
+    }).then(data => {
+      projects = data.projects;
+      const counts = Object.fromEntries(["repository", "agent", "model"].map(kind =>
+        [kind, projects.filter(p => p.kind === kind).length]));
+      document.querySelector("#summary").innerHTML =
+        `<span class="count"><strong>${counts.repository.toLocaleString()}</strong> repositories</span>
+         <span class="count"><strong>${counts.agent.toLocaleString()}</strong> agent projects</span>
+         <span class="count"><strong>${counts.model.toLocaleString()}</strong> models</span>
+         <span>Snapshot: ${date(data.generated_at)}</span>` +
+        (data.main_model ? `<span class="count">Main model: <a href="${esc(data.main_model.url)}">${esc(data.main_model.id)}</a><br>
+          Latest <code>new model</code> commit: <span class="${data.main_model.new_model_commit_within_31_days ? "fresh" : ""}">${date(data.main_model.latest_new_model_commit_at)}</span><br>
+          Source last changed: ${date(data.main_model.source_last_modified)}</span>` : "");
+      document.querySelector("#search").addEventListener("input", render);
+      document.querySelector("#kind").addEventListener("change", render);
+      render();
+    }).catch(error => {
+      document.querySelector("#status").textContent = `Could not load data.json: ${error.message}`;
+    });
+  </script>
+</body>
+</html>
