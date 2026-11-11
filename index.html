@@ -11,9 +11,18 @@
     h1 { width: 100%; margin-bottom: 0; }
     a { color: #4a86e8; }
     .count { padding: .65rem 1rem; border: 1px solid #8886; border-radius: .5rem; }
-    .controls { display: flex; gap: .75rem; margin: 1.5rem 0; }
+    .controls { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.5rem 0; }
     input, select { font: inherit; padding: .6rem; border: 1px solid #8888; border-radius: .35rem; background: Canvas; color: CanvasText; }
     input { flex: 1; min-width: 12rem; }
+    .history { margin: 2rem 0; }
+    .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 28rem), 1fr)); gap: 1rem; }
+    .chart-card { min-width: 0; margin: 0; padding: 1rem; border: 1px solid #8886; border-radius: .5rem; }
+    .chart-card h3 { margin: 0 0 .35rem; }
+    .chart-note { min-height: 2.4em; margin: 0 0 .5rem; opacity: .75; font-size: .9rem; }
+    .chart svg { display: block; width: 100%; height: auto; }
+    .chart text { fill: CanvasText; font-family: inherit; font-size: 11px; }
+    .chart .grid { stroke: #8884; stroke-width: 1; }
+    .chart .axis { stroke: #8888; stroke-width: 1; }
     table { width: 100%; border-collapse: collapse; }
     th, td { text-align: left; padding: .6rem; border-bottom: 1px solid #8884; vertical-align: top; }
     th:nth-child(n+3), td:nth-child(n+3) { text-align: right; white-space: nowrap; }
@@ -26,19 +35,45 @@
 <body>
   <header>
     <h1>RWKV project tracker</h1>
-    <p>A daily snapshot of RWKV repositories, agent projects, and model weights.</p>
+    <p>A daily snapshot of RWKV repositories, agent projects, model weights, and papers.</p>
     <a href="data.json">Download JSON</a> · <a href="https://github.com/BlinkDL/RWKV-LM">RWKV-LM</a>
   </header>
   <main>
     <section id="summary" aria-label="Dataset summary"></section>
     <p id="status">Loading data…</p>
+    <section class="history" aria-labelledby="history-title">
+      <h2 id="history-title">History</h2>
+      <div class="chart-grid">
+        <article class="chart-card">
+          <h3>Tracked projects</h3>
+          <p class="chart-note">Total repositories, agents, models, and papers in each daily snapshot.</p>
+          <div id="projects-chart" class="chart"></div>
+        </article>
+        <article class="chart-card">
+          <h3>Observed commits</h3>
+          <p class="chart-note">Default-branch observations by UTC committer date, covering at most 30 days.</p>
+          <div id="commits-chart" class="chart"></div>
+        </article>
+        <article class="chart-card">
+          <h3>Project changes</h3>
+          <p class="chart-note">Projects added, removed, and changed in each daily snapshot.</p>
+          <div id="changes-chart" class="chart"></div>
+        </article>
+        <article class="chart-card">
+          <h3>First arXiv submissions</h3>
+          <p class="chart-note">Papers by v1 publication month; papers are title/abstract keyword matches.</p>
+          <div id="papers-chart" class="chart"></div>
+        </article>
+      </div>
+    </section>
     <div class="controls">
-      <input id="search" type="search" placeholder="Filter by name or description" aria-label="Filter projects">
+      <input id="search" type="search" placeholder="Filter by name, description, or authors" aria-label="Filter projects and papers">
       <select id="kind" aria-label="Project type">
         <option value="">All types</option>
         <option value="repository">Repositories</option>
         <option value="agent">Agent projects</option>
         <option value="model">Models</option>
+        <option value="paper">Papers</option>
       </select>
     </div>
     <table>
@@ -48,43 +83,285 @@
   </main>
   <script>
     const esc = value => String(value ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
-    const date = value => value ? value.slice(0, 10) : "—";
+    const DAY = 86400000;
+    const plainNumber = value => value.toLocaleString();
+    const metric = value => typeof value === "number" && Number.isFinite(value) ? esc(plainNumber(value)) : "—";
+    const date = value => value ? esc(String(value).slice(0, 10)) : "—";
+    const validValue = value => typeof value === "number" && Number.isFinite(value) && value >= 0;
     let projects = [];
 
     function render() {
       const query = document.querySelector("#search").value.toLowerCase();
       const kind = document.querySelector("#kind").value;
-      const shown = projects.filter(p => (!kind || p.kind === kind) &&
-        `${p.id} ${p.name || ""} ${p.description || ""}`.toLowerCase().includes(query));
-      document.querySelector("#projects").innerHTML = shown.map(p => `<tr>
-        <td><a href="${esc(p.url)}">${esc(p.name || p.id)}</a>${p.main ? ' <span title="Main RWKV model">★</span>' : ""}<small>${esc(p.description)}</small></td>
-        <td>${esc(p.kind)}</td><td>${date(p.updated_at)}</td>
-        <td>${p.stars == null ? "—" : esc(p.stars.toLocaleString())}</td>
-        <td>${p.downloads == null ? "—" : esc(p.downloads.toLocaleString())}</td>
-      </tr>`).join("");
+      const shown = projects.filter(p => {
+        const authors = Array.isArray(p.authors) ? p.authors.join(" ") : p.authors || "";
+        return (!kind || p.kind === kind) &&
+          `${p.id} ${p.name || ""} ${p.description || ""} ${authors}`.toLowerCase().includes(query);
+      });
+      document.querySelector("#projects").innerHTML = shown.map(p => {
+        const authors = Array.isArray(p.authors) ? p.authors.join(", ") : "";
+        return `<tr>
+          <td><a href="${esc(p.url)}">${esc(p.name || p.id)}</a>${p.main ? ' <span title="Main RWKV model">★</span>' : ""}<small>${esc(p.description)}</small>${authors ? `<small>Authors: ${esc(authors)}</small>` : ""}</td>
+          <td>${esc(p.kind)}</td><td>${date(p.updated_at)}</td>
+          <td>${metric(p.stars)}</td>
+          <td>${metric(p.downloads)}</td>
+        </tr>`;
+      }).join("");
       document.querySelector("#status").textContent = `${shown.length.toLocaleString()} of ${projects.length.toLocaleString()} projects`;
     }
 
-    fetch("data.json").then(response => {
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return response.json();
-    }).then(data => {
-      projects = data.projects;
-      const counts = Object.fromEntries(["repository", "agent", "model"].map(kind =>
+    function fetchJson(url) {
+      return fetch(url).then(response => {
+        if (!response.ok) throw new Error(`${url}: HTTP ${response.status}`);
+        return response.json();
+      });
+    }
+
+    function fetchJsonl(url) {
+      return fetch(url).then(response => {
+        if (!response.ok) throw new Error(`${url}: HTTP ${response.status}`);
+        return response.text();
+      }).then(text => {
+        const records = [];
+        text.split(/\r?\n/).forEach((line, index) => {
+          if (!line.trim()) return;
+          try {
+            records.push(JSON.parse(line));
+          } catch {
+            throw new Error(`${url}:${index + 1}: invalid JSON`);
+          }
+        });
+        return records;
+      });
+    }
+
+    function utcDay(value) {
+      if (typeof value !== "string") return null;
+      const parsed = Date.parse(value.length === 10 ? `${value}T00:00:00Z` : value);
+      return Number.isFinite(parsed) ? Math.floor(parsed / DAY) * DAY : null;
+    }
+
+    const isoDay = value => new Date(value).toISOString().slice(0, 10);
+
+    function nextMonth(key) {
+      let year = Number(key.slice(0, 4));
+      let month = Number(key.slice(5, 7)) + 1;
+      if (month === 13) {
+        year += 1;
+        month = 1;
+      }
+      return `${String(year).padStart(4, "0")}-${String(month).padStart(2, "0")}`;
+    }
+
+    function paperMonthPoints(records, generatedAt) {
+      const counts = new Map();
+      records.forEach(record => {
+        if (!record || typeof record.published_at !== "string") return;
+        const parsed = Date.parse(record.published_at);
+        if (!Number.isFinite(parsed)) return;
+        const month = new Date(parsed).toISOString().slice(0, 7);
+        counts.set(month, (counts.get(month) || 0) + 1);
+      });
+      const observedMonths = Array.from(counts.keys()).sort();
+      if (!observedMonths.length) return [];
+      const generated = typeof generatedAt === "string" ? Date.parse(generatedAt) : NaN;
+      let end = Number.isFinite(generated) ? new Date(generated).toISOString().slice(0, 7) : observedMonths[observedMonths.length - 1];
+      if (observedMonths[observedMonths.length - 1] > end) end = observedMonths[observedMonths.length - 1];
+      const points = [];
+      for (let month = observedMonths[0]; month <= end; month = nextMonth(month)) {
+        points.push({label: month, value: counts.get(month) || 0});
+      }
+      return points;
+    }
+
+    const svgNumber = value => Number.isFinite(value) ? value.toFixed(2) : "0";
+    const axisNumber = value => esc(value.toLocaleString(undefined, {maximumFractionDigits: value < 10 ? 2 : 0}));
+
+    function drawChart(targetId, options) {
+      const target = document.getElementById(targetId);
+      const titleId = `${targetId}-title`;
+      const descriptionId = `${targetId}-description`;
+      const title = esc(options.title);
+      const description = esc(options.description || "No history available.");
+      const svgStart = `<svg viewBox="0 0 720 260" role="img" aria-labelledby="${esc(titleId)} ${esc(descriptionId)}" focusable="false"><title id="${esc(titleId)}">${title}</title><desc id="${esc(descriptionId)}">${description}</desc>`;
+      const labels = Array.isArray(options.labels) ? options.labels : [];
+      const series = Array.isArray(options.series) ? options.series : [];
+      const valid = labels.length > 0 && series.length > 0 && series.every(item =>
+        Array.isArray(item.values) && item.values.length === labels.length && item.values.every(validValue));
+      if (!valid) {
+        const message = labels.length ? "No valid history available" : options.emptyMessage || "No history available";
+        target.innerHTML = `${svgStart}<text x="360" y="130" text-anchor="middle">${esc(message)}</text></svg>`;
+        return;
+      }
+
+      const width = 720;
+      const left = 54;
+      const right = 18;
+      const top = options.kind !== "bar" && series.length > 1 ? 36 : 18;
+      const bottom = 226;
+      const plotWidth = width - left - right;
+      const plotHeight = bottom - top;
+      let maxValue = 0;
+      series.forEach(item => item.values.forEach(value => { maxValue = Math.max(maxValue, value); }));
+      const yMax = Math.max(1, maxValue);
+      const x = index => labels.length === 1 ? left + plotWidth / 2 : left + index / (labels.length - 1) * plotWidth;
+      const y = value => bottom - value / yMax * plotHeight;
+      let markup = svgStart;
+
+      for (let tick = 0; tick <= 4; tick++) {
+        const ratio = tick / 4;
+        const tickY = top + plotHeight * ratio;
+        const value = yMax * (1 - ratio);
+        markup += `<line class="grid" x1="${left}" y1="${svgNumber(tickY)}" x2="${width - right}" y2="${svgNumber(tickY)}"></line><text x="${left - 8}" y="${svgNumber(tickY)}" text-anchor="end" dominant-baseline="middle">${axisNumber(value)}</text>`;
+      }
+      markup += `<line class="axis" x1="${left}" y1="${bottom}" x2="${width - right}" y2="${bottom}"></line>`;
+
+      const tickCount = Math.min(5, labels.length);
+      const tickIndices = new Set();
+      for (let tick = 0; tick < tickCount; tick++) {
+        tickIndices.add(tickCount === 1 ? 0 : Math.round(tick * (labels.length - 1) / (tickCount - 1)));
+      }
+      Array.from(tickIndices).sort((a, b) => a - b).forEach(index => {
+        const anchor = labels.length === 1 ? "middle" : index === 0 ? "start" : index === labels.length - 1 ? "end" : "middle";
+        markup += `<text x="${svgNumber(x(index))}" y="246" text-anchor="${anchor}">${esc(labels[index])}</text>`;
+      });
+
+      if (options.kind === "bar") {
+        const item = series[0];
+        const slot = plotWidth / labels.length;
+        const barWidth = Math.max(0.5, Math.min(56, slot * 0.72));
+        item.values.forEach((value, index) => {
+          const height = value / yMax * plotHeight;
+          const barX = left + index * slot + (slot - barWidth) / 2;
+          markup += `<rect x="${svgNumber(barX)}" y="${svgNumber(bottom - height)}" width="${svgNumber(barWidth)}" height="${svgNumber(height)}" fill="${esc(item.color)}"><title>${esc(labels[index])}: ${axisNumber(value)}</title></rect>`;
+        });
+      } else {
+        if (series.length > 1) {
+          series.forEach((item, index) => {
+            const legendX = left + index * 112;
+            const dash = item.dash ? ` stroke-dasharray="${esc(item.dash)}"` : "";
+            markup += `<line x1="${legendX}" y1="14" x2="${legendX + 16}" y2="14" stroke="${esc(item.color)}" stroke-width="3"${dash}></line><text x="${legendX + 22}" y="18">${esc(item.name)}</text>`;
+          });
+        }
+        series.forEach(item => {
+          const path = item.values.map((value, index) => `${index ? "L" : "M"}${svgNumber(x(index))},${svgNumber(y(value))}`).join(" ");
+          const dash = item.dash ? ` stroke-dasharray="${esc(item.dash)}"` : "";
+          markup += `<path d="${path}" fill="none" stroke="${esc(item.color)}" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"${dash}></path>`;
+          const pointIndex = item.values.length - 1;
+          markup += `<circle cx="${svgNumber(x(pointIndex))}" cy="${svgNumber(y(item.values[pointIndex]))}" r="3.5" fill="${esc(item.color)}"></circle>`;
+        });
+      }
+      target.innerHTML = `${markup}</svg>`;
+    }
+
+    function renderHistory(data, daily, commits, paperHistory) {
+      const sortedDays = daily.filter(entry => entry && utcDay(entry.date) !== null)
+        .slice().sort((a, b) => utcDay(a.date) - utcDay(b.date));
+      const countKinds = ["repository", "agent", "model", "paper"];
+      const totalPoints = sortedDays.flatMap(entry => {
+        const values = countKinds.map(kind => entry.counts && entry.counts[kind]);
+        if (!values.every(validValue)) return [];
+        const total = values.reduce((sum, value) => sum + value, 0);
+        return Number.isFinite(total) ? [{label: isoDay(utcDay(entry.date)), value: total}] : [];
+      });
+      const totalValues = totalPoints.map(point => point.value);
+      const totalDescription = totalPoints.length === 1
+        ? `One daily snapshot on ${totalPoints[0].label}: ${plainNumber(totalValues[0])} tracked projects.`
+        : totalPoints.length ? `${totalPoints.length} daily snapshots from ${totalPoints[0].label} to ${totalPoints[totalPoints.length - 1].label}. The latest total is ${plainNumber(totalValues[totalValues.length - 1])} tracked projects.` : "No valid daily project counts are available.";
+      drawChart("projects-chart", {
+        title: "Total tracked projects over time",
+        description: totalDescription,
+        emptyMessage: "No daily project counts yet",
+        labels: totalPoints.map(point => point.label),
+        series: [{name: "Projects", color: "#4a86e8", values: totalValues}]
+      });
+
+      const generatedDay = utcDay(data.generated_at);
+      const latestDaily = sortedDays[sortedDays.length - 1];
+      const historyStart = latestDaily ? utcDay(latestDaily.history_start) : null;
+      let commitPoints = [];
+      if (generatedDay !== null) {
+        const start = Math.max(generatedDay - 29 * DAY, historyStart === null ? -Infinity : historyStart);
+        if (Number.isFinite(start) && start <= generatedDay) {
+          const counts = new Map();
+          for (let day = start; day <= generatedDay; day += DAY) counts.set(day, 0);
+          commits.forEach(commit => {
+            const day = commit && utcDay(commit.committer_date);
+            if (day !== null && counts.has(day)) counts.set(day, counts.get(day) + 1);
+          });
+          commitPoints = Array.from(counts, ([day, value]) => ({label: isoDay(day), value}));
+        }
+      }
+      const commitValues = commitPoints.map(point => point.value);
+      const commitTotal = commitValues.reduce((sum, value) => sum + value, 0);
+      const commitDescription = !commitPoints.length ? "No valid UTC commit window is available."
+        : commitTotal === 0 ? `No default-branch commits were observed from ${commitPoints[0].label} through ${commitPoints[commitPoints.length - 1].label}.`
+        : `${plainNumber(commitTotal)} observed default-branch commits from ${commitPoints[0].label} through ${commitPoints[commitPoints.length - 1].label}, grouped by UTC committer date.`;
+      drawChart("commits-chart", {
+        title: "Observed commits per UTC day",
+        description: commitDescription,
+        emptyMessage: "No commit window available",
+        labels: commitPoints.map(point => point.label),
+        series: [{name: "Commits", color: "#2e9e5b", values: commitValues}]
+      });
+
+      const changePoints = sortedDays.flatMap(entry => {
+        const values = ["added", "removed", "changed"].map(kind => entry.changes && entry.changes[kind]);
+        return values.every(validValue) ? [{label: isoDay(utcDay(entry.date)), values}] : [];
+      });
+      const changeSeries = [
+        {name: "Added", color: "#2e9e5b", dash: "", index: 0},
+        {name: "Removed", color: "#d64550", dash: "6 3", index: 1},
+        {name: "Changed", color: "#b7791f", dash: "2 2", index: 2}
+      ].map(item => ({...item, values: changePoints.map(point => point.values[item.index])}));
+      const latestChanges = changePoints.length ? changePoints[changePoints.length - 1].values : null;
+      const changeDescription = latestChanges ? `${changePoints.length} daily snapshots from ${changePoints[0].label} to ${changePoints[changePoints.length - 1].label}. Latest changes: ${plainNumber(latestChanges[0])} added, ${plainNumber(latestChanges[1])} removed, and ${plainNumber(latestChanges[2])} changed.` : "No valid daily project changes are available.";
+      drawChart("changes-chart", {
+        title: "Project changes per day",
+        description: changeDescription,
+        emptyMessage: "No daily project changes yet",
+        labels: changePoints.map(point => point.label),
+        series: changeSeries
+      });
+
+      const paperPoints = paperMonthPoints(paperHistory, data.generated_at);
+      const paperValues = paperPoints.map(point => point.value);
+      const paperTotal = paperValues.reduce((sum, value) => sum + value, 0);
+      const paperDescription = paperPoints.length ? `${plainNumber(paperTotal)} first arXiv submissions from ${paperPoints[0].label} through ${paperPoints[paperPoints.length - 1].label}, grouped by UTC v1 publication month.` : "No valid paper publication history is available.";
+      drawChart("papers-chart", {
+        title: "First arXiv submissions per UTC month",
+        description: paperDescription,
+        emptyMessage: "No paper publication history yet",
+        labels: paperPoints.map(point => point.label),
+        kind: "bar",
+        series: [{name: "Papers", color: "#8864c7", values: paperValues}]
+      });
+    }
+
+    Promise.all([
+      fetchJson("data.json"),
+      fetchJsonl("history/daily.jsonl"),
+      fetchJsonl("history/commits.jsonl"),
+      fetchJsonl("history/papers.jsonl")
+    ]).then(([data, daily, commits, paperHistory]) => {
+      projects = Array.isArray(data.projects) ? data.projects : [];
+      const counts = Object.fromEntries(["repository", "agent", "model", "paper"].map(kind =>
         [kind, projects.filter(p => p.kind === kind).length]));
       document.querySelector("#summary").innerHTML =
-        `<span class="count"><strong>${counts.repository.toLocaleString()}</strong> repositories</span>
-         <span class="count"><strong>${counts.agent.toLocaleString()}</strong> agent projects</span>
-         <span class="count"><strong>${counts.model.toLocaleString()}</strong> models</span>
+        `<span class="count"><strong>${metric(counts.repository)}</strong> repositories</span>
+         <span class="count"><strong>${metric(counts.agent)}</strong> agent projects</span>
+         <span class="count"><strong>${metric(counts.model)}</strong> models</span>
+         <span class="count"><strong>${metric(counts.paper)}</strong> papers</span>
          <span>Snapshot: ${date(data.generated_at)}</span>` +
         (data.main_model ? `<span class="count">Main model: <a href="${esc(data.main_model.url)}">${esc(data.main_model.id)}</a><br>
           Latest <code>new model</code> commit: <span class="${data.main_model.new_model_commit_within_31_days ? "fresh" : ""}">${date(data.main_model.latest_new_model_commit_at)}</span><br>
           Source last changed: ${date(data.main_model.source_last_modified)}</span>` : "");
+      renderHistory(data, daily, commits, paperHistory);
       document.querySelector("#search").addEventListener("input", render);
       document.querySelector("#kind").addEventListener("change", render);
       render();
     }).catch(error => {
-      document.querySelector("#status").textContent = `Could not load data.json: ${error.message}`;
+      document.querySelector("#status").textContent = `Could not load tracker data: ${error.message}`;
     });
   </script>
 </body>
