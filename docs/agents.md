@@ -2,19 +2,19 @@
 
 All projects from the RWKV agent catalog, ordered by catalog update time.
 
-**Records:** 47 · **Snapshot:** 2026-11-11T02:56:02.817745Z · **[Source](https://agent.objects.rwkvos.com/en)**
+**Records:** 47 · **Snapshot:** 2026-11-11T11:58:23.279353Z · **[Source](https://agent.objects.rwkvos.com/en)**
 
 | Project | Updated | Stars | Classification |
 |---|---|---|---|
-| [ai00-x-client](https://github.com/cgisky1980/ai00-x-client) | 2026-11-08 | 5 | Strict Agent |
-| [dsh-rwkv-plugin](https://github.com/No-22-Github/dsh-rwkv-plugin) | 2026-11-08 | 0 | Strict Agent |
+| [memopet](https://github.com/Nice0o0/memopet) | 2026-11-10 | 0 | Agent companion application |
+| [stateswap](https://github.com/Nice0o0/stateswap) | 2026-11-10 | 1 | Agent persona and state infrastructure |
+| [dsh-rwkv-plugin](https://github.com/No-22-Github/dsh-rwkv-plugin) | 2026-11-10 | 0 | Strict Agent |
+| [ai00-x-client](https://github.com/cgisky1980/ai00-x-client) | 2026-11-09 | 5 | Strict Agent |
 | [noesis](https://github.com/Vaniell0/noesis) | 2026-11-07 | 4 | Agent boundary project |
 | [RWKV-Agent](https://github.com/No-22-Github/RWKV-Agent) | 2026-11-03 | 4 | Strict Agent |
 | [RWKV-LH](https://github.com/rwkv-rs/RWKV-LH) | 2026-11-03 | 4 | Strict Agent |
 | [rwkv-agent](https://github.com/123123213weqw/rwkv-agent) | 2026-11-01 | 9 | Strict Agent |
-| [memopet](https://github.com/Nice0o0/memopet) | 2026-11-01 | 0 | Agent companion application |
 | [HTMLNLM](https://github.com/ConsciousNode/HTMLNLM) | 2026-10-29 | 2 | Agent companion research |
-| [stateswap](https://github.com/Nice0o0/stateswap) | 2026-10-25 | 1 | Agent persona and state infrastructure |
 | [rwkv-prompt-format](https://github.com/Ai00-X/rwkv-prompt-format) | 2026-10-22 | 3 | Agent supporting tools |
 | [rwkv-toolcaller-bench](https://codeberg.org/scarletwolf_ai/rwkv-toolcaller-bench) | 2026-10-19 | 0 | Agent benchmark and training upstream |
 | [RWKV-SearchReader](https://github.com/w1c2j3/RWKV-SearchReader) | 2026-10-19 | 2 | Agent-related research assistant |
@@ -23,7 +23,7 @@ All projects from the RWKV agent catalog, ordered by catalog update time.
 | [rwkv-statetrace-agent](https://github.com/wangkeyu-u/rwkv-statetrace-agent) | 2026-10-07 | 0 | Strict Agent |
 | [Gut-RWKV-Jev-laya](https://github.com/xiaol/Gut-RWKV-Jev-laya) | 2026-09-28 | 1 | Agent decision infrastructure |
 | [Long-RWKV](https://github.com/Joshua-Zhang-Jiaquan/Long-RWKV) | 2026-09-23 | 2 | Agent workload research |
-| [rwkv-jev](https://github.com/XingQiPan/rwkv-jev) | 2026-09-22 | 4 | Agent decision infrastructure |
+| [rwkv-jev](https://github.com/XingQiPan/rwkv-jev) | 2026-09-22 | 5 | Agent decision infrastructure |
 | [rwkv-jev-like](https://github.com/1cyberlangke1/rwkv-jev-like) | 2026-09-20 | 4 | Agent decision infrastructure |
 | [RWKV-WM](https://github.com/JingyuWang-128/RWKV-WM) | 2026-09-16 | 0 | Reinforcement-learning Agent research |
 | [rwkv7-agent-kit](https://github.com/SU-180/rwkv7-agent-kit) | 2026-09-14 | 1 | Strict Agent |

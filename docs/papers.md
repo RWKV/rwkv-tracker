@@ -2,7 +2,7 @@
 
 All papers matching the RWKV title/abstract query, ordered by first arXiv submission.
 
-**Records:** 146 · **Snapshot:** 2026-11-11T02:56:02.817745Z · **[Source](https://arxiv.org/search/?query=RWKV&searchtype=all)**
+**Records:** 146 · **Snapshot:** 2026-11-11T11:58:23.279353Z · **[Source](https://arxiv.org/search/?query=RWKV&searchtype=all)**
 
 | Project | Published | Updated | Authors |
 |---|---|---|---|
@@ -12,7 +12,7 @@ All papers matching the RWKV title/abstract query, ordered by first arXiv submis
 | [DAMI: Dual-Axis Memory Initialization for Enhanced Long-Context Retrieval in Gated Linear Attention](https://arxiv.org/abs/2610.41994) | 2026-10-30 | 2026-11-03 | Zhangchi Feng, Harry Jiang, Yangyifei Luo et al. |
 | [DGCM-SSFA: Dual-Granularity Cross-Modulation and Sparse Strip Frequency Attention for Efficient 3T-to-7T MRI Synthesis](https://arxiv.org/abs/2610.29141) | 2026-10-21 | 2026-10-21 | Zhichun Fan, Zhiqiang Chen, Lanling Liu et al. |
 | [Frame-Wise Streaming for Efficient Learned Speech Compression](https://arxiv.org/abs/2610.21998) | 2026-10-15 | 2026-10-15 | Yuhan Liu, Jun Xu, Fengxi Zhang et al. |
-| [Compute-Optimal Scaling Laws for Spiking Language Models](https://arxiv.org/abs/2610.15146) | 2026-10-10 | 2026-10-20 | Dan Saunders, Benjamin Ren, Catherine He |
+| [Compute-Optimal Scaling Laws for Spiking Language Models](https://arxiv.org/abs/2610.15146) | 2026-10-10 | 2026-11-10 | Dan Saunders, Benjamin Ren, Catherine He |
 | [HART: Hybrid Attention-RWKV Time series Foundation Model](https://arxiv.org/abs/2610.12883) | 2026-10-09 | 2026-10-09 | Qingwen Lin, Boyan Xu, Shifeng Xie et al. |
 | [ContiLNN: Mitigating Slice Sampling Discontinuity with Liquid Neural Networks for Medical Image Restoration](https://arxiv.org/abs/2610.12337) | 2026-10-08 | 2026-10-08 | Jialei He, Enhe Liu, Sifan Song et al. |
 | [NinaXander: Feasibility and Limits of Composing Frozen Language Models Across Architecture Families via a Shared Latent Space](https://arxiv.org/abs/2609.38261) | 2026-09-29 | 2026-09-29 | Takanori Kotama, Shun-ichiro Hayashi, Daichi Mukunoki et al. |

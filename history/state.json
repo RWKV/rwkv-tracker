@@ -1,6 +1,6 @@
 {
   "history_start": "2026-11-04T01:40:02.878390Z",
-  "last_success_started_at": "2026-11-11T02:56:02.817745Z",
+  "last_success_started_at": "2026-11-11T11:58:23.279353Z",
   "scanned_repositories": [
     "00ffcc/chunkRWKV6",
     "00ffcc/conRWKV",
@@ -528,6 +528,7 @@
     "cgisky1980/rwkv-rsv",
     "cgisky1980/rwkv-tts-rs",
     "cgisky1980/rwkv7-state-embedding",
+    "chenqi2013/RWKVBuddy",
     "chenqi2013/kotlinloadrwkv",
     "chenqi2013/rwkv_go",
     "chenqi2013/rwkvcommonutil",
