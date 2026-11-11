@@ -2,11 +2,11 @@
 
 A dependency-free daily tracker for RWKV projects, models, papers, and activity history.
 
-**Last fetched:** 2026-11-11T01:43:42.898432Z · **[Complete JSON data](data.json)**
+**Last fetched:** 2026-11-11T02:27:09.583115Z · **[Complete JSON data](data.json)**
 
 | Source | Records |
 |---|---:|
-| [GitHub repositories](https://github.com/search?o=desc&p=1&q=rwkv&s=updated&type=Repositories) | 1,011 |
+| [GitHub repositories](https://github.com/search?o=desc&p=1&q=rwkv&s=updated&type=Repositories) | 1,012 |
 | [Agent projects](https://agent.objects.rwkvos.com/en) | 47 |
 | [Hugging Face models](https://huggingface.co/models?sort=modified&search=rwkv) | 961 |
 | [arXiv papers](https://arxiv.org/search/?query=RWKV&searchtype=all) | 146 |
@@ -38,8 +38,9 @@ The JSON dataset and GitHub Pages site contain every current record; these table
 
 | Project | Updated | Stars | Language |
 |---|---|---|---|
+| [m8than/rwkv-tracker](https://github.com/m8than/rwkv-tracker) | 2026-11-11 | 0 | Python |
+| [binary-husky/gpt_academic](https://github.com/binary-husky/gpt_academic) | 2026-11-11 | 71,642 | Python |
 | [JSchoreels/anki-rwkv](https://github.com/JSchoreels/anki-rwkv) | 2026-11-11 | 2 | Python |
-| [binary-husky/gpt_academic](https://github.com/binary-husky/gpt_academic) | 2026-11-11 | 71,641 | Python |
 | [DavidCaastro/redukt](https://github.com/DavidCaastro/redukt) | 2026-11-11 | 0 | Rust |
 | [Fantasia-Infinity/RWKV-AgenticLearning](https://github.com/Fantasia-Infinity/RWKV-AgenticLearning) | 2026-11-10 | 0 | HTML |
 | [josStorer/RWKV-Runner](https://github.com/josStorer/RWKV-Runner) | 2026-11-10 | 6,501 | TypeScript |
@@ -62,7 +63,6 @@ The JSON dataset and GitHub Pages site contain every current record; these table
 | [datawhalechina/llms-from-scratch-cn](https://github.com/datawhalechina/llms-from-scratch-cn) | 2026-11-10 | 4,454 | Jupyter Notebook |
 | [open-spaced-repetition/srs-benchmark](https://github.com/open-spaced-repetition/srs-benchmark) | 2026-11-10 | 286 | Jupyter Notebook |
 | [uncoalesced/parentheses](https://github.com/uncoalesced/parentheses) | 2026-11-09 | 0 | Python |
-| [RWKV/rwkv.cpp](https://github.com/RWKV/rwkv.cpp) | 2026-11-09 | 1,591 | C++ |
 
 ### Agent projects
 

@@ -1,6 +1,6 @@
 {
   "history_start": "2026-11-04T01:40:02.878390Z",
-  "last_success_started_at": "2026-11-11T01:43:42.898432Z",
+  "last_success_started_at": "2026-11-11T02:27:09.583115Z",
   "scanned_repositories": [
     "00ffcc/chunkRWKV6",
     "00ffcc/conRWKV",
@@ -736,6 +736,7 @@
     "m8than/RWKV-LM-LatentReason",
     "m8than/RWKV-LMD",
     "m8than/RWKV-World-Tokenizer-CPP",
+    "m8than/rwkv-tracker",
     "maa123/rwkvimage",
     "marty1885/llm.cmake",
     "marty1885/rwkv-steering-analysis",
