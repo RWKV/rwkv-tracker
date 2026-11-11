@@ -14,7 +14,14 @@
     .controls { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.5rem 0; }
     input, select { font: inherit; padding: .6rem; border: 1px solid #8888; border-radius: .35rem; background: Canvas; color: CanvasText; }
     input { flex: 1; min-width: 12rem; }
-    .history { margin: 2rem 0; }
+    .history, .activity { margin: 2rem 0; }
+    .activity-scroll { overflow-x: auto; }
+    .activity-table { min-width: 48rem; }
+    .activity-table th:first-child, .activity-table td:first-child,
+    .activity-table th:nth-child(2), .activity-table td:nth-child(2) { white-space: nowrap; }
+    .activity-table th:nth-child(n+3), .activity-table td:nth-child(n+3) { text-align: left; white-space: normal; }
+    .activity-table td { overflow-wrap: anywhere; }
+    .activity-empty { text-align: center !important; opacity: .75; }
     .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 28rem), 1fr)); gap: 1rem; }
     .chart-card { min-width: 0; margin: 0; padding: 1rem; border: 1px solid #8886; border-radius: .5rem; }
     .chart-card h3 { margin: 0 0 .35rem; }
@@ -29,7 +36,10 @@
     td small { display: block; max-width: 42rem; opacity: .75; margin-top: .25rem; }
     #status { opacity: .75; }
     .fresh { color: #2e9e5b; font-weight: 600; }
-    @media (max-width: 650px) { th:nth-child(4), td:nth-child(4) { display: none; } }
+    @media (max-width: 650px) {
+      th:nth-child(4), td:nth-child(4) { display: none; }
+      .activity-table th:nth-child(4), .activity-table td:nth-child(4) { display: table-cell; }
+    }
   </style>
 </head>
 <body>
@@ -41,6 +51,15 @@
   <main>
     <section id="summary" aria-label="Dataset summary"></section>
     <p id="status">Loading data…</p>
+    <section class="activity" aria-labelledby="activity-title">
+      <h2 id="activity-title">Latest activity</h2>
+      <div class="activity-scroll">
+        <table class="activity-table">
+          <thead><tr><th scope="col">Date</th><th scope="col">Type</th><th scope="col">Activity</th><th scope="col">Details</th></tr></thead>
+          <tbody id="activity"><tr><td class="activity-empty" colspan="4">No activity available</td></tr></tbody>
+        </table>
+      </div>
+    </section>
     <section class="history" aria-labelledby="history-title">
       <h2 id="history-title">History</h2>
       <div class="chart-grid">
@@ -254,6 +273,59 @@
       target.innerHTML = `${markup}</svg>`;
     }
 
+    function renderActivity(records) {
+      const target = document.getElementById("activity");
+      const types = new Set(["repository", "agent", "model", "paper", "commit", "change"]);
+      const events = (Array.isArray(records) ? records : []).map((record, index) => {
+        if (!record || typeof record !== "object" || Array.isArray(record) ||
+            typeof record.timestamp !== "string" || !types.has(record.type) ||
+            typeof record.label !== "string" || !record.label.trim() ||
+            typeof record.detail !== "string" || !record.detail.trim() ||
+            typeof record.url !== "string") return null;
+        const timestamp = Date.parse(record.timestamp);
+        if (!Number.isFinite(timestamp)) return null;
+        let url;
+        try {
+          url = new URL(record.url);
+        } catch {
+          return null;
+        }
+        if (url.protocol !== "http:" && url.protocol !== "https:") return null;
+        return {record, timestamp, index, url: url.href};
+      }).filter(Boolean).sort((a, b) => b.timestamp - a.timestamp || a.index - b.index).slice(0, 100);
+
+      target.replaceChildren();
+      if (!events.length) {
+        const row = document.createElement("tr");
+        const cell = document.createElement("td");
+        cell.className = "activity-empty";
+        cell.colSpan = 4;
+        cell.textContent = "No activity available";
+        row.append(cell);
+        target.append(row);
+        return;
+      }
+
+      const fragment = document.createDocumentFragment();
+      events.forEach(({record, timestamp, url}) => {
+        const row = document.createElement("tr");
+        const dateCell = document.createElement("td");
+        const typeCell = document.createElement("td");
+        const activityCell = document.createElement("td");
+        const detailCell = document.createElement("td");
+        const link = document.createElement("a");
+        dateCell.textContent = new Date(timestamp).toISOString().replace("T", " ").replace("Z", " UTC");
+        typeCell.textContent = record.type;
+        link.href = url;
+        link.textContent = record.label;
+        activityCell.append(link);
+        detailCell.textContent = record.detail;
+        row.append(dateCell, typeCell, activityCell, detailCell);
+        fragment.append(row);
+      });
+      target.append(fragment);
+    }
+
     function renderHistory(data, daily, commits, paperHistory) {
       const sortedDays = daily.filter(entry => entry && utcDay(entry.date) !== null)
         .slice().sort((a, b) => utcDay(a.date) - utcDay(b.date));
@@ -342,8 +414,9 @@
       fetchJson("data.json"),
       fetchJsonl("history/daily.jsonl"),
       fetchJsonl("history/commits.jsonl"),
-      fetchJsonl("history/papers.jsonl")
-    ]).then(([data, daily, commits, paperHistory]) => {
+      fetchJsonl("history/papers.jsonl"),
+      fetchJsonl("history/activity.jsonl")
+    ]).then(([data, daily, commits, paperHistory, activity]) => {
       projects = Array.isArray(data.projects) ? data.projects : [];
       const counts = Object.fromEntries(["repository", "agent", "model", "paper"].map(kind =>
         [kind, projects.filter(p => p.kind === kind).length]));
@@ -356,6 +429,7 @@
         (data.main_model ? `<span class="count">Main model: <a href="${esc(data.main_model.url)}">${esc(data.main_model.id)}</a><br>
           Latest <code>new model</code> commit: <span class="${data.main_model.new_model_commit_within_31_days ? "fresh" : ""}">${date(data.main_model.latest_new_model_commit_at)}</span><br>
           Source last changed: ${date(data.main_model.source_last_modified)}</span>` : "");
+      renderActivity(activity);
       renderHistory(data, daily, commits, paperHistory);
       document.querySelector("#search").addEventListener("input", render);
       document.querySelector("#kind").addEventListener("change", render);

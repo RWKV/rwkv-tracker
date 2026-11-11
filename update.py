@@ -491,7 +491,8 @@ def daily_history(projects, changes, history_start, now):
 
 def markdown(value):
     text = html.escape(str(value if value is not None else "—"))
-    return text.replace("|", "\\|").replace("\r", " ").replace("\n", " ")
+    return (text.replace("|", "\\|").replace("[", "\\[").replace("]", "\\]")
+            .replace("\r", " ").replace("\n", " "))
 
 
 def project_link(project):
@@ -520,37 +521,134 @@ def render_table(projects, columns):
     return lines
 
 
-def render_readme(data, history_state):
-    repositories = [p for p in data["projects"] if p["kind"] == "repository"]
-    agents = [p for p in data["projects"] if p["kind"] == "agent"]
-    models = [p for p in data["projects"] if p["kind"] == "model"]
+def activity_history(projects, commits, papers, changes):
+    events = []
+    update_labels = {
+        "repository": "Repository metadata last updated",
+        "agent": "Agent catalog entry last updated",
+        "model": "Model repository last modified",
+    }
+    for project in projects:
+        kind = project["kind"]
+        if kind in update_labels and project.get("updated_at"):
+            events.append({
+                "timestamp": project["updated_at"], "type": kind,
+                "label": project["name"], "detail": update_labels[kind], "url": project["url"],
+            })
+    for commit in commits:
+        events.append({
+            "timestamp": commit["committer_date"], "type": "commit",
+            "label": commit["repo"], "detail": commit["message"] or "No commit message", "url": commit["url"],
+        })
+    for paper in papers:
+        events.append({
+            "timestamp": paper["published_at"], "type": "paper",
+            "label": paper["title"], "detail": f"First arXiv submission · {paper['id']}",
+            "url": f"https://arxiv.org/abs/{paper['id']}",
+        })
+        if paper["updated_at"] != paper["published_at"]:
+            events.append({
+                "timestamp": paper["updated_at"], "type": "paper",
+                "label": paper["title"], "detail": f"Latest observed arXiv revision · {paper['id']}",
+                "url": f"https://arxiv.org/abs/{paper['id']}",
+            })
+    for change in changes:
+        if change["event"] == "changed":
+            action = "Changed " + ", ".join(change.get("changes", {}))
+        else:
+            action = change["event"].capitalize()
+        events.append({
+            "timestamp": change["observed_at"], "type": "change",
+            "label": change["name"], "detail": f"{action} · {change['kind']} · {change['id']}",
+            "url": change["url"],
+        })
+    return sorted(
+        events,
+        key=lambda event: (event["timestamp"], event["type"], event["label"], event["detail"]),
+        reverse=True,
+    )
+
+
+def render_activity_table(events, limit):
+    lines = [
+        "| Date (UTC) | Type | Activity | Details |",
+        "|---|---|---|---|",
+    ]
+    for event in events[:limit]:
+        timestamp = event["timestamp"][:16].replace("T", " ")
+        activity = f"[{markdown(event['label'])}]({event['url']})"
+        lines.append(f"| {timestamp} | {markdown(event['type'].capitalize())} | {activity} | {markdown(event['detail'])} |")
+    return lines
+
+
+def render_type_document(title, description, source, projects, columns, generated_at):
+    return "\n".join([
+        f"# {title}",
+        "",
+        description,
+        "",
+        f"**Records:** {len(projects):,} · **Snapshot:** {generated_at} · **[Source]({source})**",
+        "",
+        *render_table(projects, columns),
+        "",
+    ])
+
+
+def render_type_documents(data):
+    projects = data["projects"]
+    repositories = [p for p in projects if p["kind"] == "repository"]
+    agents = [p for p in projects if p["kind"] == "agent"]
+    models = [p for p in projects if p["kind"] == "model"]
     papers = sorted(
-        (p for p in data["projects"] if p["kind"] == "paper"),
+        (p for p in projects if p["kind"] == "paper"),
         key=lambda p: (p["published_at"], p["id"]), reverse=True,
     )
+    generated_at = data["generated_at"]
+    return {
+        Path("docs/github.md"): render_type_document(
+            "GitHub Projects", "All non-fork GitHub repositories matching `rwkv`, ordered by repository update time.",
+            GITHUB_SOURCE, repositories, ["Updated", "Stars", "Forks", "Language"], generated_at,
+        ),
+        Path("docs/models.md"): render_type_document(
+            "Model Updates", "All Hugging Face models matching `rwkv`, ordered by last modification.",
+            HF_SOURCE, models, ["Updated", "Downloads", "Likes"], generated_at,
+        ),
+        Path("docs/agents.md"): render_type_document(
+            "Agent Projects", "All projects from the RWKV agent catalog, ordered by catalog update time.",
+            AGENT_SOURCE, agents, ["Updated", "Stars", "Classification"], generated_at,
+        ),
+        Path("docs/papers.md"): render_type_document(
+            "arXiv Papers", "All papers matching the RWKV title/abstract query, ordered by first arXiv submission.",
+            ARXIV_SOURCE, papers, ["Published", "Updated", "Authors"], generated_at,
+        ),
+    }
+
+
+def render_readme(data, history_state, activity):
+    counts = {kind: sum(p["kind"] == kind for p in data["projects"]) for kind in ("repository", "agent", "model", "paper")}
     main = data["main_model"]
     freshness = "yes" if main["new_model_commit_within_31_days"] else "no"
     lines = [
         "# RWKV Project Tracker",
         "",
-        "A dependency-free daily tracker for RWKV projects, models, papers, and activity history.",
+        "A daily summary of RWKV projects, model updates, agent projects, papers, and development activity.",
         "",
         f"**Last fetched:** {data['generated_at']} · **[Complete JSON data](data.json)**",
         "",
-        "| Source | Records |",
-        "|---|---:|",
-        f"| [GitHub repositories]({GITHUB_SOURCE}) | {len(repositories):,} |",
-        f"| [Agent projects]({AGENT_SOURCE}) | {len(agents):,} |",
-        f"| [Hugging Face models]({HF_SOURCE}) | {len(models):,} |",
-        f"| [arXiv papers]({ARXIV_SOURCE}) | {len(papers):,} |",
+        "## Overview",
         "",
-        "## Activity history",
+        "| Type | Records | Complete Markdown list |",
+        "|---|---:|---|",
+        f"| GitHub projects | {counts['repository']:,} | [github.md](docs/github.md) |",
+        f"| Model updates | {counts['model']:,} | [models.md](docs/models.md) |",
+        f"| Agent projects | {counts['agent']:,} | [agents.md](docs/agents.md) |",
+        f"| arXiv papers | {counts['paper']:,} | [papers.md](docs/papers.md) |",
         "",
-        "GitHub Pages includes auto-updating charts for project totals, daily commits, project changes, and arXiv first submissions.",
+        "## Latest activity",
         "",
-        "Raw history: [daily counts](history/daily.jsonl) · [project changes](history/changes.jsonl) · [commits](history/commits.jsonl) · [papers](history/papers.jsonl).",
+        "The 25 most recent events across all sources. GitHub Pages shows the latest 100; the [activity JSONL](history/activity.jsonl) contains the complete derived feed.",
         "",
-        f"Commit collection begins **{day(history_state['history_start'])}** and extends daily. It records observed default-branch commits, not all-branch activity. Project-count history begins with the first daily snapshot; earlier counts are never fabricated.",
+        *render_activity_table(activity, 25),
         "",
         "## Main model",
         "",
@@ -563,33 +661,15 @@ def render_readme(data, history_state):
         "",
         "The 31-day indicator describes observed commit titles, not a guaranteed release schedule.",
         "",
-        "## Recent activity",
+        "## Activity history",
         "",
-        "The JSON dataset and GitHub Pages site contain every current record; these tables show 25 recent entries per source.",
+        "GitHub Pages includes auto-updating charts for project totals, daily commits, project changes, and arXiv first submissions.",
         "",
-        "### GitHub repositories",
+        "Raw history: [activity](history/activity.jsonl) · [daily counts](history/daily.jsonl) · [project changes](history/changes.jsonl) · [commits](history/commits.jsonl) · [papers](history/papers.jsonl).",
         "",
-        *render_table(repositories[:25], ["Updated", "Stars", "Language"]),
+        f"Commit collection begins **{day(history_state['history_start'])}** and extends daily. Commits are observed on default branches. Project-count history begins with the first daily snapshot; earlier counts are never fabricated.",
         "",
-        "### Agent projects",
-        "",
-        *render_table(agents[:25], ["Updated", "Stars", "Classification"]),
-        "",
-        "### Hugging Face models",
-        "",
-        *render_table(models[:25], ["Updated", "Downloads", "Likes"]),
-        "",
-        "### Papers by first arXiv submission",
-        "",
-        *render_table(papers[:25], ["Published", "Authors"]),
-        "",
-        "## Update",
-        "",
-        "Run `python3 update.py`. Python 3.11+ is the only requirement. Set `GITHUB_TOKEN` to raise GitHub API rate limits; the token is sent only to `api.github.com`.",
-        "",
-        "The scheduled workflow runs once daily, commits the current snapshot and JSONL history, and deploys the charts to GitHub Pages. A failed fetch leaves the previous snapshot untouched.",
-        "",
-        "GitHub repository search excludes forks by default. Creation-date shards work around its 1,000-result-per-query cap. Hugging Face results are matching model repositories; their contents are not independently verified as usable weights. arXiv results mention RWKV in their title or abstract; paper graphs use first-submission timestamps, not journal publication dates.",
+        "Hugging Face results are matching model repositories, not independently verified weights. arXiv results mention RWKV in their title or abstract; publication dates mean first arXiv submission, not journal publication.",
         "",
     ]
     return "\n".join(lines)
@@ -630,14 +710,17 @@ def main():
     changes = project_changes(previous, projects, now)
     daily = daily_history(projects, changes, parse_time(history_state["history_start"]), now)
     papers_observed = paper_history(papers, now)
+    activity = activity_history(projects, commits, papers_observed, changes)
     outputs = {
         snapshot_path: json.dumps(data, ensure_ascii=False, indent=2) + "\n",
-        Path("README.md"): render_readme(data, history_state),
+        Path("README.md"): render_readme(data, history_state, activity),
+        HISTORY_DIR / "activity.jsonl": jsonl(activity),
         HISTORY_DIR / "daily.jsonl": jsonl(daily),
         HISTORY_DIR / "changes.jsonl": jsonl(changes),
         HISTORY_DIR / "commits.jsonl": jsonl(commits),
         HISTORY_DIR / "papers.jsonl": jsonl(papers_observed),
         HISTORY_DIR / "state.json": json.dumps(history_state, indent=2) + "\n",
+        **render_type_documents(data),
     }
     for path, content in outputs.items():
         atomic_write(path, content)
