@@ -2,10 +2,11 @@
 
 All papers matching the RWKV title/abstract query, ordered by first arXiv submission.
 
-**Records:** 146 · **Snapshot:** 2026-11-12T12:58:13.382920Z · **[Source](https://arxiv.org/search/?query=RWKV&searchtype=all)**
+**Records:** 147 · **Snapshot:** 2026-11-13T12:24:08.985502Z · **[Source](https://arxiv.org/search/?query=RWKV&searchtype=all)**
 
 | Project | Published | Updated | Authors |
 |---|---|---|---|
+| [MusicRWKV: A Multimodal RWKV Framework for Music Representation Learning](https://arxiv.org/abs/2611.16718) | 2026-11-12 | 2026-11-12 | Terry Tan |
 | [DAPointRWKV: Domain Adaptive Vision RWKV for Point Cloud Completion](https://arxiv.org/abs/2611.10353) | 2026-11-07 | 2026-11-07 | Yinghui Li, Qianyu Zhou, Hao Yang et al. |
 | [MIRA: Mitigating Pole Geometry Bias in Recurrent Language Models](https://arxiv.org/abs/2611.09412) | 2026-11-06 | 2026-11-06 | Róisín Luo, Ihsan Ullah, Christian Gagné et al. |
 | [Neural Image Compression with Internal-External Prior Fusion and Alignment](https://arxiv.org/abs/2611.07644) | 2026-11-05 | 2026-11-08 | Tiancheng Si, Wenlong Xu, Dahua Gao |

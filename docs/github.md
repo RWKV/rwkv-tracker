@@ -2,26 +2,38 @@
 
 All non-fork GitHub repositories matching `rwkv`, ordered by repository update time.
 
-**Records:** 1,016 · **Snapshot:** 2026-11-12T12:58:13.382920Z · **[Source](https://github.com/search?o=desc&p=1&q=rwkv&s=updated&type=Repositories)**
+**Records:** 1,014 · **Snapshot:** 2026-11-13T12:24:08.985502Z · **[Source](https://github.com/search?o=desc&p=1&q=rwkv&s=updated&type=Repositories)**
 
 | Project | Updated | Stars | Forks | Language |
 |---|---|---|---|---|
-| [Bai-Xuecheng/DRWKV](https://github.com/Bai-Xuecheng/DRWKV) | 2026-11-12 | 20 | 3 | Python |
-| [BlinkDL/RWKV-LM](https://github.com/BlinkDL/RWKV-LM) | 2026-11-12 | 14,775 | 1025 | Python |
-| [josStorer/RWKV-Runner](https://github.com/josStorer/RWKV-Runner) | 2026-11-12 | 6,503 | 593 | TypeScript |
-| [BlinkDL/AI-Writer](https://github.com/BlinkDL/AI-Writer) | 2026-11-12 | 3,937 | 569 | Python |
-| [datawhalechina/llms-from-scratch-cn](https://github.com/datawhalechina/llms-from-scratch-cn) | 2026-11-12 | 4,458 | 615 | Jupyter Notebook |
-| [AUXStar/RWKV-Server](https://github.com/AUXStar/RWKV-Server) | 2026-11-12 | 16 | 0 | Python |
-| [zhaojiangshan2010/RWKV-Easy](https://github.com/zhaojiangshan2010/RWKV-Easy) | 2026-11-12 | 2 | 0 | Python |
-| [shengxia/RWKV_Role_Playing](https://github.com/shengxia/RWKV_Role_Playing) | 2026-11-12 | 250 | 27 | Python |
-| [binary-husky/gpt_academic](https://github.com/binary-husky/gpt_academic) | 2026-11-12 | 71,655 | 8319 | Python |
+| [uncoalesced/parentheses](https://github.com/uncoalesced/parentheses) | 2026-11-13 | 1 | 1 | Python |
+| [binary-husky/gpt_academic](https://github.com/binary-husky/gpt_academic) | 2026-11-13 | 71,658 | 8320 | Python |
+| [saya-ch/model-muses](https://github.com/saya-ch/model-muses) | 2026-11-13 | 7 | 0 | Python |
+| [BlinkDL/AI-Writer](https://github.com/BlinkDL/AI-Writer) | 2026-11-13 | 3,939 | 568 | Python |
+| [chenqi2013/RWKVBuddy](https://github.com/chenqi2013/RWKVBuddy) | 2026-11-13 | 0 | 0 | JavaScript |
+| [rwkv-org/F-rwkv](https://github.com/rwkv-org/F-rwkv) | 2026-11-13 | 0 | 0 | — |
+| [KevlarKanou/rwkv7.c](https://github.com/KevlarKanou/rwkv7.c) | 2026-11-13 | 47 | 3 | C |
+| [josStorer/RWKV-Runner](https://github.com/josStorer/RWKV-Runner) | 2026-11-13 | 6,503 | 594 | TypeScript |
+| [RWKV/rwkv.cpp](https://github.com/RWKV/rwkv.cpp) | 2026-11-13 | 1,591 | 131 | C++ |
+| [wenda-LLM/wenda](https://github.com/wenda-LLM/wenda) | 2026-11-13 | 6,143 | 782 | JavaScript |
+| [JSchoreels/anki-rwkv](https://github.com/JSchoreels/anki-rwkv) | 2026-11-13 | 3 | 0 | Python |
+| [howard-hou/RWKV-X](https://github.com/howard-hou/RWKV-X) | 2026-11-12 | 61 | 3 | Python |
+| [BlinkDL/RWKV-LM](https://github.com/BlinkDL/RWKV-LM) | 2026-11-12 | 14,774 | 1025 | Python |
+| [zhaojiangshan2010/RWKV-Easy](https://github.com/zhaojiangshan2010/RWKV-Easy) | 2026-11-12 | 3 | 0 | Python |
+| [RWKV-APP/RWKV_APP](https://github.com/RWKV-APP/RWKV_APP) | 2026-11-12 | 135 | 15 | Dart |
+| [shuaiqianende/RWKVPCSSC](https://github.com/shuaiqianende/RWKVPCSSC) | 2026-11-12 | 5 | 0 | Python |
+| [RWKV/rwkv-tracker](https://github.com/RWKV/rwkv-tracker) | 2026-11-12 | 0 | 0 | Python |
 | [Fantasia-Infinity/RWKV-AgenticLearning](https://github.com/Fantasia-Infinity/RWKV-AgenticLearning) | 2026-11-12 | 0 | 0 | HTML |
+| [BlinkDL/ChatRWKV](https://github.com/BlinkDL/ChatRWKV) | 2026-11-12 | 9,488 | 685 | Python |
+| [Bai-Xuecheng/DRWKV](https://github.com/Bai-Xuecheng/DRWKV) | 2026-11-12 | 20 | 3 | Python |
+| [datawhalechina/llms-from-scratch-cn](https://github.com/datawhalechina/llms-from-scratch-cn) | 2026-11-12 | 4,458 | 616 | Jupyter Notebook |
+| [AUXStar/RWKV-Server](https://github.com/AUXStar/RWKV-Server) | 2026-11-12 | 16 | 0 | Python |
+| [shengxia/RWKV_Role_Playing](https://github.com/shengxia/RWKV_Role_Playing) | 2026-11-12 | 250 | 27 | Python |
 | [RodkinIvan/recurrent-armt](https://github.com/RodkinIvan/recurrent-armt) | 2026-11-12 | 0 | 0 | Python |
 | [LuckySongXiao/RWKV-Learning-Materials](https://github.com/LuckySongXiao/RWKV-Learning-Materials) | 2026-11-12 | 1 | 0 | JavaScript |
 | [MollySophia/rwkv-mobile](https://github.com/MollySophia/rwkv-mobile) | 2026-11-12 | 102 | 10 | C++ |
 | [camenduru/rwkv-music-hf](https://github.com/camenduru/rwkv-music-hf) | 2026-11-12 | 2 | 0 | Python |
 | [No-22-Github/dsh-rwkv-plugin](https://github.com/No-22-Github/dsh-rwkv-plugin) | 2026-11-12 | 2 | 1 | TypeScript |
-| [JSchoreels/anki-rwkv](https://github.com/JSchoreels/anki-rwkv) | 2026-11-12 | 2 | 0 | Python |
 | [deepglint/RWKV-CLIP](https://github.com/deepglint/RWKV-CLIP) | 2026-11-12 | 152 | 9 | Python |
 | [xun082/rwkv-vibe-code-desktop](https://github.com/xun082/rwkv-vibe-code-desktop) | 2026-11-12 | 0 | 0 | Rust |
 | [open-spaced-repetition/srs-benchmark](https://github.com/open-spaced-repetition/srs-benchmark) | 2026-11-12 | 287 | 29 | Jupyter Notebook |
@@ -33,16 +45,10 @@ All non-fork GitHub repositories matching `rwkv`, ordered by repository update t
 | [DavidCaastro/redukt](https://github.com/DavidCaastro/redukt) | 2026-11-11 | 0 | 0 | Rust |
 | [Brain2nd/NeuronSpark](https://github.com/Brain2nd/NeuronSpark) | 2026-11-11 | 3 | 0 | Python |
 | [Alic-Li/rwkv_lightning_cuda](https://github.com/Alic-Li/rwkv_lightning_cuda) | 2026-11-11 | 13 | 2 | C++ |
-| [RWKV/rwkv-tracker](https://github.com/RWKV/rwkv-tracker) | 2026-11-11 | 0 | 0 | Python |
-| [saya-ch/model-muses](https://github.com/saya-ch/model-muses) | 2026-11-11 | 6 | 0 | Python |
-| [RWKV/rwkv.cpp](https://github.com/RWKV/rwkv.cpp) | 2026-11-11 | 1,592 | 131 | C++ |
 | [rwkv-rs/FlashRWKV2](https://github.com/rwkv-rs/FlashRWKV2) | 2026-11-11 | 6 | 2 | Python |
 | [laixiaolaigo/rwkvAgentObjects](https://github.com/laixiaolaigo/rwkvAgentObjects) | 2026-11-11 | 1 | 1 | TypeScript |
-| [chenqi2013/RWKVBuddy](https://github.com/chenqi2013/RWKVBuddy) | 2026-11-11 | 0 | 0 | C++ |
-| [RWKV-APP/RWKV_APP](https://github.com/RWKV-APP/RWKV_APP) | 2026-11-11 | 135 | 15 | Dart |
 | [Pedrubik2000/anki-rwkv-forecast](https://github.com/Pedrubik2000/anki-rwkv-forecast) | 2026-11-11 | 0 | 0 | Python |
 | [harrisonvanderbyl/rwkv_paper_tracker](https://github.com/harrisonvanderbyl/rwkv_paper_tracker) | 2026-11-11 | 0 | 0 | TypeScript |
-| [BlinkDL/ChatRWKV](https://github.com/BlinkDL/ChatRWKV) | 2026-11-10 | 9,487 | 685 | Python |
 | [RWKV-Vibe/rwkv_lightning](https://github.com/RWKV-Vibe/rwkv_lightning) | 2026-11-10 | 37 | 10 | Python |
 | [cryscan/web-rwkv](https://github.com/cryscan/web-rwkv) | 2026-11-10 | 361 | 36 | Rust |
 | [xiudeJude/-rwkv-transformers-LLM-](https://github.com/xiudeJude/-rwkv-transformers-LLM-) | 2026-11-10 | 0 | 0 | Python |
@@ -52,17 +58,15 @@ All non-fork GitHub repositories matching `rwkv`, ordered by repository update t
 | [Nice0o0/stateswap](https://github.com/Nice0o0/stateswap) | 2026-11-10 | 1 | 0 | Python |
 | [diegovalsesia/linerwkv](https://github.com/diegovalsesia/linerwkv) | 2026-11-10 | 13 | 0 | Python |
 | [DeepJH/State_Tuning_Tutorial_For_RWKV](https://github.com/DeepJH/State_Tuning_Tutorial_For_RWKV) | 2026-11-10 | 3 | 0 | Python |
-| [uncoalesced/parentheses](https://github.com/uncoalesced/parentheses) | 2026-11-09 | 0 | 1 | Python |
 | [guinmoon/LLMFarm](https://github.com/guinmoon/LLMFarm) | 2026-11-09 | 2,080 | 188 | C |
 | [youzow3/onnx_rwkv](https://github.com/youzow3/onnx_rwkv) | 2026-11-09 | 3 | 0 | Python |
 | [zaguk/RWKV4Anki](https://github.com/zaguk/RWKV4Anki) | 2026-11-09 | 6 | 0 | Python |
 | [cgisky1980/rwkv-rsv](https://github.com/cgisky1980/rwkv-rsv) | 2026-11-09 | 4 | 0 | Rust |
 | [tanjiarui/music-rwkv](https://github.com/tanjiarui/music-rwkv) | 2026-11-09 | 0 | 0 | — |
-| [Pangu-Immortal/MagicWX](https://github.com/Pangu-Immortal/MagicWX) | 2026-11-09 | 863 | 362 | Kotlin |
+| [Pangu-Immortal/MagicWX](https://github.com/Pangu-Immortal/MagicWX) | 2026-11-09 | 863 | 363 | Kotlin |
 | [XingQiPan/rwkv-jev](https://github.com/XingQiPan/rwkv-jev) | 2026-11-09 | 5 | 0 | Python |
 | [xiaoiecc/qkv-rosa-fast-exact-backward](https://github.com/xiaoiecc/qkv-rosa-fast-exact-backward) | 2026-11-09 | 7 | 3 | C++ |
 | [xiaol/LiuBai-RWKV](https://github.com/xiaol/LiuBai-RWKV) | 2026-11-08 | 6 | 1 | Python |
-| [wenda-LLM/wenda](https://github.com/wenda-LLM/wenda) | 2026-11-08 | 6,144 | 782 | JavaScript |
 | [RafaelUI/rwkv-layer-probing_ARTICLE](https://github.com/RafaelUI/rwkv-layer-probing_ARTICLE) | 2026-11-08 | 1 | 0 | Python |
 | [OpenMOSE/RWKV-Infer-Next](https://github.com/OpenMOSE/RWKV-Infer-Next) | 2026-11-08 | 1 | 0 | Python |
 | [RWKV-Vibe/Awesome-RWKV](https://github.com/RWKV-Vibe/Awesome-RWKV) | 2026-11-08 | 9 | 1 | — |
@@ -131,7 +135,6 @@ All non-fork GitHub repositories matching `rwkv`, ordered by repository update t
 | [KerfuffleV2/smolrsrwkv](https://github.com/KerfuffleV2/smolrsrwkv) | 2026-10-30 | 95 | 4 | Rust |
 | [yynil/rwkv-lewm](https://github.com/yynil/rwkv-lewm) | 2026-10-30 | 0 | 0 | Python |
 | [ahb-sjsu/qpatch](https://github.com/ahb-sjsu/qpatch) | 2026-10-29 | 2 | 0 | Python |
-| [howard-hou/RWKV-X](https://github.com/howard-hou/RWKV-X) | 2026-10-29 | 60 | 3 | Python |
 | [waylliam1988/rna-lab](https://github.com/waylliam1988/rna-lab) | 2026-10-29 | 2 | 0 | Python |
 | [mel0k1/Sputnik-AI](https://github.com/mel0k1/Sputnik-AI) | 2026-10-28 | 1 | 0 | Python |
 | [No-22-Github/rwkv-harbor-scratch](https://github.com/No-22-Github/rwkv-harbor-scratch) | 2026-10-28 | 0 | 0 | Python |
@@ -248,10 +251,8 @@ All non-fork GitHub repositories matching `rwkv`, ordered by repository update t
 | [xiaol/RWKV-Long-ROSA](https://github.com/xiaol/RWKV-Long-ROSA) | 2026-09-28 | 0 | 0 | Python |
 | [uavdet/RWKVDet](https://github.com/uavdet/RWKVDet) | 2026-09-28 | 0 | 0 | — |
 | [laixiaolaigo/rwkv-team-plugins](https://github.com/laixiaolaigo/rwkv-team-plugins) | 2026-09-28 | 1 | 0 | — |
-| [danja-takahcock/rwkvs](https://github.com/danja-takahcock/rwkvs) | 2026-09-27 | 0 | 0 | — |
 | [mechuchuchu/rwkv_doomloop_experiment](https://github.com/mechuchuchu/rwkv_doomloop_experiment) | 2026-09-27 | 0 | 0 | — |
 | [mechuchuchu/rwkv-state-choice](https://github.com/mechuchuchu/rwkv-state-choice) | 2026-09-26 | 0 | 0 | Python |
-| [rm85663dr/rwkvd](https://github.com/rm85663dr/rwkvd) | 2026-09-25 | 0 | 0 | — |
 | [PCfVW/plip-rs](https://github.com/PCfVW/plip-rs) | 2026-09-25 | 9 | 0 | Rust |
 | [Cai-z-us/remote-downloader-rwkv](https://github.com/Cai-z-us/remote-downloader-rwkv) | 2026-09-24 | 1 | 0 | Python |
 | [xiaol/JEPA-RWKV-LLM](https://github.com/xiaol/JEPA-RWKV-LLM) | 2026-09-24 | 2 | 0 | Python |
@@ -426,7 +427,6 @@ All non-fork GitHub repositories matching `rwkv`, ordered by repository update t
 | [v3ucn/RWKV_Role_Playing_with_GPT-SoVITS](https://github.com/v3ucn/RWKV_Role_Playing_with_GPT-SoVITS) | 2026-07-08 | 30 | 2 | Python |
 | [Prunoideae/web-rwkv-axum](https://github.com/Prunoideae/web-rwkv-axum) | 2026-07-08 | 30 | 3 | Rust |
 | [BBuf/flash-rwkv](https://github.com/BBuf/flash-rwkv) | 2026-07-08 | 32 | 2 | Python |
-| [KevlarKanou/rwkv7.c](https://github.com/KevlarKanou/rwkv7.c) | 2026-07-08 | 47 | 3 | C |
 | [LuckySongXiao/RWKV_document-term-translator](https://github.com/LuckySongXiao/RWKV_document-term-translator) | 2026-07-07 | 5 | 1 | C# |
 | [00ffcc/chunkRWKV6](https://github.com/00ffcc/chunkRWKV6) | 2026-07-07 | 23 | 0 | Python |
 | [SpectralPillager/RWKV-soko](https://github.com/SpectralPillager/RWKV-soko) | 2026-07-06 | 0 | 0 | Python |
@@ -450,7 +450,6 @@ All non-fork GitHub repositories matching `rwkv`, ordered by repository update t
 | [sonalamarasekera/quant-demix-rwkv](https://github.com/sonalamarasekera/quant-demix-rwkv) | 2026-06-27 | 0 | 0 | Python |
 | [ismail-you/rwkvno](https://github.com/ismail-you/rwkvno) | 2026-06-25 | 0 | 0 | — |
 | [Achrafchen/rwkv-cvm](https://github.com/Achrafchen/rwkv-cvm) | 2026-06-23 | 0 | 0 | Jupyter Notebook |
-| [shuaiqianende/RWKVPCSSC](https://github.com/shuaiqianende/RWKVPCSSC) | 2026-06-23 | 4 | 0 | Python |
 | [nlpodyssey/verbaflow](https://github.com/nlpodyssey/verbaflow) | 2026-06-21 | 62 | 5 | Go |
 | [szxysdt/VKWR-edge](https://github.com/szxysdt/VKWR-edge) | 2026-06-21 | 0 | 0 | — |
 | [key-rqy/AHP-RWKV](https://github.com/key-rqy/AHP-RWKV) | 2026-06-21 | 0 | 0 | Python |
@@ -574,7 +573,6 @@ All non-fork GitHub repositories matching `rwkv`, ordered by repository update t
 | [bug-breeder/vant](https://github.com/bug-breeder/vant) | 2026-03-17 | 0 | 0 | Rust |
 | [TumbleDryer404/RWKV-state-tuning](https://github.com/TumbleDryer404/RWKV-state-tuning) | 2026-03-17 | 0 | 0 | — |
 | [w1c2j3/rwkv-gepa-distill](https://github.com/w1c2j3/rwkv-gepa-distill) | 2026-03-16 | 1 | 0 | Python |
-| [luluisthebest/RadarRWKV](https://github.com/luluisthebest/RadarRWKV) | 2026-03-15 | 0 | 0 | Python |
 | [soveshmohapatra/RWKV](https://github.com/soveshmohapatra/RWKV) | 2026-03-15 | 0 | 0 | Python |
 | [resloved/RWKV-notebooks](https://github.com/resloved/RWKV-notebooks) | 2026-03-13 | 58 | 6 | Jupyter Notebook |
 | [johanwind/flex_rnn](https://github.com/johanwind/flex_rnn) | 2026-03-11 | 9 | 0 | Python |

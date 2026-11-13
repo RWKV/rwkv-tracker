@@ -144,3 +144,4 @@
 {"first_seen_at": "2026-11-11T01:40:02.878390Z", "id": "2611.07644", "published_at": "2026-11-05T08:27:45Z", "title": "Neural Image Compression with Internal-External Prior Fusion and Alignment", "updated_at": "2026-11-08T10:30:59Z"}
 {"first_seen_at": "2026-11-11T01:40:02.878390Z", "id": "2611.09412", "published_at": "2026-11-06T12:44:53Z", "title": "MIRA: Mitigating Pole Geometry Bias in Recurrent Language Models", "updated_at": "2026-11-06T12:44:53Z"}
 {"first_seen_at": "2026-11-11T01:40:02.878390Z", "id": "2611.10353", "published_at": "2026-11-07T00:31:59Z", "title": "DAPointRWKV: Domain Adaptive Vision RWKV for Point Cloud Completion", "updated_at": "2026-11-07T00:31:59Z"}
+{"first_seen_at": "2026-11-13T12:24:08.985502Z", "id": "2611.16718", "published_at": "2026-11-12T12:34:08Z", "title": "MusicRWKV: A Multimodal RWKV Framework for Music Representation Learning", "updated_at": "2026-11-12T12:34:08Z"}
