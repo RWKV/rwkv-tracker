@@ -1,6 +1,6 @@
 {
   "history_start": "2026-11-04T01:40:02.878390Z",
-  "last_success_started_at": "2026-11-13T12:24:08.985502Z",
+  "last_success_started_at": "2026-11-14T11:37:46.470542Z",
   "scanned_repositories": [
     "00ffcc/chunkRWKV6",
     "00ffcc/conRWKV",
@@ -423,6 +423,8 @@
     "TumbleDryer404/RWKV-state-tuning",
     "UnstoppableCurry/RWKV-LM-Interpretability-Research",
     "Vaniell0/noesis",
+    "VeroLM-Official/RWKV-Flow",
+    "VeroLM-Official/VeroKernel",
     "VikasOjha666/ChatRWKV",
     "WHYKEYSAY/serve-rwkv-6-7b",
     "WaivOps/Pop-K",
@@ -778,6 +780,7 @@
     "mxdlzg/RWKV-v4neo",
     "mymyid/rwkv",
     "neardws/llm-arch-bench",
+    "nekocross233/st-convert",
     "nenkoru/serverless-rwkv",
     "nerdpudding/rwkv-exploration",
     "neromous/RWKV-Ouroboros",
