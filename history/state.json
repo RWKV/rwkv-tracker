@@ -1,6 +1,6 @@
 {
   "history_start": "2026-11-04T01:40:02.878390Z",
-  "last_success_started_at": "2026-11-14T11:37:46.470542Z",
+  "last_success_started_at": "2026-11-15T12:08:38.972749Z",
   "scanned_repositories": [
     "00ffcc/chunkRWKV6",
     "00ffcc/conRWKV",
@@ -175,7 +175,6 @@
     "JRBonilla/RWKV-MedSAM2",
     "JSchoreels/anki-rwkv",
     "JacquesGariepy/engrammics",
-    "JeanLuc-Oudshoorn/Basin",
     "Jeasco/MSB-RWKV",
     "Jellyfish042/RWKV-15Puzzle",
     "Jellyfish042/RWKV-PIP-COOKBOOK",
@@ -812,6 +811,7 @@
     "playaswd/rwkv-explainer",
     "pojdd/rwkvcpp",
     "prouast/tensorflow-rwkv",
+    "qbz6282-hub/RWKV-",
     "rainrainrainbow/PetRWKV",
     "raozf/PointRWKV",
     "rebehzat/cat-em",
@@ -1012,6 +1012,7 @@
     "zdxdsw/inductive_counting_with_LMs",
     "zebulontaylor/RWKV-LM-RLHF",
     "zhaojiangshan2010/RWKV-Easy",
+    "zhaojiangshan2010/RWKV-SELA",
     "zhuobinggang/taku-rwkv",
     "zhxhzy/SCRWKV",
     "ziq-ao/DNA4-RWKV",
