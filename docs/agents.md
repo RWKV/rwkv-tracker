@@ -2,15 +2,16 @@
 
 All projects from the RWKV agent catalog, ordered by catalog update time.
 
-**Records:** 47 · **Snapshot:** 2026-11-15T12:08:38.972749Z · **[Source](https://agent.objects.rwkvos.com/en)**
+**Records:** 47 · **Snapshot:** 2026-11-16T12:57:22.152848Z · **[Source](https://agent.objects.rwkvos.com/en)**
 
 | Project | Updated | Stars | Classification |
 |---|---|---|---|
-| [memopet](https://github.com/Nice0o0/memopet) | 2026-11-10 | 0 | Agent companion application |
-| [stateswap](https://github.com/Nice0o0/stateswap) | 2026-11-10 | 1 | Agent persona and state infrastructure |
-| [dsh-rwkv-plugin](https://github.com/No-22-Github/dsh-rwkv-plugin) | 2026-11-10 | 0 | Strict Agent |
-| [ai00-x-client](https://github.com/cgisky1980/ai00-x-client) | 2026-11-09 | 5 | Strict Agent |
-| [noesis](https://github.com/Vaniell0/noesis) | 2026-11-07 | 4 | Agent boundary project |
+| [memopet](https://github.com/Nice0o0/memopet) | 2026-11-15 | 0 | Agent companion application |
+| [stateswap](https://github.com/Nice0o0/stateswap) | 2026-11-15 | 1 | Agent persona and state infrastructure |
+| [dsh-rwkv-plugin](https://github.com/No-22-Github/dsh-rwkv-plugin) | 2026-11-14 | 2 | Strict Agent |
+| [ai00-x-client](https://github.com/cgisky1980/ai00-x-client) | 2026-11-14 | 5 | Strict Agent |
+| [noesis](https://github.com/Vaniell0/noesis) | 2026-11-12 | 4 | Agent boundary project |
+| [RWKV-ECRA](https://github.com/ehooon/RWKV-ECRA) | 2026-11-12 | 7 | Strict Agent |
 | [RWKV-Agent](https://github.com/No-22-Github/RWKV-Agent) | 2026-11-03 | 4 | Strict Agent |
 | [RWKV-LH](https://github.com/rwkv-rs/RWKV-LH) | 2026-11-03 | 4 | Strict Agent |
 | [rwkv-agent](https://github.com/123123213weqw/rwkv-agent) | 2026-11-01 | 9 | Strict Agent |
@@ -19,7 +20,6 @@ All projects from the RWKV agent catalog, ordered by catalog update time.
 | [rwkv-toolcaller-bench](https://codeberg.org/scarletwolf_ai/rwkv-toolcaller-bench) | 2026-10-19 | 0 | Agent benchmark and training upstream |
 | [RWKV-SearchReader](https://github.com/w1c2j3/RWKV-SearchReader) | 2026-10-19 | 2 | Agent-related research assistant |
 | [rwkv-router](https://github.com/cgisky1980/rwkv-router) | 2026-10-12 | 4 | Agent routing infrastructure |
-| [RWKV-ECRA](https://github.com/ehooon/RWKV-ECRA) | 2026-10-10 | 6 | Strict Agent |
 | [rwkv-statetrace-agent](https://github.com/wangkeyu-u/rwkv-statetrace-agent) | 2026-10-07 | 0 | Strict Agent |
 | [Gut-RWKV-Jev-laya](https://github.com/xiaol/Gut-RWKV-Jev-laya) | 2026-09-28 | 1 | Agent decision infrastructure |
 | [Long-RWKV](https://github.com/Joshua-Zhang-Jiaquan/Long-RWKV) | 2026-09-23 | 2 | Agent workload research |
