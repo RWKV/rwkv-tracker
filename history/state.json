@@ -1,6 +1,6 @@
 {
   "history_start": "2026-11-04T01:40:02.878390Z",
-  "last_success_started_at": "2026-11-16T12:57:22.152848Z",
+  "last_success_started_at": "2026-11-17T13:39:23.033351Z",
   "scanned_repositories": [
     "00ffcc/chunkRWKV6",
     "00ffcc/conRWKV",
@@ -417,6 +417,7 @@
     "Triang-jyed-driung/RWKV-AlignBench",
     "Triang-jyed-driung/RWKV-World-Finetune",
     "Triang-jyed-driung/RWKV-vs-FLA",
+    "Triang-jyed-driung/rwkv-native",
     "Triang-jyed-driung/rwkv7mini",
     "TsFreddie/ai00_rwkv_docker",
     "TumbleDryer404/RWKV-state-tuning",
