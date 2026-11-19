@@ -1,6 +1,6 @@
 {
   "history_start": "2026-11-04T01:40:02.878390Z",
-  "last_success_started_at": "2026-11-18T13:14:10.108210Z",
+  "last_success_started_at": "2026-11-19T13:34:20.013016Z",
   "scanned_repositories": [
     "00ffcc/chunkRWKV6",
     "00ffcc/conRWKV",
@@ -281,6 +281,7 @@
     "Ojiyumm/RULER_RWKV",
     "Ojiyumm/rwkv-benchmark",
     "Ojiyumm/rwkv_kg",
+    "Open-Superintelligence-Lab/linear-attention-ssm-recall",
     "OpenGVLab/Vision-RWKV",
     "OpenMOSE/RWKV-ASR-Harness",
     "OpenMOSE/RWKV-Infer",
@@ -892,6 +893,7 @@
     "sumitra-source/Comparing-ChatGPT-with-BERT-AND-RWKV-on-text-prediction",
     "sunhuadong0601/RWKV-CHN-2",
     "sunqi0311/gpt_academic",
+    "superalp1985/rwkv-priority-memory",
     "supercyt/MMSegRWKV",
     "superowner/Rwkv-Python-Inference",
     "szxysdt/VKWR",
