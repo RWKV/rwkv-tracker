@@ -1,6 +1,6 @@
 {
   "history_start": "2026-11-04T01:40:02.878390Z",
-  "last_success_started_at": "2026-11-19T13:34:20.013016Z",
+  "last_success_started_at": "2026-11-20T13:15:48.188679Z",
   "scanned_repositories": [
     "00ffcc/chunkRWKV6",
     "00ffcc/conRWKV",
@@ -187,6 +187,7 @@
     "JiangjiangUser/UHH-RWKV",
     "JiawZ40/rwkv7_nes",
     "Jiayu-Xiong/AudioRWKV",
+    "JingZhang1-lang/CM-RWKV",
     "JingyuWang-128/RWKV-WM",
     "Joluck/RWKV-PEFT",
     "Joluck/RWKV-batch-infer",
@@ -992,6 +993,7 @@
     "ytfh44/RWKV.jl",
     "yuekcc/chat_with_rwkv",
     "yuguo8961-cmd/MedRWKV",
+    "yujieteo/anki-rwkv-setup",
     "yuunnn-w/RWKV_Pytorch",
     "yuunnn-w/RWKV_QQBot_BackEnd",
     "yuyi2439/mi-rwkv",

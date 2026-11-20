@@ -2,14 +2,16 @@
 
 All projects from the RWKV agent catalog, ordered by catalog update time.
 
-**Records:** 47 · **Snapshot:** 2026-11-19T13:34:20.013016Z · **[Source](https://agent.objects.rwkvos.com/en)**
+**Records:** 48 · **Snapshot:** 2026-11-20T13:15:48.188679Z · **[Source](https://agent.objects.rwkvos.com/en)**
 
 | Project | Updated | Stars | Classification |
 |---|---|---|---|
+| [dsh-rwkv-plugin](https://github.com/No-22-Github/dsh-rwkv-plugin) | 2026-11-20 | 3 | Strict Agent |
+| [ai00-x-client](https://github.com/cgisky1980/ai00-x-client) | 2026-11-20 | 5 | Strict Agent |
+| [RWKV-AgenticLearning](https://github.com/Fantasia-Infinity/RWKV-AgenticLearning) | 2026-11-19 | 0 | Research Agent and evaluation |
+| [RWKV-SearchReader](https://github.com/w1c2j3/RWKV-SearchReader) | 2026-11-19 | 2 | Agent-related research assistant |
 | [memopet](https://github.com/Nice0o0/memopet) | 2026-11-15 | 0 | Agent companion application |
 | [stateswap](https://github.com/Nice0o0/stateswap) | 2026-11-15 | 1 | Agent persona and state infrastructure |
-| [dsh-rwkv-plugin](https://github.com/No-22-Github/dsh-rwkv-plugin) | 2026-11-14 | 2 | Strict Agent |
-| [ai00-x-client](https://github.com/cgisky1980/ai00-x-client) | 2026-11-14 | 5 | Strict Agent |
 | [noesis](https://github.com/Vaniell0/noesis) | 2026-11-12 | 4 | Agent boundary project |
 | [RWKV-ECRA](https://github.com/ehooon/RWKV-ECRA) | 2026-11-12 | 7 | Strict Agent |
 | [RWKV-Agent](https://github.com/No-22-Github/RWKV-Agent) | 2026-11-03 | 4 | Strict Agent |
@@ -18,7 +20,6 @@ All projects from the RWKV agent catalog, ordered by catalog update time.
 | [HTMLNLM](https://github.com/ConsciousNode/HTMLNLM) | 2026-10-29 | 2 | Agent companion research |
 | [rwkv-prompt-format](https://github.com/Ai00-X/rwkv-prompt-format) | 2026-10-22 | 3 | Agent supporting tools |
 | [rwkv-toolcaller-bench](https://codeberg.org/scarletwolf_ai/rwkv-toolcaller-bench) | 2026-10-19 | 0 | Agent benchmark and training upstream |
-| [RWKV-SearchReader](https://github.com/w1c2j3/RWKV-SearchReader) | 2026-10-19 | 2 | Agent-related research assistant |
 | [rwkv-router](https://github.com/cgisky1980/rwkv-router) | 2026-10-12 | 4 | Agent routing infrastructure |
 | [rwkv-statetrace-agent](https://github.com/wangkeyu-u/rwkv-statetrace-agent) | 2026-10-07 | 0 | Strict Agent |
 | [Gut-RWKV-Jev-laya](https://github.com/xiaol/Gut-RWKV-Jev-laya) | 2026-09-28 | 1 | Agent decision infrastructure |
@@ -50,6 +51,6 @@ All projects from the RWKV agent catalog, ordered by catalog update time.
 | [RepoScout](https://github.com/No-22-Github/RepoScout) | 2026-03-30 | 1 | Agent context infrastructure |
 | [RWKV_Agent_Lite](https://github.com/No-22-Github/RWKV_Agent_Lite) | 2026-03-26 | 1 | Strict Agent |
 | [Flint](https://github.com/Tornedahl/Flint) | 2026-03-15 | 0 | Agent companion application |
-| [birdsnest](https://github.com/Dappit-io/birdsnest) | 2026-03-06 | 21 | Tool-enabled assistant |
+| [birdsnest](https://github.com/Dappit-io/birdsnest) | 2026-03-06 | 18 | Tool-enabled assistant |
 | [psa3](https://github.com/keshav-yanamandra/psa3) | 2025-12-07 | 0 | Agent state infrastructure |
 | [Rusty-R2](https://github.com/bonzupii/Rusty-R2) | 2025-11-11 | 11 | Experimental Agent |
