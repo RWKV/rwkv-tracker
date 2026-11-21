@@ -1,6 +1,6 @@
 {
   "history_start": "2026-11-04T01:40:02.878390Z",
-  "last_success_started_at": "2026-11-20T13:15:48.188679Z",
+  "last_success_started_at": "2026-11-21T12:50:52.942700Z",
   "scanned_repositories": [
     "00ffcc/chunkRWKV6",
     "00ffcc/conRWKV",
@@ -313,6 +313,7 @@
     "Puzzle-Logic/PathRWKV",
     "PyThaiNLP/improve-thai-rwkv-tokenizer",
     "QiNuoTu/RWKV-body2D-PaperdollParts",
+    "QuasoZN/RWKV-MIL",
     "Quicksticks-oss/RWKVFF",
     "QuintinDong/Reg-RWKV",
     "RWKV-APP/.github",

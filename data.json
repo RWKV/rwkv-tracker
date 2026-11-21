@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-11-20T13:15:48.188679Z",
+  "generated_at": "2026-11-21T12:50:52.942700Z",
   "sources": {
     "repository": "https://github.com/search?o=desc&p=1&q=rwkv&s=updated&type=Repositories",
     "agent": "https://agent.objects.rwkvos.com/en",
@@ -18,26 +18,138 @@
   "projects": [
     {
       "kind": "repository",
-      "id": "open-spaced-repetition/srs-benchmark",
-      "name": "open-spaced-repetition/srs-benchmark",
-      "url": "https://github.com/open-spaced-repetition/srs-benchmark",
-      "description": "A benchmark for spaced repetition schedulers/algorithms",
-      "updated_at": "2026-11-20T12:43:10Z",
-      "pushed_at": "2026-11-19T13:12:30Z",
-      "created_at": "2023-10-11T11:55:48Z",
-      "stars": 293,
-      "forks": 29,
-      "language": "Jupyter Notebook",
+      "id": "zaguk/RWKV4Anki",
+      "name": "zaguk/RWKV4Anki",
+      "url": "https://github.com/zaguk/RWKV4Anki",
+      "description": "",
+      "updated_at": "2026-11-21T12:47:04Z",
+      "pushed_at": "2026-10-22T17:05:35Z",
+      "created_at": "2026-07-18T05:26:56Z",
+      "stars": 54,
+      "forks": 5,
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "kind": "repository",
+      "id": "saya-ch/model-muses",
+      "name": "saya-ch/model-muses",
+      "url": "https://github.com/saya-ch/model-muses",
+      "description": "32 个 AI 模型与平台的拟人形象原画 · 技术本体说明 · 官方链接索引 · 逐图版权溯源 | 32 AI models & platforms illustrated",
+      "updated_at": "2026-11-21T12:35:24Z",
+      "pushed_at": "2026-11-11T13:14:07Z",
+      "created_at": "2026-10-25T16:04:15Z",
+      "stars": 13,
+      "forks": 0,
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "kind": "repository",
+      "id": "BlinkDL/RWKV-LM",
+      "name": "BlinkDL/RWKV-LM",
+      "url": "https://github.com/BlinkDL/RWKV-LM",
+      "description": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 \"Goose\". So it's combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctx_len, and free sentence embedding.",
+      "updated_at": "2026-11-21T12:08:51Z",
+      "pushed_at": "2026-11-04T10:19:05Z",
+      "created_at": "2021-08-08T06:05:27Z",
+      "stars": 14786,
+      "forks": 1027,
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "kind": "repository",
+      "id": "Jellyfish042/RWKV_Othello",
+      "name": "Jellyfish042/RWKV_Othello",
+      "url": "https://github.com/Jellyfish042/RWKV_Othello",
+      "description": "A specialized RWKV-7 model for Othello(a.k.a. Reversi) that predicts legal moves, evaluates positions, and performs in-context search. Its performance scales with the number of test-time tokens.",
+      "updated_at": "2026-11-21T12:08:46Z",
+      "pushed_at": "2025-01-25T06:50:08Z",
+      "created_at": "2025-01-07T13:25:07Z",
+      "stars": 45,
+      "forks": 3,
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "kind": "repository",
+      "id": "Yaziwel/Restore-RWKV",
+      "name": "Yaziwel/Restore-RWKV",
+      "url": "https://github.com/Yaziwel/Restore-RWKV",
+      "description": "Restore-RWKV: Efficient and Effective Medical Image Restoration with RWKV",
+      "updated_at": "2026-11-21T12:08:39Z",
+      "pushed_at": "2026-03-16T15:53:58Z",
+      "created_at": "2024-07-12T11:20:15Z",
+      "stars": 144,
+      "forks": 9,
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "kind": "repository",
+      "id": "OpenGVLab/Vision-RWKV",
+      "name": "OpenGVLab/Vision-RWKV",
+      "url": "https://github.com/OpenGVLab/Vision-RWKV",
+      "description": "[ICLR 2025 Spotlight] Vision-RWKV: Efficient and Scalable Visual Perception with RWKV-Like Architectures",
+      "updated_at": "2026-11-21T12:08:38Z",
+      "pushed_at": "2025-02-18T05:46:38Z",
+      "created_at": "2024-02-29T12:23:45Z",
+      "stars": 560,
+      "forks": 23,
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "kind": "repository",
+      "id": "BlinkDL/ChatRWKV",
+      "name": "BlinkDL/ChatRWKV",
+      "url": "https://github.com/BlinkDL/ChatRWKV",
+      "description": "ChatRWKV is like ChatGPT but powered by RWKV (100% RNN) language model, and open source.",
+      "updated_at": "2026-11-21T12:08:32Z",
+      "pushed_at": "2026-07-19T19:09:29Z",
+      "created_at": "2023-01-13T08:07:40Z",
+      "stars": 9482,
+      "forks": 685,
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "kind": "repository",
+      "id": "howard-hou/VisualRWKV",
+      "name": "howard-hou/VisualRWKV",
+      "url": "https://github.com/howard-hou/VisualRWKV",
+      "description": "VisualRWKV is the visual-enhanced version of the RWKV language model, enabling RWKV to handle various visual tasks.",
+      "updated_at": "2026-11-21T12:08:28Z",
+      "pushed_at": "2026-01-13T08:13:18Z",
+      "created_at": "2023-06-15T15:12:49Z",
+      "stars": 247,
+      "forks": 19,
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "kind": "repository",
+      "id": "RWKV-Vibe/RWKV-LM-V7",
+      "name": "RWKV-Vibe/RWKV-LM-V7",
+      "url": "https://github.com/RWKV-Vibe/RWKV-LM-V7",
+      "description": "RWKV-LM-V7(https://github.com/BlinkDL/RWKV-LM) Under Lightning Framework",
+      "updated_at": "2026-11-21T12:08:27Z",
+      "pushed_at": "2026-05-13T05:58:21Z",
+      "created_at": "2025-06-10T11:19:29Z",
+      "stars": 63,
+      "forks": 14,
+      "language": "HIP",
       "archived": false
     },
     {
       "kind": "model",
-      "id": "amr-ismaiel/rwkv7-5b-fullstack-agent",
-      "name": "amr-ismaiel/rwkv7-5b-fullstack-agent",
-      "url": "https://huggingface.co/amr-ismaiel/rwkv7-5b-fullstack-agent",
+      "id": "clainstone/rwkv7-g1l",
+      "name": "clainstone/rwkv7-g1l",
+      "url": "https://huggingface.co/clainstone/rwkv7-g1l",
       "description": "",
-      "updated_at": "2026-11-20T12:04:03Z",
-      "created_at": "2026-11-19T07:34:00Z",
+      "updated_at": "2026-11-21T11:52:38Z",
+      "created_at": "2026-11-21T11:52:38Z",
       "downloads": 0,
       "likes": 0,
       "pipeline_tag": null,
@@ -45,31 +157,191 @@
     },
     {
       "kind": "repository",
+      "id": "FZU-N/URWKV",
+      "name": "FZU-N/URWKV",
+      "url": "https://github.com/FZU-N/URWKV",
+      "description": "[CVPR'2025] URWKV: Unified RWKV Model with Multi-state Perspective for Low-light Image Restoration",
+      "updated_at": "2026-11-21T11:32:49Z",
+      "pushed_at": "2026-09-17T06:30:48Z",
+      "created_at": "2025-03-03T07:25:05Z",
+      "stars": 39,
+      "forks": 2,
+      "language": "Python",
+      "archived": false
+    },
+    {
+      "kind": "agent",
+      "id": "github.com/cgisky1980/ai00-x-client",
+      "name": "ai00-x-client",
+      "url": "https://github.com/cgisky1980/ai00-x-client",
+      "description": "A Tauri 2 desktop client built with Rust and TypeScript. It combines local RWKV inference with remote AI APIs and provides a personal assistant, coding agent, knowledge-work agent, and Markdown-defined custom agents. The application also integrates long-term memory, tool-enabled workflows, Skills, MCP, and remote access through phone browsers and messaging platforms.",
+      "category": "Cross-platform RWKV AI assistant and Agent desktop client",
+      "classification": "Strict Agent",
+      "owner": "cgisky1980",
+      "updated_at": "2026-11-21T11:00:50Z",
+      "created_at": "2026-08-12T06:11:04Z",
+      "stars": 5,
+      "forks": 2,
+      "language": "Rust",
+      "license": "MIT"
+    },
+    {
+      "kind": "repository",
       "id": "binary-husky/gpt_academic",
       "name": "binary-husky/gpt_academic",
       "url": "https://github.com/binary-husky/gpt_academic",
       "description": "为GPT/GLM等LLM大语言模型提供实用化交互接口，特别优化论文阅读/润色/写作体验，模块化设计，支持自定义快捷按钮&函数插件，支持Python和C++等项目剖析&自译解功能，PDF/LaTex论文翻译&总结功能，支持并行问询多种LLM模型，支持chatglm3等本地模型。接入通义千问, deepseekcoder, 讯飞星火, 文心一言, llama2, rwkv, claude2, moss等。",
-      "updated_at": "2026-11-20T11:55:40Z",
+      "updated_at": "2026-11-21T09:36:51Z",
       "pushed_at": "2026-01-25T12:33:10Z",
       "created_at": "2023-03-20T09:05:13Z",
-      "stars": 71702,
-      "forks": 8312,
+      "stars": 71707,
+      "forks": 8289,
       "language": "Python",
       "archived": false
     },
     {
       "kind": "repository",
-      "id": "zaguk/RWKV4Anki",
-      "name": "zaguk/RWKV4Anki",
-      "url": "https://github.com/zaguk/RWKV4Anki",
-      "description": "",
-      "updated_at": "2026-11-20T11:46:04Z",
-      "pushed_at": "2026-10-22T17:05:35Z",
-      "created_at": "2026-07-18T05:26:56Z",
-      "stars": 48,
-      "forks": 3,
+      "id": "QuasoZN/RWKV-MIL",
+      "name": "QuasoZN/RWKV-MIL",
+      "url": "https://github.com/QuasoZN/RWKV-MIL",
+      "description": "# RWKV-MIL  Code for “RWKV-MIL: Efficient Weakly Supervised Histopathology Image Segmentation via Hilbert Curve-Based Linear Attention”.  The code is being organized for public release and will be uploaded shortly.",
+      "updated_at": "2026-11-21T08:59:25Z",
+      "pushed_at": "2026-11-21T09:00:06Z",
+      "created_at": "2026-11-21T08:59:23Z",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "archived": false
+    },
+    {
+      "kind": "repository",
+      "id": "BlinkDL/AI-Writer",
+      "name": "BlinkDL/AI-Writer",
+      "url": "https://github.com/BlinkDL/AI-Writer",
+      "description": "AI 写小说，生成玄幻和言情网文等等。中文预训练生成模型。采用我的 RWKV 模型，类似 GPT-2 。AI写作。RWKV for Chinese novel generation.",
+      "updated_at": "2026-11-21T08:20:04Z",
+      "pushed_at": "2025-05-15T10:31:45Z",
+      "created_at": "2021-07-26T22:43:14Z",
+      "stars": 3944,
+      "forks": 568,
       "language": "Python",
       "archived": false
+    },
+    {
+      "kind": "repository",
+      "id": "datawhalechina/llms-from-scratch-cn",
+      "name": "datawhalechina/llms-from-scratch-cn",
+      "url": "https://github.com/datawhalechina/llms-from-scratch-cn",
+      "description": "仅需Python基础，从0构建大语言模型；从0逐步构建GLM4\\Llama3\\RWKV6， 深入理解大模型原理",
+      "updated_at": "2026-11-21T06:10:46Z",
+      "pushed_at": "2026-09-17T03:01:54Z",
+      "created_at": "2024-02-28T07:50:52Z",
+      "stars": 4469,
+      "forks": 616,
+      "language": "Jupyter Notebook",
+      "archived": false
+    },
+    {
+      "kind": "repository",
+      "id": "BrutalCoding/shady.ai",
+      "name": "BrutalCoding/shady.ai",
+      "url": "https://github.com/BrutalCoding/shady.ai",
+      "description": "Making offline AI models accessible to all types of edge devices.",
+      "updated_at": "2026-11-21T05:35:53Z",
+      "pushed_at": "2024-02-12T21:28:29Z",
+      "created_at": "2023-04-09T18:24:42Z",
+      "stars": 147,
+      "forks": 15,
+      "language": "Dart",
+      "archived": false
+    },
+    {
+      "kind": "model",
+      "id": "Vaniello/noesis-rwkv7-g1d-0.4b-ticks",
+      "name": "Vaniello/noesis-rwkv7-g1d-0.4b-ticks",
+      "url": "https://huggingface.co/Vaniello/noesis-rwkv7-g1d-0.4b-ticks",
+      "description": "",
+      "updated_at": "2026-11-21T04:52:45Z",
+      "created_at": "2026-11-21T04:50:12Z",
+      "downloads": 6,
+      "likes": 0,
+      "pipeline_tag": null,
+      "main": false
+    },
+    {
+      "kind": "agent",
+      "id": "github.com/vaniell0/noesis",
+      "name": "noesis",
+      "url": "https://github.com/Vaniell0/noesis",
+      "description": "A research project for an always-running RWKV cognitive runtime that ingests system events, organizes persistent memory, routes tools, and acts on the local environment through extensions. The repository includes runtime, memory, policy, DSL, training, and deployment foundations.",
+      "category": "Persistent RWKV cognitive-runtime research",
+      "classification": "Agent boundary project",
+      "owner": "Vaniell0",
+      "updated_at": "2026-11-21T04:32:22Z",
+      "created_at": "2026-07-21T22:04:25Z",
+      "stars": 4,
+      "forks": 1,
+      "language": "Python",
+      "license": "Apache-2.0"
+    },
+    {
+      "kind": "repository",
+      "id": "open-spaced-repetition/srs-benchmark",
+      "name": "open-spaced-repetition/srs-benchmark",
+      "url": "https://github.com/open-spaced-repetition/srs-benchmark",
+      "description": "A benchmark for spaced repetition schedulers/algorithms",
+      "updated_at": "2026-11-20T20:30:28Z",
+      "pushed_at": "2026-11-19T13:12:30Z",
+      "created_at": "2023-10-11T11:55:48Z",
+      "stars": 294,
+      "forks": 29,
+      "language": "Jupyter Notebook",
+      "archived": false
+    },
+    {
+      "kind": "agent",
+      "id": "github.com/fantasia-infinity/rwkv-agenticlearning",
+      "name": "RWKV-AgenticLearning",
+      "url": "https://github.com/Fantasia-Infinity/RWKV-AgenticLearning",
+      "description": "Reproducible research on RWKV-7 G1l-1.5B, covering tool-call SFT, multi-turn calculator-tool experiments, DAPO RLVR, and critic-based SAO. Publishes training recipes, data builders, evaluation scripts, result JSONs, and ecosystem audits.",
+      "category": "RWKV agentic SFT/RL research and multi-turn tool evaluation",
+      "classification": "Research Agent and evaluation",
+      "owner": "Fantasia-Infinity",
+      "updated_at": "2026-11-20T17:13:46Z",
+      "created_at": "2026-11-05T21:56:04Z",
+      "stars": 0,
+      "forks": 0,
+      "language": null,
+      "license": "Apache-2.0"
+    },
+    {
+      "kind": "model",
+      "id": "amr-ismaiel/rwkv7-5b-fullstack-agent",
+      "name": "amr-ismaiel/rwkv7-5b-fullstack-agent",
+      "url": "https://huggingface.co/amr-ismaiel/rwkv7-5b-fullstack-agent",
+      "description": "",
+      "updated_at": "2026-11-20T15:13:40Z",
+      "created_at": "2026-11-19T07:34:00Z",
+      "downloads": 0,
+      "likes": 0,
+      "pipeline_tag": null,
+      "main": false
+    },
+    {
+      "kind": "agent",
+      "id": "github.com/no-22-github/dsh-rwkv-plugin",
+      "name": "dsh-rwkv-plugin",
+      "url": "https://github.com/No-22-Github/dsh-rwkv-plugin",
+      "description": "A DeepSeek Harness plugin that registers RWKV-7 G1 continuation models as an LLM provider. RWKV can act as the main Agent or as a subagent invoked by a DeepSeek main Agent. The plugin converts conversation history and tool definitions into text prompts, parses model-generated tool calls, and returns them to DeepSeek Harness for execution. It supports rwkv_lightning CUDA and iRWKV backends, model and initial-state management, and generation traces.",
+      "category": "RWKV Agent plugin for DeepSeek Harness",
+      "classification": "Strict Agent",
+      "owner": "No-22-Github",
+      "updated_at": "2026-11-20T10:40:04Z",
+      "created_at": "2026-11-03T11:41:16Z",
+      "stars": 3,
+      "forks": 2,
+      "language": "TypeScript",
+      "license": "MIT"
     },
     {
       "kind": "repository",
@@ -86,38 +358,6 @@
       "archived": false
     },
     {
-      "kind": "agent",
-      "id": "github.com/no-22-github/dsh-rwkv-plugin",
-      "name": "dsh-rwkv-plugin",
-      "url": "https://github.com/No-22-Github/dsh-rwkv-plugin",
-      "description": "A DeepSeek Harness plugin that registers RWKV-7 G1 continuation models as an LLM provider. RWKV can act as the main Agent or as a subagent invoked by a DeepSeek main Agent. The plugin converts conversation history and tool definitions into text prompts, parses model-generated tool calls, and returns them to DeepSeek Harness for execution. It supports rwkv_lightning CUDA and iRWKV backends, model and initial-state management, and generation traces.",
-      "category": "RWKV Agent plugin for DeepSeek Harness",
-      "classification": "Strict Agent",
-      "owner": "No-22-Github",
-      "updated_at": "2026-11-20T10:12:58Z",
-      "created_at": "2026-11-03T11:41:16Z",
-      "stars": 3,
-      "forks": 2,
-      "language": "TypeScript",
-      "license": "MIT"
-    },
-    {
-      "kind": "agent",
-      "id": "github.com/cgisky1980/ai00-x-client",
-      "name": "ai00-x-client",
-      "url": "https://github.com/cgisky1980/ai00-x-client",
-      "description": "A Tauri 2 desktop client built with Rust and TypeScript. It combines local RWKV inference with remote AI APIs and provides a personal assistant, coding agent, knowledge-work agent, and Markdown-defined custom agents. The application also integrates long-term memory, tool-enabled workflows, Skills, MCP, and remote access through phone browsers and messaging platforms.",
-      "category": "Cross-platform RWKV AI assistant and Agent desktop client",
-      "classification": "Strict Agent",
-      "owner": "cgisky1980",
-      "updated_at": "2026-11-20T10:05:32Z",
-      "created_at": "2026-08-12T06:11:04Z",
-      "stars": 5,
-      "forks": 2,
-      "language": "Rust",
-      "license": "MIT"
-    },
-    {
       "kind": "repository",
       "id": "zaguk/rwkv-srs",
       "name": "zaguk/rwkv-srs",
@@ -129,34 +369,6 @@
       "stars": 2,
       "forks": 0,
       "language": "Rust",
-      "archived": false
-    },
-    {
-      "kind": "repository",
-      "id": "saya-ch/model-muses",
-      "name": "saya-ch/model-muses",
-      "url": "https://github.com/saya-ch/model-muses",
-      "description": "32 个 AI 模型与平台的拟人形象原画 · 技术本体说明 · 官方链接索引 · 逐图版权溯源 | 32 AI models & platforms illustrated",
-      "updated_at": "2026-11-20T07:59:37Z",
-      "pushed_at": "2026-11-11T13:14:07Z",
-      "created_at": "2026-10-25T16:04:15Z",
-      "stars": 11,
-      "forks": 0,
-      "language": "Python",
-      "archived": false
-    },
-    {
-      "kind": "repository",
-      "id": "datawhalechina/llms-from-scratch-cn",
-      "name": "datawhalechina/llms-from-scratch-cn",
-      "url": "https://github.com/datawhalechina/llms-from-scratch-cn",
-      "description": "仅需Python基础，从0构建大语言模型；从0逐步构建GLM4\\Llama3\\RWKV6， 深入理解大模型原理",
-      "updated_at": "2026-11-20T07:48:01Z",
-      "pushed_at": "2026-09-17T03:01:54Z",
-      "created_at": "2024-02-28T07:50:52Z",
-      "stars": 4468,
-      "forks": 616,
-      "language": "Jupyter Notebook",
       "archived": false
     },
     {
@@ -180,7 +392,7 @@
       "url": "https://github.com/Brain2nd/NeuronSpark",
       "description": "Spiking language model built from neuron models: dendritic neuron layers with selective state-space membrane dynamics and hippocampal memory layers. Lower loss than Transformer, Mamba-2 and RWKV-7 at every size (200M-1.3B) in a controlled comparison, and 1.3x the single-stream decoding speed of a same-size Transformer served by vLLM.",
       "updated_at": "2026-11-20T02:16:53Z",
-      "pushed_at": "2026-11-20T05:19:24Z",
+      "pushed_at": "2026-11-21T10:52:02Z",
       "created_at": "2026-10-16T08:00:14Z",
       "stars": 1,
       "forks": 0,
@@ -200,22 +412,6 @@
       "forks": 36,
       "language": "Rust",
       "archived": false
-    },
-    {
-      "kind": "agent",
-      "id": "github.com/fantasia-infinity/rwkv-agenticlearning",
-      "name": "RWKV-AgenticLearning",
-      "url": "https://github.com/Fantasia-Infinity/RWKV-AgenticLearning",
-      "description": "Reproducible research on RWKV-7 G1l-1.5B, covering tool-call SFT, multi-turn calculator-tool experiments, DAPO RLVR, and critic-based SAO. Publishes training recipes, data builders, evaluation scripts, result JSONs, and ecosystem audits.",
-      "category": "RWKV agentic SFT/RL research and multi-turn tool evaluation",
-      "classification": "Research Agent and evaluation",
-      "owner": "Fantasia-Infinity",
-      "updated_at": "2026-11-19T23:17:41Z",
-      "created_at": "2026-11-05T21:56:04Z",
-      "stars": 0,
-      "forks": 0,
-      "language": null,
-      "license": "Apache-2.0"
     },
     {
       "kind": "repository",
@@ -257,20 +453,6 @@
       "stars": 313,
       "forks": 20,
       "language": "C++",
-      "archived": false
-    },
-    {
-      "kind": "repository",
-      "id": "BlinkDL/RWKV-LM",
-      "name": "BlinkDL/RWKV-LM",
-      "url": "https://github.com/BlinkDL/RWKV-LM",
-      "description": "RWKV (pronounced RwaKuv) is an RNN with great LLM performance, which can also be directly trained like a GPT transformer (parallelizable). We are at RWKV-7 \"Goose\". So it's combining the best of RNN and transformer - great performance, linear time, constant space (no kv-cache), fast training, infinite ctx_len, and free sentence embedding.",
-      "updated_at": "2026-11-19T22:54:11Z",
-      "pushed_at": "2026-11-04T10:19:05Z",
-      "created_at": "2021-08-08T06:05:27Z",
-      "stars": 14786,
-      "forks": 1027,
-      "language": "Python",
       "archived": false
     },
     {
@@ -331,34 +513,6 @@
     },
     {
       "kind": "repository",
-      "id": "BlinkDL/ChatRWKV",
-      "name": "BlinkDL/ChatRWKV",
-      "url": "https://github.com/BlinkDL/ChatRWKV",
-      "description": "ChatRWKV is like ChatGPT but powered by RWKV (100% RNN) language model, and open source.",
-      "updated_at": "2026-11-19T22:47:39Z",
-      "pushed_at": "2026-07-19T19:09:29Z",
-      "created_at": "2023-01-13T08:07:40Z",
-      "stars": 9483,
-      "forks": 685,
-      "language": "Python",
-      "archived": false
-    },
-    {
-      "kind": "repository",
-      "id": "BlinkDL/AI-Writer",
-      "name": "BlinkDL/AI-Writer",
-      "url": "https://github.com/BlinkDL/AI-Writer",
-      "description": "AI 写小说，生成玄幻和言情网文等等。中文预训练生成模型。采用我的 RWKV 模型，类似 GPT-2 。AI写作。RWKV for Chinese novel generation.",
-      "updated_at": "2026-11-19T22:17:23Z",
-      "pushed_at": "2025-05-15T10:31:45Z",
-      "created_at": "2021-07-26T22:43:14Z",
-      "stars": 3943,
-      "forks": 568,
-      "language": "Python",
-      "archived": false
-    },
-    {
-      "kind": "repository",
       "id": "Dappit-io/birdsnest",
       "name": "Dappit-io/birdsnest",
       "url": "https://github.com/Dappit-io/birdsnest",
@@ -378,7 +532,7 @@
       "url": "https://github.com/yujieteo/anki-rwkv-setup",
       "description": "Anki with the RWKV-P scheduler, and a way to build decks for it from your notes. Example: a Joe Hudson deck.",
       "updated_at": "2026-11-19T15:14:38Z",
-      "pushed_at": "2026-11-20T10:53:42Z",
+      "pushed_at": "2026-11-21T08:45:42Z",
       "created_at": "2026-11-19T15:14:27Z",
       "stars": 0,
       "forks": 0,
@@ -465,7 +619,7 @@
       "description": "",
       "updated_at": "2026-11-19T02:45:31Z",
       "created_at": "2026-11-19T02:21:08Z",
-      "downloads": 23,
+      "downloads": 32,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -506,7 +660,7 @@
       "description": "",
       "updated_at": "2026-11-18T23:58:44Z",
       "created_at": "2026-11-18T18:17:08Z",
-      "downloads": 199,
+      "downloads": 222,
       "likes": 3,
       "pipeline_tag": null,
       "main": false
@@ -726,24 +880,10 @@
       "url": "https://github.com/JSchoreels/anki-rwkv",
       "description": "RWKV training and compression research for Anki, with a reproducible SRS benchmark baseline",
       "updated_at": "2026-11-16T03:05:44Z",
-      "pushed_at": "2026-11-20T02:08:56Z",
+      "pushed_at": "2026-11-21T12:45:48Z",
       "created_at": "2026-10-10T21:48:33Z",
       "stars": 6,
       "forks": 0,
-      "language": "Python",
-      "archived": false
-    },
-    {
-      "kind": "repository",
-      "id": "howard-hou/VisualRWKV",
-      "name": "howard-hou/VisualRWKV",
-      "url": "https://github.com/howard-hou/VisualRWKV",
-      "description": "VisualRWKV is the visual-enhanced version of the RWKV language model, enabling RWKV to handle various visual tasks.",
-      "updated_at": "2026-11-16T01:52:09Z",
-      "pushed_at": "2026-01-13T08:13:18Z",
-      "created_at": "2023-06-15T15:12:49Z",
-      "stars": 248,
-      "forks": 19,
       "language": "Python",
       "archived": false
     },
@@ -913,7 +1053,7 @@
       "description": "",
       "updated_at": "2026-11-13T23:08:19Z",
       "created_at": "2026-11-09T03:49:43Z",
-      "downloads": 130,
+      "downloads": 133,
       "likes": 0,
       "pipeline_tag": "time-series-forecasting",
       "main": false
@@ -1020,7 +1160,7 @@
       "description": "",
       "updated_at": "2026-11-12T22:37:28Z",
       "created_at": "2026-08-09T11:33:40Z",
-      "downloads": 2878,
+      "downloads": 3718,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -1074,7 +1214,7 @@
       "url": "https://github.com/RWKV/rwkv-tracker",
       "description": "",
       "updated_at": "2026-11-12T13:59:29Z",
-      "pushed_at": "2026-11-19T13:35:26Z",
+      "pushed_at": "2026-11-20T13:16:47Z",
       "created_at": "2026-11-11T02:12:43Z",
       "stars": 0,
       "forks": 0,
@@ -1088,7 +1228,7 @@
       "url": "https://github.com/Fantasia-Infinity/RWKV-AgenticLearning",
       "description": "",
       "updated_at": "2026-11-12T13:47:41Z",
-      "pushed_at": "2026-11-19T23:17:41Z",
+      "pushed_at": "2026-11-20T17:13:46Z",
       "created_at": "2026-11-05T21:56:04Z",
       "stars": 0,
       "forks": 0,
@@ -1150,7 +1290,7 @@
       "url": "https://github.com/RodkinIvan/recurrent-armt",
       "description": "ARMT (associative recurrent memory) on top of recurrent LMs: RWKV-7, GDN-2, Mamba, Mamba2",
       "updated_at": "2026-11-12T10:29:23Z",
-      "pushed_at": "2026-11-19T12:17:32Z",
+      "pushed_at": "2026-11-20T23:30:11Z",
       "created_at": "2026-11-12T10:29:08Z",
       "stars": 0,
       "forks": 0,
@@ -1234,28 +1374,12 @@
       "url": "https://github.com/Vaniell0/noesis",
       "description": "Persistent Cognitive Runtime — an RNN-first local agent alongside the user. Research code + architecture notes.",
       "updated_at": "2026-11-12T07:07:43Z",
-      "pushed_at": "2026-11-12T06:07:38Z",
+      "pushed_at": "2026-11-21T04:32:22Z",
       "created_at": "2026-07-21T22:04:25Z",
       "stars": 4,
       "forks": 1,
       "language": "Python",
       "archived": false
-    },
-    {
-      "kind": "agent",
-      "id": "github.com/vaniell0/noesis",
-      "name": "noesis",
-      "url": "https://github.com/Vaniell0/noesis",
-      "description": "A research project for an always-running RWKV cognitive runtime that ingests system events, organizes persistent memory, routes tools, and acts on the local environment through extensions. The repository includes runtime, memory, policy, DSL, training, and deployment foundations.",
-      "category": "Persistent RWKV cognitive-runtime research",
-      "classification": "Agent boundary project",
-      "owner": "Vaniell0",
-      "updated_at": "2026-11-12T06:07:38Z",
-      "created_at": "2026-07-21T22:04:25Z",
-      "stars": 4,
-      "forks": 1,
-      "language": "Python",
-      "license": "Apache-2.0"
     },
     {
       "kind": "repository",
@@ -1264,7 +1388,7 @@
       "url": "https://github.com/shoumenchougou/rwkv-discord-daily-brief",
       "description": "Private daily briefs generated from authorized RWKV Discord channels.",
       "updated_at": "2026-11-12T05:55:04Z",
-      "pushed_at": "2026-11-20T04:53:37Z",
+      "pushed_at": "2026-11-21T04:48:54Z",
       "created_at": "2026-08-03T05:56:01Z",
       "stars": 0,
       "forks": 1,
@@ -1378,7 +1502,7 @@
       "url": "https://github.com/laixiaolaigo/rwkvAgentObjects",
       "description": "rwkvAgentObjects list",
       "updated_at": "2026-11-11T07:24:28Z",
-      "pushed_at": "2026-11-20T10:22:45Z",
+      "pushed_at": "2026-11-21T11:13:39Z",
       "created_at": "2026-08-10T03:34:48Z",
       "stars": 1,
       "forks": 1,
@@ -1537,7 +1661,7 @@
       "url": "https://github.com/cgisky1980/rwkv-rsv",
       "description": "RWKV-7 inference engine in Rust (Vulkan compute shaders) with fp16/any4/int8 quantization paths",
       "updated_at": "2026-11-09T08:36:34Z",
-      "pushed_at": "2026-11-09T08:36:30Z",
+      "pushed_at": "2026-11-20T22:00:13Z",
       "created_at": "2026-08-07T02:30:33Z",
       "stars": 4,
       "forks": 0,
@@ -1629,7 +1753,7 @@
       "description": "",
       "updated_at": "2026-11-08T08:04:09Z",
       "created_at": "2026-11-07T16:04:01Z",
-      "downloads": 9464,
+      "downloads": 9496,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -1790,20 +1914,6 @@
     },
     {
       "kind": "repository",
-      "id": "BrutalCoding/shady.ai",
-      "name": "BrutalCoding/shady.ai",
-      "url": "https://github.com/BrutalCoding/shady.ai",
-      "description": "Making offline AI models accessible to all types of edge devices.",
-      "updated_at": "2026-11-06T02:02:47Z",
-      "pushed_at": "2024-02-12T21:28:29Z",
-      "created_at": "2023-04-09T18:24:42Z",
-      "stars": 146,
-      "forks": 15,
-      "language": "Dart",
-      "archived": false
-    },
-    {
-      "kind": "repository",
       "id": "rwkv-rs/RWKV-LH",
       "name": "rwkv-rs/RWKV-LH",
       "url": "https://github.com/rwkv-rs/RWKV-LH",
@@ -1829,20 +1939,6 @@
       "forks": 0,
       "language": "Python",
       "archived": true
-    },
-    {
-      "kind": "repository",
-      "id": "FZU-N/URWKV",
-      "name": "FZU-N/URWKV",
-      "url": "https://github.com/FZU-N/URWKV",
-      "description": "[CVPR'2025] URWKV: Unified RWKV Model with Multi-state Perspective for Low-light Image Restoration",
-      "updated_at": "2026-11-05T08:45:13Z",
-      "pushed_at": "2026-09-17T06:30:48Z",
-      "created_at": "2025-03-03T07:25:05Z",
-      "stars": 38,
-      "forks": 2,
-      "language": "Python",
-      "archived": false
     },
     {
       "kind": "repository",
@@ -1880,7 +1976,7 @@
       "description": "",
       "updated_at": "2026-11-04T21:29:19Z",
       "created_at": "2025-03-07T17:05:50Z",
-      "downloads": 11688,
+      "downloads": 11534,
       "likes": 257,
       "pipeline_tag": "text-generation",
       "main": true
@@ -1931,7 +2027,7 @@
       "description": "",
       "updated_at": "2026-11-04T07:53:39Z",
       "created_at": "2026-11-04T07:53:39Z",
-      "downloads": 63,
+      "downloads": 65,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -2060,20 +2156,6 @@
       "stars": 35,
       "forks": 3,
       "language": null,
-      "archived": false
-    },
-    {
-      "kind": "repository",
-      "id": "OpenGVLab/Vision-RWKV",
-      "name": "OpenGVLab/Vision-RWKV",
-      "url": "https://github.com/OpenGVLab/Vision-RWKV",
-      "description": "[ICLR 2025 Spotlight] Vision-RWKV: Efficient and Scalable Visual Perception with RWKV-Like Architectures",
-      "updated_at": "2026-11-03T20:03:35Z",
-      "pushed_at": "2025-02-18T05:46:38Z",
-      "created_at": "2024-02-29T12:23:45Z",
-      "stars": 561,
-      "forks": 23,
-      "language": "Python",
       "archived": false
     },
     {
@@ -2241,20 +2323,6 @@
       "likes": 4,
       "pipeline_tag": null,
       "main": false
-    },
-    {
-      "kind": "repository",
-      "id": "Yaziwel/Restore-RWKV",
-      "name": "Yaziwel/Restore-RWKV",
-      "url": "https://github.com/Yaziwel/Restore-RWKV",
-      "description": "Restore-RWKV: Efficient and Effective Medical Image Restoration with RWKV",
-      "updated_at": "2026-11-03T03:35:03Z",
-      "pushed_at": "2026-03-16T15:53:58Z",
-      "created_at": "2024-07-12T11:20:15Z",
-      "stars": 145,
-      "forks": 9,
-      "language": "Python",
-      "archived": false
     },
     {
       "kind": "repository",
@@ -2503,7 +2571,7 @@
       "description": "",
       "updated_at": "2026-11-01T05:23:07Z",
       "created_at": "2026-10-31T19:41:16Z",
-      "downloads": 190,
+      "downloads": 193,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -2516,7 +2584,7 @@
       "description": "",
       "updated_at": "2026-11-01T05:22:56Z",
       "created_at": "2026-10-31T16:43:29Z",
-      "downloads": 193,
+      "downloads": 195,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -2529,7 +2597,7 @@
       "description": "",
       "updated_at": "2026-11-01T05:22:45Z",
       "created_at": "2026-10-31T14:46:49Z",
-      "downloads": 326,
+      "downloads": 328,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -2542,7 +2610,7 @@
       "description": "",
       "updated_at": "2026-11-01T05:22:34Z",
       "created_at": "2026-10-31T13:00:00Z",
-      "downloads": 413,
+      "downloads": 415,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -2597,7 +2665,7 @@
       "description": "",
       "updated_at": "2026-10-31T22:39:02Z",
       "created_at": "2026-10-31T20:19:40Z",
-      "downloads": 869,
+      "downloads": 881,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -2623,7 +2691,7 @@
       "description": "",
       "updated_at": "2026-10-31T19:40:32Z",
       "created_at": "2026-10-31T19:04:42Z",
-      "downloads": 548,
+      "downloads": 562,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -2677,7 +2745,7 @@
       "description": "",
       "updated_at": "2026-10-31T17:58:48Z",
       "created_at": "2026-10-31T17:04:48Z",
-      "downloads": 677,
+      "downloads": 690,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -2690,7 +2758,7 @@
       "description": "",
       "updated_at": "2026-10-31T16:42:56Z",
       "created_at": "2026-10-31T16:12:29Z",
-      "downloads": 642,
+      "downloads": 664,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -2703,7 +2771,7 @@
       "description": "",
       "updated_at": "2026-10-31T15:59:14Z",
       "created_at": "2026-10-31T15:22:46Z",
-      "downloads": 627,
+      "downloads": 652,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -2716,7 +2784,7 @@
       "description": "",
       "updated_at": "2026-10-31T14:46:25Z",
       "created_at": "2026-10-31T14:15:57Z",
-      "downloads": 449,
+      "downloads": 454,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -2729,7 +2797,7 @@
       "description": "",
       "updated_at": "2026-10-31T13:40:34Z",
       "created_at": "2026-10-31T12:58:33Z",
-      "downloads": 664,
+      "downloads": 701,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -2742,7 +2810,7 @@
       "description": "",
       "updated_at": "2026-10-31T13:30:09Z",
       "created_at": "2026-10-31T13:00:22Z",
-      "downloads": 1049,
+      "downloads": 1053,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -3458,7 +3526,7 @@
       "description": "",
       "updated_at": "2026-10-21T15:33:19Z",
       "created_at": "2026-10-21T11:56:46Z",
-      "downloads": 407,
+      "downloads": 311,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -3795,7 +3863,7 @@
       "url": "https://github.com/Expertium/rwkv-anki-autoresearch",
       "description": "Making the RWKV neural net efficient enough to be usable in Anki.",
       "updated_at": "2026-10-14T11:41:10Z",
-      "pushed_at": "2026-10-14T11:40:21Z",
+      "pushed_at": "2026-11-21T06:46:41Z",
       "created_at": "2026-06-27T13:02:39Z",
       "stars": 2,
       "forks": 1,
@@ -4536,7 +4604,7 @@
       "description": "",
       "updated_at": "2026-10-02T11:26:00Z",
       "created_at": "2026-10-02T09:58:45Z",
-      "downloads": 57,
+      "downloads": 55,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -4591,7 +4659,7 @@
       "description": "",
       "updated_at": "2026-09-30T17:19:23Z",
       "created_at": "2026-09-30T15:13:21Z",
-      "downloads": 2522,
+      "downloads": 2544,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -4604,7 +4672,7 @@
       "description": "",
       "updated_at": "2026-09-30T16:12:14Z",
       "created_at": "2026-09-30T15:30:54Z",
-      "downloads": 307,
+      "downloads": 296,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -4617,7 +4685,7 @@
       "description": "",
       "updated_at": "2026-09-30T15:34:54Z",
       "created_at": "2026-09-30T15:30:49Z",
-      "downloads": 377,
+      "downloads": 419,
       "likes": 7,
       "pipeline_tag": "text-generation",
       "main": false
@@ -4630,7 +4698,7 @@
       "description": "",
       "updated_at": "2026-09-30T15:32:41Z",
       "created_at": "2026-09-30T15:30:49Z",
-      "downloads": 40,
+      "downloads": 38,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -4643,7 +4711,7 @@
       "description": "",
       "updated_at": "2026-09-30T15:15:36Z",
       "created_at": "2026-09-30T15:12:26Z",
-      "downloads": 16,
+      "downloads": 17,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -4656,7 +4724,7 @@
       "description": "",
       "updated_at": "2026-09-30T15:13:47Z",
       "created_at": "2026-09-30T15:12:25Z",
-      "downloads": 308,
+      "downloads": 269,
       "likes": 8,
       "pipeline_tag": "text-generation",
       "main": false
@@ -4669,7 +4737,7 @@
       "description": "",
       "updated_at": "2026-09-30T13:12:42Z",
       "created_at": "2026-09-30T12:03:05Z",
-      "downloads": 336,
+      "downloads": 215,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -4682,7 +4750,7 @@
       "description": "",
       "updated_at": "2026-09-30T12:04:50Z",
       "created_at": "2026-09-30T12:02:43Z",
-      "downloads": 42,
+      "downloads": 40,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -4695,7 +4763,7 @@
       "description": "",
       "updated_at": "2026-09-30T12:03:52Z",
       "created_at": "2026-09-30T12:02:42Z",
-      "downloads": 189,
+      "downloads": 182,
       "likes": 3,
       "pipeline_tag": "text-generation",
       "main": false
@@ -4708,7 +4776,7 @@
       "description": "",
       "updated_at": "2026-09-30T11:52:54Z",
       "created_at": "2026-09-30T11:01:33Z",
-      "downloads": 44,
+      "downloads": 42,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -4721,7 +4789,7 @@
       "description": "",
       "updated_at": "2026-09-30T11:23:18Z",
       "created_at": "2026-09-30T11:01:39Z",
-      "downloads": 449,
+      "downloads": 422,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -4734,7 +4802,7 @@
       "description": "",
       "updated_at": "2026-09-30T11:02:23Z",
       "created_at": "2026-09-30T11:01:33Z",
-      "downloads": 191,
+      "downloads": 164,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -4788,20 +4856,6 @@
       ],
       "primary_category": "cs.CL",
       "versioned_id": "2609.38261v1"
-    },
-    {
-      "kind": "repository",
-      "id": "Jellyfish042/RWKV_Othello",
-      "name": "Jellyfish042/RWKV_Othello",
-      "url": "https://github.com/Jellyfish042/RWKV_Othello",
-      "description": "A specialized RWKV-7 model for Othello(a.k.a. Reversi) that predicts legal moves, evaluates positions, and performs in-context search. Its performance scales with the number of test-time tokens.",
-      "updated_at": "2026-09-29T02:41:28Z",
-      "pushed_at": "2025-01-25T06:50:08Z",
-      "created_at": "2025-01-07T13:25:07Z",
-      "stars": 46,
-      "forks": 3,
-      "language": "Python",
-      "archived": false
     },
     {
       "kind": "repository",
@@ -4938,7 +4992,7 @@
       "description": "",
       "updated_at": "2026-09-27T11:27:44Z",
       "created_at": "2026-09-27T11:23:48Z",
-      "downloads": 7,
+      "downloads": 6,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -5365,7 +5419,7 @@
       "description": "",
       "updated_at": "2026-09-16T09:18:40Z",
       "created_at": "2026-09-14T12:03:07Z",
-      "downloads": 36,
+      "downloads": 32,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -5450,7 +5504,7 @@
       "description": "",
       "updated_at": "2026-09-14T18:37:51Z",
       "created_at": "2026-07-01T12:18:56Z",
-      "downloads": 27,
+      "downloads": 26,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -5646,7 +5700,7 @@
       "description": "",
       "updated_at": "2026-09-11T08:01:11Z",
       "created_at": "2026-09-07T14:07:12Z",
-      "downloads": 29,
+      "downloads": 28,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -5900,7 +5954,7 @@
       "description": "",
       "updated_at": "2026-09-08T08:55:34Z",
       "created_at": "2026-07-08T07:14:31Z",
-      "downloads": 44,
+      "downloads": 41,
       "likes": 2,
       "pipeline_tag": "image-classification",
       "main": false
@@ -5913,7 +5967,7 @@
       "description": "",
       "updated_at": "2026-09-08T08:54:34Z",
       "created_at": "2026-07-07T13:51:16Z",
-      "downloads": 25,
+      "downloads": 26,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6056,7 +6110,7 @@
       "description": "",
       "updated_at": "2026-09-04T06:39:03Z",
       "created_at": "2026-09-02T12:01:22Z",
-      "downloads": 302,
+      "downloads": 281,
       "likes": 4,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6069,7 +6123,7 @@
       "description": "",
       "updated_at": "2026-09-04T06:38:58Z",
       "created_at": "2026-09-02T11:10:04Z",
-      "downloads": 187,
+      "downloads": 175,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6082,7 +6136,7 @@
       "description": "",
       "updated_at": "2026-09-04T06:38:56Z",
       "created_at": "2026-09-02T09:13:21Z",
-      "downloads": 787,
+      "downloads": 759,
       "likes": 3,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6095,7 +6149,7 @@
       "description": "",
       "updated_at": "2026-09-04T06:38:53Z",
       "created_at": "2026-09-02T07:54:54Z",
-      "downloads": 184,
+      "downloads": 192,
       "likes": 5,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6122,7 +6176,7 @@
       "description": "",
       "updated_at": "2026-09-04T05:13:46Z",
       "created_at": "2026-09-02T12:09:38Z",
-      "downloads": 93,
+      "downloads": 91,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6135,7 +6189,7 @@
       "description": "",
       "updated_at": "2026-09-04T05:13:44Z",
       "created_at": "2026-09-02T12:04:07Z",
-      "downloads": 235,
+      "downloads": 230,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6148,7 +6202,7 @@
       "description": "",
       "updated_at": "2026-09-04T05:13:41Z",
       "created_at": "2026-09-02T10:49:20Z",
-      "downloads": 142,
+      "downloads": 135,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6161,7 +6215,7 @@
       "description": "",
       "updated_at": "2026-09-04T05:13:38Z",
       "created_at": "2026-09-02T08:27:25Z",
-      "downloads": 118,
+      "downloads": 114,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6272,7 +6326,7 @@
       "description": "",
       "updated_at": "2026-09-02T13:51:14Z",
       "created_at": "2026-09-02T12:09:38Z",
-      "downloads": 73,
+      "downloads": 74,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6285,7 +6339,7 @@
       "description": "",
       "updated_at": "2026-09-02T12:02:43Z",
       "created_at": "2026-09-02T11:12:22Z",
-      "downloads": 124,
+      "downloads": 118,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6298,7 +6352,7 @@
       "description": "",
       "updated_at": "2026-09-02T10:36:03Z",
       "created_at": "2026-09-02T10:16:12Z",
-      "downloads": 168,
+      "downloads": 39,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6311,7 +6365,7 @@
       "description": "",
       "updated_at": "2026-09-02T08:38:27Z",
       "created_at": "2026-09-02T07:28:29Z",
-      "downloads": 210,
+      "downloads": 94,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6378,7 +6432,7 @@
       "description": "",
       "updated_at": "2026-09-01T12:59:25Z",
       "created_at": "2025-10-13T13:03:46Z",
-      "downloads": 2114,
+      "downloads": 2181,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -6435,20 +6489,6 @@
       "stars": 0,
       "forks": 0,
       "language": "Python",
-      "archived": false
-    },
-    {
-      "kind": "repository",
-      "id": "RWKV-Vibe/RWKV-LM-V7",
-      "name": "RWKV-Vibe/RWKV-LM-V7",
-      "url": "https://github.com/RWKV-Vibe/RWKV-LM-V7",
-      "description": "RWKV-LM-V7(https://github.com/BlinkDL/RWKV-LM) Under Lightning Framework",
-      "updated_at": "2026-08-30T01:58:02Z",
-      "pushed_at": "2026-05-13T05:58:21Z",
-      "created_at": "2025-06-10T11:19:29Z",
-      "stars": 64,
-      "forks": 14,
-      "language": "HIP",
       "archived": false
     },
     {
@@ -6514,7 +6554,7 @@
       "url": "https://github.com/aierwiki/rwkvtune",
       "description": "An easy-to-use, extensible training toolkit for RWKV language models. Inspired by HuggingFace trl, RWKVTune brings the same familiar Trainer-style API to the RWKV ecosystem -- if you've used trl, you'll feel right at home.",
       "updated_at": "2026-08-28T14:34:13Z",
-      "pushed_at": "2026-11-16T20:10:43Z",
+      "pushed_at": "2026-11-20T18:23:25Z",
       "created_at": "2026-02-05T15:18:04Z",
       "stars": 3,
       "forks": 0,
@@ -6644,7 +6684,7 @@
       "description": "",
       "updated_at": "2026-08-27T02:14:39Z",
       "created_at": "2026-08-19T13:18:21Z",
-      "downloads": 16,
+      "downloads": 17,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6657,7 +6697,7 @@
       "description": "",
       "updated_at": "2026-08-27T02:14:30Z",
       "created_at": "2026-08-19T13:16:53Z",
-      "downloads": 14,
+      "downloads": 15,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6670,7 +6710,7 @@
       "description": "",
       "updated_at": "2026-08-27T02:14:21Z",
       "created_at": "2026-08-19T11:29:14Z",
-      "downloads": 16,
+      "downloads": 17,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6683,7 +6723,7 @@
       "description": "",
       "updated_at": "2026-08-27T02:14:11Z",
       "created_at": "2026-08-19T11:29:12Z",
-      "downloads": 19,
+      "downloads": 20,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6696,7 +6736,7 @@
       "description": "",
       "updated_at": "2026-08-27T02:14:03Z",
       "created_at": "2026-08-19T11:15:28Z",
-      "downloads": 45,
+      "downloads": 50,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6709,7 +6749,7 @@
       "description": "",
       "updated_at": "2026-08-27T02:13:54Z",
       "created_at": "2026-08-19T13:15:19Z",
-      "downloads": 87,
+      "downloads": 81,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6927,7 +6967,7 @@
       "description": "",
       "updated_at": "2026-08-23T19:46:00Z",
       "created_at": "2026-08-23T19:25:20Z",
-      "downloads": 16,
+      "downloads": 17,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -6940,7 +6980,7 @@
       "description": "",
       "updated_at": "2026-08-23T19:43:20Z",
       "created_at": "2026-08-22T11:00:39Z",
-      "downloads": 31,
+      "downloads": 29,
       "likes": 3,
       "pipeline_tag": "text-generation",
       "main": false
@@ -7165,7 +7205,7 @@
       "description": "",
       "updated_at": "2026-08-20T08:47:10Z",
       "created_at": "2026-08-17T05:33:22Z",
-      "downloads": 14,
+      "downloads": 15,
       "likes": 0,
       "pipeline_tag": "image-text-to-text",
       "main": false
@@ -7433,7 +7473,7 @@
       "description": "",
       "updated_at": "2026-08-15T14:22:51Z",
       "created_at": "2026-08-15T14:17:56Z",
-      "downloads": 233,
+      "downloads": 226,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -7446,7 +7486,7 @@
       "description": "",
       "updated_at": "2026-08-15T14:14:18Z",
       "created_at": "2026-08-15T14:04:47Z",
-      "downloads": 431,
+      "downloads": 440,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -7459,7 +7499,7 @@
       "description": "",
       "updated_at": "2026-08-15T13:58:40Z",
       "created_at": "2026-08-15T13:37:25Z",
-      "downloads": 394,
+      "downloads": 399,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -7472,7 +7512,7 @@
       "description": "",
       "updated_at": "2026-08-15T13:26:42Z",
       "created_at": "2026-08-15T12:52:22Z",
-      "downloads": 345,
+      "downloads": 363,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -7499,7 +7539,7 @@
       "description": "",
       "updated_at": "2026-08-14T12:05:05Z",
       "created_at": "2026-08-14T12:03:34Z",
-      "downloads": 29,
+      "downloads": 28,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -7525,7 +7565,7 @@
       "description": "",
       "updated_at": "2026-08-14T12:02:18Z",
       "created_at": "2026-08-14T12:01:44Z",
-      "downloads": 93,
+      "downloads": 92,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -7867,7 +7907,7 @@
       "description": "",
       "updated_at": "2026-08-06T10:56:28Z",
       "created_at": "2026-08-06T10:36:28Z",
-      "downloads": 51,
+      "downloads": 52,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -7880,7 +7920,7 @@
       "description": "",
       "updated_at": "2026-08-06T10:56:17Z",
       "created_at": "2026-08-06T10:35:14Z",
-      "downloads": 58,
+      "downloads": 57,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -7893,7 +7933,7 @@
       "description": "",
       "updated_at": "2026-08-06T10:56:06Z",
       "created_at": "2026-08-06T10:34:37Z",
-      "downloads": 103,
+      "downloads": 102,
       "likes": 4,
       "pipeline_tag": "text-generation",
       "main": false
@@ -7906,7 +7946,7 @@
       "description": "",
       "updated_at": "2026-08-06T10:55:57Z",
       "created_at": "2026-08-06T10:34:06Z",
-      "downloads": 136,
+      "downloads": 133,
       "likes": 8,
       "pipeline_tag": "text-generation",
       "main": false
@@ -7932,7 +7972,7 @@
       "description": "",
       "updated_at": "2026-08-05T14:53:49Z",
       "created_at": "2026-08-05T13:06:36Z",
-      "downloads": 81,
+      "downloads": 83,
       "likes": 3,
       "pipeline_tag": null,
       "main": false
@@ -7945,7 +7985,7 @@
       "description": "",
       "updated_at": "2026-08-05T12:32:56Z",
       "created_at": "2026-08-05T08:55:15Z",
-      "downloads": 62,
+      "downloads": 60,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -7958,7 +7998,7 @@
       "description": "",
       "updated_at": "2026-08-05T12:31:44Z",
       "created_at": "2026-08-05T11:23:30Z",
-      "downloads": 85,
+      "downloads": 93,
       "likes": 7,
       "pipeline_tag": null,
       "main": false
@@ -8091,7 +8131,7 @@
       "description": "",
       "updated_at": "2026-08-02T12:22:06Z",
       "created_at": "2026-07-30T16:14:26Z",
-      "downloads": 11,
+      "downloads": 15,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -8104,7 +8144,7 @@
       "description": "",
       "updated_at": "2026-08-02T12:22:00Z",
       "created_at": "2026-07-30T16:14:25Z",
-      "downloads": 12,
+      "downloads": 13,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -8117,7 +8157,7 @@
       "description": "",
       "updated_at": "2026-08-02T12:21:54Z",
       "created_at": "2026-07-30T16:13:33Z",
-      "downloads": 12,
+      "downloads": 13,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -8130,7 +8170,7 @@
       "description": "",
       "updated_at": "2026-08-02T12:21:48Z",
       "created_at": "2026-07-30T16:13:22Z",
-      "downloads": 25,
+      "downloads": 27,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -8143,7 +8183,7 @@
       "description": "",
       "updated_at": "2026-08-02T12:21:15Z",
       "created_at": "2026-07-30T08:15:58Z",
-      "downloads": 56,
+      "downloads": 51,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -8377,7 +8417,7 @@
       "description": "",
       "updated_at": "2026-07-26T15:34:26Z",
       "created_at": "2026-07-26T04:35:30Z",
-      "downloads": 9,
+      "downloads": 11,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -8390,7 +8430,7 @@
       "description": "",
       "updated_at": "2026-07-26T06:51:14Z",
       "created_at": "2026-07-11T18:29:29Z",
-      "downloads": 1113,
+      "downloads": 1314,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -8403,7 +8443,7 @@
       "description": "",
       "updated_at": "2026-07-26T06:50:51Z",
       "created_at": "2026-07-11T16:37:32Z",
-      "downloads": 399,
+      "downloads": 411,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -8416,7 +8456,7 @@
       "description": "",
       "updated_at": "2026-07-26T06:50:32Z",
       "created_at": "2026-07-11T18:07:36Z",
-      "downloads": 1325,
+      "downloads": 1244,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -8429,7 +8469,7 @@
       "description": "",
       "updated_at": "2026-07-26T06:50:09Z",
       "created_at": "2026-07-11T16:31:36Z",
-      "downloads": 300,
+      "downloads": 332,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -8442,7 +8482,7 @@
       "description": "",
       "updated_at": "2026-07-26T06:49:00Z",
       "created_at": "2026-07-11T17:05:34Z",
-      "downloads": 846,
+      "downloads": 886,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -8455,7 +8495,7 @@
       "description": "",
       "updated_at": "2026-07-26T06:48:26Z",
       "created_at": "2026-07-11T16:19:02Z",
-      "downloads": 420,
+      "downloads": 459,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -8468,7 +8508,7 @@
       "description": "",
       "updated_at": "2026-07-26T06:47:26Z",
       "created_at": "2026-07-11T18:42:23Z",
-      "downloads": 743,
+      "downloads": 817,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -8481,7 +8521,7 @@
       "description": "",
       "updated_at": "2026-07-26T06:46:54Z",
       "created_at": "2026-07-11T16:40:50Z",
-      "downloads": 390,
+      "downloads": 512,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -8673,7 +8713,7 @@
       "description": "",
       "updated_at": "2026-07-21T20:02:18Z",
       "created_at": "2026-07-21T00:32:32Z",
-      "downloads": 13,
+      "downloads": 14,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -8768,7 +8808,7 @@
       "description": "",
       "updated_at": "2026-07-19T18:56:37Z",
       "created_at": "2026-07-19T18:36:53Z",
-      "downloads": 7,
+      "downloads": 9,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -8908,7 +8948,7 @@
       "description": "",
       "updated_at": "2026-07-15T11:21:34Z",
       "created_at": "2026-07-15T11:21:34Z",
-      "downloads": 42,
+      "downloads": 41,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -8935,7 +8975,7 @@
       "description": "",
       "updated_at": "2026-07-15T00:11:20Z",
       "created_at": "2024-06-12T09:37:48Z",
-      "downloads": 14206,
+      "downloads": 13863,
       "likes": 25,
       "pipeline_tag": null,
       "main": false
@@ -9017,7 +9057,7 @@
       "description": "",
       "updated_at": "2026-07-13T13:50:24Z",
       "created_at": "2026-07-13T13:42:21Z",
-      "downloads": 37,
+      "downloads": 33,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -9044,7 +9084,7 @@
       "description": "",
       "updated_at": "2026-07-13T13:13:58Z",
       "created_at": "2026-07-13T13:06:52Z",
-      "downloads": 35,
+      "downloads": 38,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -9057,7 +9097,7 @@
       "description": "",
       "updated_at": "2026-07-13T12:49:20Z",
       "created_at": "2026-07-13T12:47:33Z",
-      "downloads": 35,
+      "downloads": 31,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -9070,7 +9110,7 @@
       "description": "",
       "updated_at": "2026-07-13T12:43:14Z",
       "created_at": "2026-07-13T12:42:01Z",
-      "downloads": 43,
+      "downloads": 44,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -9083,7 +9123,7 @@
       "description": "",
       "updated_at": "2026-07-13T05:54:48Z",
       "created_at": "2026-07-13T05:46:45Z",
-      "downloads": 9,
+      "downloads": 10,
       "likes": 0,
       "pipeline_tag": "image-text-to-text",
       "main": false
@@ -9136,7 +9176,7 @@
       "description": "",
       "updated_at": "2026-07-12T23:35:07Z",
       "created_at": "2026-07-12T23:33:43Z",
-      "downloads": 14,
+      "downloads": 15,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -9495,7 +9535,7 @@
       "description": "",
       "updated_at": "2026-07-05T02:34:28Z",
       "created_at": "2023-07-15T07:57:58Z",
-      "downloads": 73,
+      "downloads": 75,
       "likes": 54,
       "pipeline_tag": null,
       "main": false
@@ -9508,7 +9548,7 @@
       "description": "",
       "updated_at": "2026-07-05T02:33:58Z",
       "created_at": "2023-07-27T11:40:44Z",
-      "downloads": 156,
+      "downloads": 148,
       "likes": 21,
       "pipeline_tag": null,
       "main": false
@@ -9521,7 +9561,7 @@
       "description": "",
       "updated_at": "2026-07-05T02:33:46Z",
       "created_at": "2024-04-30T05:19:47Z",
-      "downloads": 1338,
+      "downloads": 1335,
       "likes": 24,
       "pipeline_tag": null,
       "main": false
@@ -9534,7 +9574,7 @@
       "description": "",
       "updated_at": "2026-07-05T02:33:36Z",
       "created_at": "2024-11-28T11:09:44Z",
-      "downloads": 389,
+      "downloads": 327,
       "likes": 15,
       "pipeline_tag": null,
       "main": false
@@ -9547,7 +9587,7 @@
       "description": "",
       "updated_at": "2026-07-05T02:33:18Z",
       "created_at": "2025-05-26T02:11:19Z",
-      "downloads": 473,
+      "downloads": 478,
       "likes": 24,
       "pipeline_tag": null,
       "main": false
@@ -9904,7 +9944,7 @@
       "description": "",
       "updated_at": "2026-06-26T08:28:56Z",
       "created_at": "2026-06-26T07:45:30Z",
-      "downloads": 108,
+      "downloads": 132,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -10110,7 +10150,7 @@
       "description": "",
       "updated_at": "2026-06-16T10:22:22Z",
       "created_at": "2026-06-16T09:13:56Z",
-      "downloads": 11,
+      "downloads": 10,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -10212,7 +10252,7 @@
       "description": "",
       "updated_at": "2026-06-12T06:47:46Z",
       "created_at": "2026-06-12T06:21:09Z",
-      "downloads": 26,
+      "downloads": 28,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -10238,7 +10278,7 @@
       "description": "",
       "updated_at": "2026-06-11T09:15:33Z",
       "created_at": "2026-05-31T22:08:19Z",
-      "downloads": 48,
+      "downloads": 49,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -10278,7 +10318,7 @@
       "description": "",
       "updated_at": "2026-06-09T15:43:59Z",
       "created_at": "2026-03-20T15:18:07Z",
-      "downloads": 17,
+      "downloads": 18,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -10380,7 +10420,7 @@
       "description": "",
       "updated_at": "2026-06-04T09:34:26Z",
       "created_at": "2026-06-03T15:19:30Z",
-      "downloads": 14,
+      "downloads": 16,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -10475,7 +10515,7 @@
       "description": "",
       "updated_at": "2026-05-31T09:01:54Z",
       "created_at": "2026-05-31T08:52:05Z",
-      "downloads": 26,
+      "downloads": 27,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -10630,7 +10670,7 @@
       "description": "",
       "updated_at": "2026-05-29T03:54:52Z",
       "created_at": "2026-05-25T15:06:29Z",
-      "downloads": 156,
+      "downloads": 158,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -10643,7 +10683,7 @@
       "description": "",
       "updated_at": "2026-05-28T06:11:27Z",
       "created_at": "2026-05-27T15:50:56Z",
-      "downloads": 19,
+      "downloads": 18,
       "likes": 1,
       "pipeline_tag": "feature-extraction",
       "main": false
@@ -10697,7 +10737,7 @@
       "description": "",
       "updated_at": "2026-05-26T09:46:40Z",
       "created_at": "2026-05-26T08:59:15Z",
-      "downloads": 20,
+      "downloads": 18,
       "likes": 3,
       "pipeline_tag": null,
       "main": false
@@ -10723,7 +10763,7 @@
       "description": "",
       "updated_at": "2026-05-26T08:41:18Z",
       "created_at": "2026-05-26T08:23:33Z",
-      "downloads": 69,
+      "downloads": 68,
       "likes": 4,
       "pipeline_tag": null,
       "main": false
@@ -10736,7 +10776,7 @@
       "description": "",
       "updated_at": "2026-05-25T16:55:40Z",
       "created_at": "2026-05-25T16:20:35Z",
-      "downloads": 22,
+      "downloads": 23,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -10812,7 +10852,7 @@
       "description": "",
       "updated_at": "2026-05-24T19:32:41Z",
       "created_at": "2026-05-24T10:17:40Z",
-      "downloads": 217,
+      "downloads": 210,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -10825,7 +10865,7 @@
       "description": "",
       "updated_at": "2026-05-24T19:30:53Z",
       "created_at": "2026-05-23T20:47:00Z",
-      "downloads": 195,
+      "downloads": 193,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -10838,7 +10878,7 @@
       "description": "",
       "updated_at": "2026-05-24T19:29:48Z",
       "created_at": "2026-05-24T11:23:08Z",
-      "downloads": 184,
+      "downloads": 182,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -10851,7 +10891,7 @@
       "description": "",
       "updated_at": "2026-05-24T19:27:27Z",
       "created_at": "2026-05-24T11:46:15Z",
-      "downloads": 384,
+      "downloads": 403,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -11160,7 +11200,7 @@
       "description": "",
       "updated_at": "2026-05-11T16:16:11Z",
       "created_at": "2026-05-11T16:16:00Z",
-      "downloads": 10,
+      "downloads": 11,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -11247,7 +11287,7 @@
       "description": "",
       "updated_at": "2026-05-10T08:33:49Z",
       "created_at": "2026-05-09T11:59:42Z",
-      "downloads": 17,
+      "downloads": 18,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -11453,7 +11493,7 @@
       "description": "",
       "updated_at": "2026-05-01T17:29:48Z",
       "created_at": "2026-05-01T12:01:45Z",
-      "downloads": 596,
+      "downloads": 624,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -11847,7 +11887,7 @@
       "description": "",
       "updated_at": "2026-04-21T08:23:05Z",
       "created_at": "2026-04-21T08:07:47Z",
-      "downloads": 78,
+      "downloads": 66,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -11860,7 +11900,7 @@
       "description": "",
       "updated_at": "2026-04-21T07:54:53Z",
       "created_at": "2026-04-21T07:18:39Z",
-      "downloads": 21,
+      "downloads": 29,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -12149,7 +12189,7 @@
       "description": "",
       "updated_at": "2026-04-15T10:25:58Z",
       "created_at": "2026-04-15T08:50:44Z",
-      "downloads": 51,
+      "downloads": 49,
       "likes": 3,
       "pipeline_tag": null,
       "main": false
@@ -12818,7 +12858,7 @@
       "description": "",
       "updated_at": "2026-03-26T09:21:11Z",
       "created_at": "2026-02-02T07:08:10Z",
-      "downloads": 171,
+      "downloads": 166,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -12875,7 +12915,7 @@
       "description": "",
       "updated_at": "2026-03-26T02:00:11Z",
       "created_at": "2026-03-25T17:22:11Z",
-      "downloads": 896,
+      "downloads": 903,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -12888,7 +12928,7 @@
       "description": "",
       "updated_at": "2026-03-25T17:42:25Z",
       "created_at": "2026-03-25T15:51:19Z",
-      "downloads": 505,
+      "downloads": 512,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -12901,7 +12941,7 @@
       "description": "",
       "updated_at": "2026-03-25T06:40:15Z",
       "created_at": "2026-03-25T06:19:18Z",
-      "downloads": 82,
+      "downloads": 81,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -13046,7 +13086,7 @@
       "description": "",
       "updated_at": "2026-03-19T10:18:03Z",
       "created_at": "2026-03-09T08:31:00Z",
-      "downloads": 56,
+      "downloads": 48,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -13059,7 +13099,7 @@
       "description": "",
       "updated_at": "2026-03-19T10:17:32Z",
       "created_at": "2026-03-09T08:45:19Z",
-      "downloads": 69,
+      "downloads": 71,
       "likes": 6,
       "pipeline_tag": null,
       "main": false
@@ -13072,7 +13112,7 @@
       "description": "",
       "updated_at": "2026-03-19T10:17:00Z",
       "created_at": "2026-03-02T09:07:59Z",
-      "downloads": 72,
+      "downloads": 73,
       "likes": 6,
       "pipeline_tag": null,
       "main": false
@@ -13085,7 +13125,7 @@
       "description": "",
       "updated_at": "2026-03-19T09:56:31Z",
       "created_at": "2026-03-12T09:49:35Z",
-      "downloads": 65,
+      "downloads": 59,
       "likes": 5,
       "pipeline_tag": null,
       "main": false
@@ -13140,7 +13180,7 @@
       "description": "",
       "updated_at": "2026-03-18T00:27:53Z",
       "created_at": "2026-03-11T17:10:06Z",
-      "downloads": 57,
+      "downloads": 56,
       "likes": 6,
       "pipeline_tag": "text-generation",
       "main": false
@@ -13195,7 +13235,7 @@
       "description": "",
       "updated_at": "2026-03-15T23:32:58Z",
       "created_at": "2026-03-15T23:32:58Z",
-      "downloads": 28,
+      "downloads": 26,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -13238,7 +13278,7 @@
       "description": "",
       "updated_at": "2026-03-14T19:19:11Z",
       "created_at": "2026-03-14T19:19:10Z",
-      "downloads": 7,
+      "downloads": 8,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -13778,7 +13818,7 @@
       "description": "",
       "updated_at": "2026-02-12T07:18:25Z",
       "created_at": "2026-02-12T05:15:42Z",
-      "downloads": 25,
+      "downloads": 27,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -13791,7 +13831,7 @@
       "description": "",
       "updated_at": "2026-02-12T06:48:50Z",
       "created_at": "2024-12-10T12:25:52Z",
-      "downloads": 796,
+      "downloads": 791,
       "likes": 109,
       "pipeline_tag": "text-generation",
       "main": false
@@ -13804,7 +13844,7 @@
       "description": "",
       "updated_at": "2026-02-12T02:08:52Z",
       "created_at": "2026-02-11T10:03:56Z",
-      "downloads": 15,
+      "downloads": 16,
       "likes": 3,
       "pipeline_tag": null,
       "main": false
@@ -13887,7 +13927,7 @@
       "description": "",
       "updated_at": "2026-02-10T05:48:54Z",
       "created_at": "2026-02-02T07:08:29Z",
-      "downloads": 23,
+      "downloads": 27,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -13900,7 +13940,7 @@
       "description": "",
       "updated_at": "2026-02-10T05:48:45Z",
       "created_at": "2026-02-02T07:08:52Z",
-      "downloads": 48,
+      "downloads": 40,
       "likes": 3,
       "pipeline_tag": null,
       "main": false
@@ -14071,7 +14111,7 @@
       "description": "",
       "updated_at": "2026-02-03T12:33:20Z",
       "created_at": "2026-02-03T12:33:13Z",
-      "downloads": 50,
+      "downloads": 49,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -14111,7 +14151,7 @@
       "description": "",
       "updated_at": "2026-02-03T02:56:58Z",
       "created_at": "2026-01-12T05:52:56Z",
-      "downloads": 929,
+      "downloads": 942,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -14241,7 +14281,7 @@
       "description": "",
       "updated_at": "2026-01-27T20:45:34Z",
       "created_at": "2025-04-29T05:07:33Z",
-      "downloads": 48,
+      "downloads": 47,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -14254,7 +14294,7 @@
       "description": "",
       "updated_at": "2026-01-27T20:10:01Z",
       "created_at": "2025-04-30T04:00:08Z",
-      "downloads": 20,
+      "downloads": 18,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -14389,7 +14429,7 @@
       "description": "",
       "updated_at": "2026-01-23T17:13:53Z",
       "created_at": "2023-11-15T06:39:18Z",
-      "downloads": 310,
+      "downloads": 213,
       "likes": 24,
       "pipeline_tag": "text-generation",
       "main": false
@@ -14602,7 +14642,7 @@
       "description": "",
       "updated_at": "2026-01-12T10:47:02Z",
       "created_at": "2026-01-12T10:02:54Z",
-      "downloads": 24,
+      "downloads": 26,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -14615,7 +14655,7 @@
       "description": "",
       "updated_at": "2026-01-12T10:33:21Z",
       "created_at": "2026-01-12T10:23:56Z",
-      "downloads": 17,
+      "downloads": 11,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -14628,7 +14668,7 @@
       "description": "",
       "updated_at": "2026-01-12T09:06:41Z",
       "created_at": "2026-01-12T09:06:34Z",
-      "downloads": 17,
+      "downloads": 18,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -14778,7 +14818,7 @@
       "description": "",
       "updated_at": "2026-01-04T13:11:10Z",
       "created_at": "2026-01-03T15:17:43Z",
-      "downloads": 203,
+      "downloads": 245,
       "likes": 6,
       "pipeline_tag": null,
       "main": false
@@ -14791,7 +14831,7 @@
       "description": "",
       "updated_at": "2026-01-04T07:24:04Z",
       "created_at": "2026-01-04T03:47:54Z",
-      "downloads": 31,
+      "downloads": 30,
       "likes": 3,
       "pipeline_tag": null,
       "main": false
@@ -14830,7 +14870,7 @@
       "description": "",
       "updated_at": "2026-01-03T06:54:19Z",
       "created_at": "2026-01-02T13:05:30Z",
-      "downloads": 916,
+      "downloads": 923,
       "likes": 4,
       "pipeline_tag": "text-generation",
       "main": false
@@ -14857,7 +14897,7 @@
       "description": "",
       "updated_at": "2026-01-02T07:07:55Z",
       "created_at": "2026-01-01T19:43:57Z",
-      "downloads": 42,
+      "downloads": 41,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -14870,7 +14910,7 @@
       "description": "",
       "updated_at": "2025-12-29T22:48:29Z",
       "created_at": "2025-12-27T21:43:58Z",
-      "downloads": 108,
+      "downloads": 120,
       "likes": 3,
       "pipeline_tag": null,
       "main": false
@@ -15049,7 +15089,7 @@
       "description": "",
       "updated_at": "2025-12-22T11:35:11Z",
       "created_at": "2025-12-22T10:15:30Z",
-      "downloads": 51,
+      "downloads": 45,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -15117,7 +15157,7 @@
       "description": "",
       "updated_at": "2025-12-14T22:20:13Z",
       "created_at": "2025-12-14T22:07:53Z",
-      "downloads": 11,
+      "downloads": 10,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -15130,7 +15170,7 @@
       "description": "",
       "updated_at": "2025-12-14T09:05:48Z",
       "created_at": "2025-07-23T14:42:48Z",
-      "downloads": 196,
+      "downloads": 229,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -15224,7 +15264,7 @@
       "description": "",
       "updated_at": "2025-12-09T05:50:24Z",
       "created_at": "2025-12-08T04:08:49Z",
-      "downloads": 43,
+      "downloads": 42,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -15237,7 +15277,7 @@
       "description": "",
       "updated_at": "2025-12-09T05:50:07Z",
       "created_at": "2025-12-09T04:02:25Z",
-      "downloads": 63,
+      "downloads": 58,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -15349,7 +15389,7 @@
       "description": "",
       "updated_at": "2025-12-06T08:23:50Z",
       "created_at": "2025-12-05T14:03:16Z",
-      "downloads": 7,
+      "downloads": 8,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -15389,7 +15429,7 @@
       "description": "",
       "updated_at": "2025-12-04T10:42:08Z",
       "created_at": "2025-12-03T06:18:19Z",
-      "downloads": 72,
+      "downloads": 70,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -15402,7 +15442,7 @@
       "description": "",
       "updated_at": "2025-12-04T10:41:58Z",
       "created_at": "2025-12-04T09:24:56Z",
-      "downloads": 21,
+      "downloads": 20,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -15778,7 +15818,7 @@
       "description": "",
       "updated_at": "2025-11-18T03:56:41Z",
       "created_at": "2025-10-31T06:28:22Z",
-      "downloads": 37,
+      "downloads": 35,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -15843,7 +15883,7 @@
       "description": "",
       "updated_at": "2025-11-17T05:02:06Z",
       "created_at": "2025-11-17T04:50:51Z",
-      "downloads": 12,
+      "downloads": 11,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -16157,7 +16197,7 @@
       "description": "",
       "updated_at": "2025-10-28T21:49:16Z",
       "created_at": "2025-10-23T17:35:30Z",
-      "downloads": 64,
+      "downloads": 68,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -16211,7 +16251,7 @@
       "description": "",
       "updated_at": "2025-10-27T21:47:42Z",
       "created_at": "2025-10-27T20:04:31Z",
-      "downloads": 38,
+      "downloads": 36,
       "likes": 3,
       "pipeline_tag": null,
       "main": false
@@ -16264,7 +16304,7 @@
       "description": "",
       "updated_at": "2025-10-26T01:17:28Z",
       "created_at": "2025-10-25T16:10:39Z",
-      "downloads": 50,
+      "downloads": 54,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -16351,7 +16391,7 @@
       "description": "",
       "updated_at": "2025-10-16T03:45:51Z",
       "created_at": "2025-10-16T03:30:09Z",
-      "downloads": 16,
+      "downloads": 13,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -16377,7 +16417,7 @@
       "description": "",
       "updated_at": "2025-10-16T03:34:35Z",
       "created_at": "2025-09-26T10:21:31Z",
-      "downloads": 17,
+      "downloads": 18,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -16403,7 +16443,7 @@
       "description": "",
       "updated_at": "2025-10-16T03:34:12Z",
       "created_at": "2025-09-26T09:04:13Z",
-      "downloads": 59,
+      "downloads": 58,
       "likes": 3,
       "pipeline_tag": null,
       "main": false
@@ -16416,7 +16456,7 @@
       "description": "",
       "updated_at": "2025-10-16T03:33:44Z",
       "created_at": "2025-09-26T09:27:52Z",
-      "downloads": 14,
+      "downloads": 15,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -16442,7 +16482,7 @@
       "description": "",
       "updated_at": "2025-10-15T02:21:37Z",
       "created_at": "2025-10-13T09:51:12Z",
-      "downloads": 15,
+      "downloads": 16,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -16573,7 +16613,7 @@
       "description": "",
       "updated_at": "2025-10-07T18:37:33Z",
       "created_at": "2025-10-03T20:42:51Z",
-      "downloads": 15,
+      "downloads": 17,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -16653,7 +16693,7 @@
       "description": "",
       "updated_at": "2025-09-27T23:12:22Z",
       "created_at": "2025-07-25T02:58:39Z",
-      "downloads": 992,
+      "downloads": 916,
       "likes": 6,
       "pipeline_tag": "text-generation",
       "main": false
@@ -16666,7 +16706,7 @@
       "description": "",
       "updated_at": "2025-09-27T19:21:35Z",
       "created_at": "2025-04-25T18:13:17Z",
-      "downloads": 244,
+      "downloads": 241,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -16679,7 +16719,7 @@
       "description": "",
       "updated_at": "2025-09-27T19:21:11Z",
       "created_at": "2025-04-29T19:53:53Z",
-      "downloads": 90,
+      "downloads": 87,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -16692,7 +16732,7 @@
       "description": "",
       "updated_at": "2025-09-27T19:20:30Z",
       "created_at": "2025-05-01T00:22:29Z",
-      "downloads": 95,
+      "downloads": 92,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -16705,7 +16745,7 @@
       "description": "",
       "updated_at": "2025-09-27T19:20:00Z",
       "created_at": "2025-05-01T17:37:45Z",
-      "downloads": 99,
+      "downloads": 96,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -16718,7 +16758,7 @@
       "description": "",
       "updated_at": "2025-09-27T19:19:45Z",
       "created_at": "2025-04-29T22:36:24Z",
-      "downloads": 106,
+      "downloads": 102,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -16731,7 +16771,7 @@
       "description": "",
       "updated_at": "2025-09-27T19:19:27Z",
       "created_at": "2025-04-23T19:16:22Z",
-      "downloads": 297,
+      "downloads": 295,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -16782,7 +16822,7 @@
       "description": "",
       "updated_at": "2025-09-26T10:08:14Z",
       "created_at": "2025-09-26T10:00:45Z",
-      "downloads": 92,
+      "downloads": 90,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -16795,7 +16835,7 @@
       "description": "",
       "updated_at": "2025-09-25T18:11:00Z",
       "created_at": "2025-09-25T17:50:48Z",
-      "downloads": 71,
+      "downloads": 72,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -16821,7 +16861,7 @@
       "description": "",
       "updated_at": "2025-09-25T09:49:33Z",
       "created_at": "2025-09-25T09:49:02Z",
-      "downloads": 32,
+      "downloads": 33,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -16834,7 +16874,7 @@
       "description": "",
       "updated_at": "2025-09-24T15:44:38Z",
       "created_at": "2025-07-25T03:37:58Z",
-      "downloads": 211,
+      "downloads": 210,
       "likes": 3,
       "pipeline_tag": "text-generation",
       "main": false
@@ -16847,7 +16887,7 @@
       "description": "",
       "updated_at": "2025-09-24T15:44:37Z",
       "created_at": "2025-07-25T02:31:41Z",
-      "downloads": 239,
+      "downloads": 238,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -16860,7 +16900,7 @@
       "description": "",
       "updated_at": "2025-09-24T15:44:36Z",
       "created_at": "2025-07-24T19:57:31Z",
-      "downloads": 559,
+      "downloads": 561,
       "likes": 6,
       "pipeline_tag": "text-generation",
       "main": false
@@ -16873,7 +16913,7 @@
       "description": "",
       "updated_at": "2025-09-24T15:41:27Z",
       "created_at": "2025-03-21T03:09:13Z",
-      "downloads": 580,
+      "downloads": 601,
       "likes": 22,
       "pipeline_tag": "text-generation",
       "main": false
@@ -16886,7 +16926,7 @@
       "description": "",
       "updated_at": "2025-09-24T15:41:18Z",
       "created_at": "2025-03-18T09:56:18Z",
-      "downloads": 192,
+      "downloads": 196,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -16899,7 +16939,7 @@
       "description": "",
       "updated_at": "2025-09-24T15:41:17Z",
       "created_at": "2025-03-18T09:10:04Z",
-      "downloads": 75,
+      "downloads": 72,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -16912,7 +16952,7 @@
       "description": "",
       "updated_at": "2025-09-24T15:41:17Z",
       "created_at": "2025-03-18T08:04:12Z",
-      "downloads": 531,
+      "downloads": 549,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -16925,7 +16965,7 @@
       "description": "",
       "updated_at": "2025-09-24T15:41:16Z",
       "created_at": "2025-03-18T06:09:18Z",
-      "downloads": 389,
+      "downloads": 408,
       "likes": 5,
       "pipeline_tag": "text-generation",
       "main": false
@@ -17114,7 +17154,7 @@
       "description": "",
       "updated_at": "2025-09-15T08:52:45Z",
       "created_at": "2025-09-15T08:50:54Z",
-      "downloads": 749,
+      "downloads": 595,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -17127,7 +17167,7 @@
       "description": "",
       "updated_at": "2025-09-15T08:48:44Z",
       "created_at": "2025-09-15T08:47:47Z",
-      "downloads": 37,
+      "downloads": 38,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -17248,7 +17288,7 @@
       "description": "",
       "updated_at": "2025-09-04T21:26:19Z",
       "created_at": "2025-09-04T21:17:30Z",
-      "downloads": 246,
+      "downloads": 218,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -17261,7 +17301,7 @@
       "description": "",
       "updated_at": "2025-09-04T21:23:55Z",
       "created_at": "2025-09-04T21:22:00Z",
-      "downloads": 77,
+      "downloads": 74,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -17356,7 +17396,7 @@
       "description": "",
       "updated_at": "2025-08-31T04:14:48Z",
       "created_at": "2025-08-31T00:41:03Z",
-      "downloads": 21,
+      "downloads": 24,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -17369,7 +17409,7 @@
       "description": "",
       "updated_at": "2025-08-30T10:12:30Z",
       "created_at": "2025-08-30T10:07:39Z",
-      "downloads": 33,
+      "downloads": 35,
       "likes": 3,
       "pipeline_tag": "text-generation",
       "main": false
@@ -17682,7 +17722,7 @@
       "description": "",
       "updated_at": "2025-08-06T05:11:00Z",
       "created_at": "2025-03-10T06:10:54Z",
-      "downloads": 542,
+      "downloads": 497,
       "likes": 6,
       "pipeline_tag": "text-generation",
       "main": false
@@ -17708,7 +17748,7 @@
       "description": "",
       "updated_at": "2025-08-06T05:10:40Z",
       "created_at": "2025-04-29T06:05:11Z",
-      "downloads": 226,
+      "downloads": 241,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -17721,7 +17761,7 @@
       "description": "",
       "updated_at": "2025-08-06T05:10:29Z",
       "created_at": "2025-05-19T18:55:26Z",
-      "downloads": 89,
+      "downloads": 99,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -17734,7 +17774,7 @@
       "description": "",
       "updated_at": "2025-08-06T05:10:12Z",
       "created_at": "2025-07-22T15:17:13Z",
-      "downloads": 43,
+      "downloads": 45,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -17761,7 +17801,7 @@
       "description": "",
       "updated_at": "2025-08-05T12:35:24Z",
       "created_at": "2025-08-04T11:04:44Z",
-      "downloads": 146,
+      "downloads": 147,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -17801,7 +17841,7 @@
       "description": "",
       "updated_at": "2025-07-31T08:21:16Z",
       "created_at": "2025-03-18T09:13:00Z",
-      "downloads": 68,
+      "downloads": 69,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -17883,7 +17923,7 @@
       "description": "",
       "updated_at": "2025-07-23T16:25:26Z",
       "created_at": "2025-07-23T06:14:34Z",
-      "downloads": 100,
+      "downloads": 101,
       "likes": 4,
       "pipeline_tag": null,
       "main": false
@@ -17896,7 +17936,7 @@
       "description": "",
       "updated_at": "2025-07-23T14:58:21Z",
       "created_at": "2025-03-17T00:14:34Z",
-      "downloads": 61,
+      "downloads": 66,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -17909,7 +17949,7 @@
       "description": "",
       "updated_at": "2025-07-23T14:57:56Z",
       "created_at": "2025-03-17T00:14:18Z",
-      "downloads": 68,
+      "downloads": 69,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -17935,7 +17975,7 @@
       "description": "",
       "updated_at": "2025-07-23T06:51:54Z",
       "created_at": "2025-07-23T03:08:11Z",
-      "downloads": 116,
+      "downloads": 69,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -17962,7 +18002,7 @@
       "description": "",
       "updated_at": "2025-07-23T00:03:39Z",
       "created_at": "2025-03-17T00:11:49Z",
-      "downloads": 167,
+      "downloads": 181,
       "likes": 3,
       "pipeline_tag": "text-generation",
       "main": false
@@ -17975,7 +18015,7 @@
       "description": "",
       "updated_at": "2025-07-23T00:03:18Z",
       "created_at": "2025-03-17T00:10:39Z",
-      "downloads": 142,
+      "downloads": 158,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -17988,7 +18028,7 @@
       "description": "",
       "updated_at": "2025-07-23T00:02:57Z",
       "created_at": "2025-03-17T00:06:51Z",
-      "downloads": 256,
+      "downloads": 260,
       "likes": 19,
       "pipeline_tag": "text-generation",
       "main": false
@@ -18001,7 +18041,7 @@
       "description": "",
       "updated_at": "2025-07-22T23:56:54Z",
       "created_at": "2025-03-17T00:09:52Z",
-      "downloads": 219,
+      "downloads": 230,
       "likes": 4,
       "pipeline_tag": "text-generation",
       "main": false
@@ -18028,7 +18068,7 @@
       "description": "",
       "updated_at": "2025-07-21T12:55:48Z",
       "created_at": "2025-05-19T19:56:49Z",
-      "downloads": 160,
+      "downloads": 146,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -18041,7 +18081,7 @@
       "description": "",
       "updated_at": "2025-07-21T10:41:05Z",
       "created_at": "2025-05-05T12:43:57Z",
-      "downloads": 223,
+      "downloads": 207,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -18054,7 +18094,7 @@
       "description": "",
       "updated_at": "2025-07-21T09:55:14Z",
       "created_at": "2025-03-25T03:16:27Z",
-      "downloads": 237,
+      "downloads": 230,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -18067,7 +18107,7 @@
       "description": "",
       "updated_at": "2025-07-21T09:05:10Z",
       "created_at": "2025-03-20T06:47:32Z",
-      "downloads": 50,
+      "downloads": 53,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -18217,7 +18257,7 @@
       "description": "",
       "updated_at": "2025-07-03T10:56:17Z",
       "created_at": "2025-07-03T07:57:40Z",
-      "downloads": 564,
+      "downloads": 593,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -18230,7 +18270,7 @@
       "description": "",
       "updated_at": "2025-07-03T07:25:04Z",
       "created_at": "2025-07-03T04:13:56Z",
-      "downloads": 751,
+      "downloads": 666,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -18489,7 +18529,7 @@
       "description": "",
       "updated_at": "2025-06-16T14:17:16Z",
       "created_at": "2025-06-04T15:37:49Z",
-      "downloads": 12,
+      "downloads": 13,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -18653,7 +18693,7 @@
       "description": "",
       "updated_at": "2025-06-06T14:32:12Z",
       "created_at": "2025-03-20T06:47:12Z",
-      "downloads": 32,
+      "downloads": 33,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -18679,7 +18719,7 @@
       "description": "",
       "updated_at": "2025-06-06T12:34:00Z",
       "created_at": "2025-03-20T06:45:32Z",
-      "downloads": 117,
+      "downloads": 118,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -18692,7 +18732,7 @@
       "description": "",
       "updated_at": "2025-06-06T10:57:55Z",
       "created_at": "2025-03-20T06:46:24Z",
-      "downloads": 60,
+      "downloads": 66,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -18948,7 +18988,7 @@
       "description": "",
       "updated_at": "2025-05-20T20:14:12Z",
       "created_at": "2025-05-20T09:07:55Z",
-      "downloads": 70,
+      "downloads": 80,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -18986,7 +19026,7 @@
       "description": "",
       "updated_at": "2025-05-20T06:17:06Z",
       "created_at": "2025-05-20T05:55:28Z",
-      "downloads": 165,
+      "downloads": 163,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -19106,7 +19146,7 @@
       "description": "",
       "updated_at": "2025-05-11T14:38:36Z",
       "created_at": "2025-01-26T14:16:08Z",
-      "downloads": 87,
+      "downloads": 82,
       "likes": 20,
       "pipeline_tag": "text-generation",
       "main": false
@@ -19119,7 +19159,7 @@
       "description": "",
       "updated_at": "2025-05-11T14:29:07Z",
       "created_at": "2025-01-29T13:52:47Z",
-      "downloads": 15,
+      "downloads": 16,
       "likes": 4,
       "pipeline_tag": "text-generation",
       "main": false
@@ -19145,7 +19185,7 @@
       "description": "",
       "updated_at": "2025-05-11T14:28:13Z",
       "created_at": "2025-02-17T00:44:30Z",
-      "downloads": 11,
+      "downloads": 12,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -19171,7 +19211,7 @@
       "description": "",
       "updated_at": "2025-05-11T14:26:46Z",
       "created_at": "2025-02-07T10:50:00Z",
-      "downloads": 21,
+      "downloads": 22,
       "likes": 6,
       "pipeline_tag": "text-generation",
       "main": false
@@ -19259,7 +19299,7 @@
       "description": "",
       "updated_at": "2025-05-07T14:39:44Z",
       "created_at": "2025-01-28T15:17:08Z",
-      "downloads": 352,
+      "downloads": 393,
       "likes": 10,
       "pipeline_tag": "text-generation",
       "main": false
@@ -19272,7 +19312,7 @@
       "description": "",
       "updated_at": "2025-05-07T14:39:43Z",
       "created_at": "2025-01-28T14:36:46Z",
-      "downloads": 85,
+      "downloads": 87,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -19285,7 +19325,7 @@
       "description": "",
       "updated_at": "2025-05-07T14:39:40Z",
       "created_at": "2025-03-13T08:22:10Z",
-      "downloads": 129,
+      "downloads": 127,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -19388,7 +19428,7 @@
       "description": "",
       "updated_at": "2025-04-29T11:14:27Z",
       "created_at": "2025-04-29T08:45:57Z",
-      "downloads": 142,
+      "downloads": 153,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -19511,7 +19551,7 @@
       "description": "",
       "updated_at": "2025-04-15T20:05:24Z",
       "created_at": "2025-04-15T19:05:18Z",
-      "downloads": 145,
+      "downloads": 151,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -19524,7 +19564,7 @@
       "description": "",
       "updated_at": "2025-04-15T19:45:02Z",
       "created_at": "2025-04-15T19:04:56Z",
-      "downloads": 166,
+      "downloads": 165,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -19537,7 +19577,7 @@
       "description": "",
       "updated_at": "2025-04-14T16:48:37Z",
       "created_at": "2025-04-10T07:50:25Z",
-      "downloads": 72,
+      "downloads": 73,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -19550,7 +19590,7 @@
       "description": "",
       "updated_at": "2025-04-14T16:34:36Z",
       "created_at": "2025-04-10T07:51:26Z",
-      "downloads": 314,
+      "downloads": 316,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -19563,7 +19603,7 @@
       "description": "",
       "updated_at": "2025-04-14T16:33:16Z",
       "created_at": "2025-04-10T07:51:58Z",
-      "downloads": 156,
+      "downloads": 148,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -19615,7 +19655,7 @@
       "description": "",
       "updated_at": "2025-04-14T10:45:43Z",
       "created_at": "2025-04-10T07:49:39Z",
-      "downloads": 170,
+      "downloads": 204,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -19749,7 +19789,7 @@
       "description": "",
       "updated_at": "2025-04-04T19:14:18Z",
       "created_at": "2025-04-04T06:45:23Z",
-      "downloads": 365,
+      "downloads": 366,
       "likes": 4,
       "pipeline_tag": null,
       "main": false
@@ -19797,7 +19837,7 @@
       "description": "",
       "updated_at": "2025-03-31T11:10:56Z",
       "created_at": "2025-03-31T10:54:47Z",
-      "downloads": 35,
+      "downloads": 38,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -19962,7 +20002,7 @@
       "description": "",
       "updated_at": "2025-03-25T00:10:00Z",
       "created_at": "2025-03-25T00:06:12Z",
-      "downloads": 63,
+      "downloads": 49,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -20119,7 +20159,7 @@
       "description": "",
       "updated_at": "2025-03-18T10:21:07Z",
       "created_at": "2025-03-18T09:21:29Z",
-      "downloads": 353,
+      "downloads": 376,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -20132,7 +20172,7 @@
       "description": "",
       "updated_at": "2025-03-18T10:18:33Z",
       "created_at": "2025-03-18T09:49:56Z",
-      "downloads": 163,
+      "downloads": 161,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -20145,7 +20185,7 @@
       "description": "",
       "updated_at": "2025-03-18T10:02:45Z",
       "created_at": "2025-03-18T09:16:35Z",
-      "downloads": 207,
+      "downloads": 215,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -20158,7 +20198,7 @@
       "description": "",
       "updated_at": "2025-03-18T09:50:17Z",
       "created_at": "2025-03-18T09:10:35Z",
-      "downloads": 241,
+      "downloads": 237,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -20171,7 +20211,7 @@
       "description": "",
       "updated_at": "2025-03-18T09:41:03Z",
       "created_at": "2025-03-18T09:38:01Z",
-      "downloads": 104,
+      "downloads": 137,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -20184,7 +20224,7 @@
       "description": "",
       "updated_at": "2025-03-18T09:25:54Z",
       "created_at": "2025-03-18T09:18:29Z",
-      "downloads": 150,
+      "downloads": 158,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -20197,7 +20237,7 @@
       "description": "",
       "updated_at": "2025-03-18T09:24:22Z",
       "created_at": "2025-03-18T09:13:26Z",
-      "downloads": 65,
+      "downloads": 72,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -20210,7 +20250,7 @@
       "description": "",
       "updated_at": "2025-03-18T09:20:42Z",
       "created_at": "2025-03-18T09:15:16Z",
-      "downloads": 120,
+      "downloads": 167,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -20223,7 +20263,7 @@
       "description": "",
       "updated_at": "2025-03-18T09:18:46Z",
       "created_at": "2025-03-18T09:12:30Z",
-      "downloads": 88,
+      "downloads": 89,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -20249,7 +20289,7 @@
       "description": "",
       "updated_at": "2025-03-18T03:19:41Z",
       "created_at": "2025-03-18T03:13:13Z",
-      "downloads": 16,
+      "downloads": 17,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -20262,7 +20302,7 @@
       "description": "",
       "updated_at": "2025-03-18T03:14:27Z",
       "created_at": "2025-03-18T02:51:42Z",
-      "downloads": 18,
+      "downloads": 23,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -20288,7 +20328,7 @@
       "description": "",
       "updated_at": "2025-03-16T21:47:10Z",
       "created_at": "2025-03-16T21:47:09Z",
-      "downloads": 138,
+      "downloads": 144,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -20341,7 +20381,7 @@
       "description": "",
       "updated_at": "2025-03-14T18:56:40Z",
       "created_at": "2025-03-14T18:56:08Z",
-      "downloads": 13,
+      "downloads": 14,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -20543,7 +20583,7 @@
       "description": "",
       "updated_at": "2025-03-09T13:32:51Z",
       "created_at": "2025-01-08T05:58:26Z",
-      "downloads": 292,
+      "downloads": 311,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -20556,7 +20596,7 @@
       "description": "",
       "updated_at": "2025-03-09T13:32:23Z",
       "created_at": "2024-12-18T00:49:35Z",
-      "downloads": 18,
+      "downloads": 20,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -20569,7 +20609,7 @@
       "description": "",
       "updated_at": "2025-03-09T13:32:17Z",
       "created_at": "2024-12-20T04:08:37Z",
-      "downloads": 43,
+      "downloads": 42,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -20582,7 +20622,7 @@
       "description": "",
       "updated_at": "2025-03-09T13:32:13Z",
       "created_at": "2025-01-02T01:57:31Z",
-      "downloads": 108,
+      "downloads": 109,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -20595,7 +20635,7 @@
       "description": "",
       "updated_at": "2025-03-09T13:32:07Z",
       "created_at": "2025-01-01T13:28:05Z",
-      "downloads": 53,
+      "downloads": 51,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -20608,7 +20648,7 @@
       "description": "",
       "updated_at": "2025-03-09T13:31:39Z",
       "created_at": "2025-01-08T03:09:30Z",
-      "downloads": 406,
+      "downloads": 417,
       "likes": 14,
       "pipeline_tag": null,
       "main": false
@@ -20746,7 +20786,7 @@
       "description": "",
       "updated_at": "2025-03-06T02:03:04Z",
       "created_at": "2025-03-06T01:51:31Z",
-      "downloads": 44,
+      "downloads": 43,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -20759,7 +20799,7 @@
       "description": "",
       "updated_at": "2025-03-02T06:13:32Z",
       "created_at": "2025-03-02T06:12:59Z",
-      "downloads": 17,
+      "downloads": 18,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -21150,7 +21190,7 @@
       "description": "",
       "updated_at": "2025-02-05T02:31:38Z",
       "created_at": "2025-02-04T14:07:55Z",
-      "downloads": 616,
+      "downloads": 611,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -21176,7 +21216,7 @@
       "description": "",
       "updated_at": "2025-02-04T08:01:07Z",
       "created_at": "2025-02-04T03:20:40Z",
-      "downloads": 995,
+      "downloads": 961,
       "likes": 6,
       "pipeline_tag": null,
       "main": false
@@ -21202,7 +21242,7 @@
       "description": "",
       "updated_at": "2025-02-03T11:08:27Z",
       "created_at": "2025-02-01T15:41:07Z",
-      "downloads": 324,
+      "downloads": 318,
       "likes": 4,
       "pipeline_tag": null,
       "main": false
@@ -21215,7 +21255,7 @@
       "description": "",
       "updated_at": "2025-02-02T15:12:44Z",
       "created_at": "2024-12-18T17:30:32Z",
-      "downloads": 32,
+      "downloads": 29,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -21228,7 +21268,7 @@
       "description": "",
       "updated_at": "2025-02-02T15:12:21Z",
       "created_at": "2024-12-18T17:30:41Z",
-      "downloads": 15,
+      "downloads": 16,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -21241,7 +21281,7 @@
       "description": "",
       "updated_at": "2025-02-02T15:11:59Z",
       "created_at": "2024-12-18T17:30:51Z",
-      "downloads": 16,
+      "downloads": 19,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -21280,7 +21320,7 @@
       "description": "",
       "updated_at": "2025-02-01T13:46:52Z",
       "created_at": "2025-01-27T04:04:48Z",
-      "downloads": 712,
+      "downloads": 717,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -21306,7 +21346,7 @@
       "description": "",
       "updated_at": "2025-01-30T01:51:10Z",
       "created_at": "2024-12-28T04:29:14Z",
-      "downloads": 22,
+      "downloads": 27,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -21319,7 +21359,7 @@
       "description": "",
       "updated_at": "2025-01-30T01:50:35Z",
       "created_at": "2025-01-21T06:17:10Z",
-      "downloads": 45,
+      "downloads": 44,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -21345,7 +21385,7 @@
       "description": "",
       "updated_at": "2025-01-29T05:45:23Z",
       "created_at": "2025-01-29T05:44:54Z",
-      "downloads": 3,
+      "downloads": 4,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -21371,7 +21411,7 @@
       "description": "",
       "updated_at": "2025-01-29T05:43:11Z",
       "created_at": "2025-01-29T05:42:35Z",
-      "downloads": 3,
+      "downloads": 4,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -21384,7 +21424,7 @@
       "description": "",
       "updated_at": "2025-01-29T05:42:29Z",
       "created_at": "2025-01-29T05:41:51Z",
-      "downloads": 5,
+      "downloads": 8,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -21632,7 +21672,7 @@
       "description": "",
       "updated_at": "2025-01-10T21:09:00Z",
       "created_at": "2024-11-17T12:50:54Z",
-      "downloads": 608,
+      "downloads": 614,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -21645,7 +21685,7 @@
       "description": "",
       "updated_at": "2025-01-10T20:50:03Z",
       "created_at": "2025-01-10T20:15:54Z",
-      "downloads": 109,
+      "downloads": 111,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -21658,7 +21698,7 @@
       "description": "",
       "updated_at": "2025-01-10T20:45:38Z",
       "created_at": "2025-01-10T20:31:50Z",
-      "downloads": 145,
+      "downloads": 135,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -21671,7 +21711,7 @@
       "description": "",
       "updated_at": "2025-01-10T20:32:49Z",
       "created_at": "2025-01-10T20:18:25Z",
-      "downloads": 96,
+      "downloads": 93,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -21800,7 +21840,7 @@
       "description": "",
       "updated_at": "2025-01-03T22:04:22Z",
       "created_at": "2024-12-27T06:19:56Z",
-      "downloads": 2,
+      "downloads": 3,
       "likes": 3,
       "pipeline_tag": null,
       "main": false
@@ -22315,7 +22355,7 @@
       "description": "",
       "updated_at": "2024-12-04T00:55:58Z",
       "created_at": "2024-11-26T19:42:22Z",
-      "downloads": 66,
+      "downloads": 65,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -22435,7 +22475,7 @@
       "description": "",
       "updated_at": "2024-11-17T12:53:08Z",
       "created_at": "2024-11-17T12:37:08Z",
-      "downloads": 80,
+      "downloads": 78,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -22448,7 +22488,7 @@
       "description": "",
       "updated_at": "2024-11-13T12:51:56Z",
       "created_at": "2024-02-08T17:47:54Z",
-      "downloads": 1757,
+      "downloads": 1750,
       "likes": 146,
       "pipeline_tag": "text-generation",
       "main": false
@@ -22567,7 +22607,7 @@
       "description": "",
       "updated_at": "2024-10-31T10:39:29Z",
       "created_at": "2024-07-21T18:45:50Z",
-      "downloads": 149,
+      "downloads": 143,
       "likes": 5,
       "pipeline_tag": "text-generation",
       "main": false
@@ -22619,7 +22659,7 @@
       "description": "",
       "updated_at": "2024-10-31T06:54:24Z",
       "created_at": "2024-09-03T10:17:10Z",
-      "downloads": 1485,
+      "downloads": 1442,
       "likes": 8,
       "pipeline_tag": null,
       "main": false
@@ -22632,7 +22672,7 @@
       "description": "",
       "updated_at": "2024-10-29T02:28:00Z",
       "created_at": "2024-09-03T09:05:58Z",
-      "downloads": 3494,
+      "downloads": 3459,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -22645,7 +22685,7 @@
       "description": "",
       "updated_at": "2024-10-25T22:47:46Z",
       "created_at": "2024-09-02T14:59:21Z",
-      "downloads": 3449,
+      "downloads": 3358,
       "likes": 5,
       "pipeline_tag": null,
       "main": false
@@ -22692,7 +22732,7 @@
       "description": "",
       "updated_at": "2024-10-24T23:00:50Z",
       "created_at": "2024-09-03T08:44:18Z",
-      "downloads": 2535,
+      "downloads": 2479,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -22705,7 +22745,7 @@
       "description": "",
       "updated_at": "2024-10-24T23:00:15Z",
       "created_at": "2024-09-02T12:49:32Z",
-      "downloads": 3659,
+      "downloads": 3533,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -22718,7 +22758,7 @@
       "description": "",
       "updated_at": "2024-10-23T22:08:49Z",
       "created_at": "2024-09-02T19:27:58Z",
-      "downloads": 3354,
+      "downloads": 3457,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -22731,7 +22771,7 @@
       "description": "",
       "updated_at": "2024-10-23T22:08:22Z",
       "created_at": "2024-09-02T09:46:28Z",
-      "downloads": 2055,
+      "downloads": 2071,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -22942,7 +22982,7 @@
       "description": "",
       "updated_at": "2024-09-25T08:38:55Z",
       "created_at": "2024-08-20T08:51:09Z",
-      "downloads": 33,
+      "downloads": 24,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -22955,7 +22995,7 @@
       "description": "",
       "updated_at": "2024-09-25T07:38:02Z",
       "created_at": "2024-09-25T06:49:54Z",
-      "downloads": 17,
+      "downloads": 20,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -23067,7 +23107,7 @@
       "description": "",
       "updated_at": "2024-09-14T10:15:27Z",
       "created_at": "2024-09-04T15:13:04Z",
-      "downloads": 3193,
+      "downloads": 3127,
       "likes": 7,
       "pipeline_tag": "text-generation",
       "main": false
@@ -23174,7 +23214,7 @@
       "description": "",
       "updated_at": "2024-09-04T06:59:58Z",
       "created_at": "2024-09-04T06:58:40Z",
-      "downloads": 41,
+      "downloads": 39,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -23187,7 +23227,7 @@
       "description": "",
       "updated_at": "2024-09-04T06:55:51Z",
       "created_at": "2024-09-04T06:49:37Z",
-      "downloads": 65,
+      "downloads": 66,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -23213,7 +23253,7 @@
       "description": "",
       "updated_at": "2024-09-03T07:28:00Z",
       "created_at": "2024-07-22T00:07:12Z",
-      "downloads": 262,
+      "downloads": 278,
       "likes": 6,
       "pipeline_tag": "text-generation",
       "main": false
@@ -23226,7 +23266,7 @@
       "description": "",
       "updated_at": "2024-09-03T07:26:17Z",
       "created_at": "2024-07-21T18:43:04Z",
-      "downloads": 53,
+      "downloads": 54,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -23325,7 +23365,7 @@
       "description": "",
       "updated_at": "2024-08-30T16:26:20Z",
       "created_at": "2024-04-17T21:41:27Z",
-      "downloads": 91,
+      "downloads": 93,
       "likes": 14,
       "pipeline_tag": "text-generation",
       "main": false
@@ -23851,7 +23891,7 @@
       "description": "",
       "updated_at": "2024-07-02T05:50:31Z",
       "created_at": "2024-05-11T08:10:17Z",
-      "downloads": 20,
+      "downloads": 21,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -23864,7 +23904,7 @@
       "description": "",
       "updated_at": "2024-07-02T05:43:04Z",
       "created_at": "2024-05-08T08:40:05Z",
-      "downloads": 214,
+      "downloads": 213,
       "likes": 4,
       "pipeline_tag": "text-generation",
       "main": false
@@ -23877,7 +23917,7 @@
       "description": "",
       "updated_at": "2024-07-02T04:55:34Z",
       "created_at": "2024-03-21T07:20:28Z",
-      "downloads": 256,
+      "downloads": 261,
       "likes": 6,
       "pipeline_tag": "text-generation",
       "main": false
@@ -24205,7 +24245,7 @@
       "description": "",
       "updated_at": "2024-06-13T09:48:18Z",
       "created_at": "2024-05-31T13:36:26Z",
-      "downloads": 36,
+      "downloads": 37,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -24218,7 +24258,7 @@
       "description": "",
       "updated_at": "2024-06-13T09:47:57Z",
       "created_at": "2024-06-11T08:45:11Z",
-      "downloads": 55,
+      "downloads": 57,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -24369,7 +24409,7 @@
       "description": "",
       "updated_at": "2024-06-06T21:17:18Z",
       "created_at": "2024-06-06T20:11:24Z",
-      "downloads": 8,
+      "downloads": 10,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -24382,7 +24422,7 @@
       "description": "",
       "updated_at": "2024-06-06T21:10:36Z",
       "created_at": "2024-06-06T20:11:08Z",
-      "downloads": 8,
+      "downloads": 10,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -24544,7 +24584,7 @@
       "description": "",
       "updated_at": "2024-05-22T09:11:30Z",
       "created_at": "2024-02-26T07:16:49Z",
-      "downloads": 190,
+      "downloads": 188,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -24838,7 +24878,7 @@
       "description": "",
       "updated_at": "2024-04-30T06:51:23Z",
       "created_at": "2024-04-06T14:22:50Z",
-      "downloads": 215,
+      "downloads": 209,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25041,7 +25081,7 @@
       "description": "",
       "updated_at": "2024-04-22T01:50:18Z",
       "created_at": "2023-10-31T03:08:04Z",
-      "downloads": 165,
+      "downloads": 162,
       "likes": 14,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25095,7 +25135,7 @@
       "description": "",
       "updated_at": "2024-04-19T01:13:08Z",
       "created_at": "2024-03-15T18:33:34Z",
-      "downloads": 34,
+      "downloads": 36,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25136,7 +25176,7 @@
       "description": "",
       "updated_at": "2024-04-14T18:28:08Z",
       "created_at": "2024-03-28T02:07:27Z",
-      "downloads": 13,
+      "downloads": 15,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25366,7 +25406,7 @@
       "description": "",
       "updated_at": "2024-04-04T21:04:00Z",
       "created_at": "2024-04-04T21:04:00Z",
-      "downloads": 44,
+      "downloads": 47,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25379,7 +25419,7 @@
       "description": "",
       "updated_at": "2024-04-04T21:03:23Z",
       "created_at": "2024-04-04T21:03:23Z",
-      "downloads": 63,
+      "downloads": 67,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25392,7 +25432,7 @@
       "description": "",
       "updated_at": "2024-04-04T20:15:44Z",
       "created_at": "2024-04-04T20:14:44Z",
-      "downloads": 38,
+      "downloads": 43,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25405,7 +25445,7 @@
       "description": "",
       "updated_at": "2024-04-04T20:14:34Z",
       "created_at": "2024-04-04T20:14:34Z",
-      "downloads": 87,
+      "downloads": 90,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25418,7 +25458,7 @@
       "description": "",
       "updated_at": "2024-04-03T21:07:22Z",
       "created_at": "2023-07-24T22:23:14Z",
-      "downloads": 837,
+      "downloads": 697,
       "likes": 272,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25499,7 +25539,7 @@
       "description": "",
       "updated_at": "2024-03-27T12:59:09Z",
       "created_at": "2024-03-27T09:40:07Z",
-      "downloads": 63,
+      "downloads": 61,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25539,7 +25579,7 @@
       "description": "",
       "updated_at": "2024-03-23T18:15:04Z",
       "created_at": "2024-03-23T16:51:42Z",
-      "downloads": 62,
+      "downloads": 61,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25552,7 +25592,7 @@
       "description": "",
       "updated_at": "2024-03-23T18:14:43Z",
       "created_at": "2024-03-23T16:53:27Z",
-      "downloads": 10,
+      "downloads": 11,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25579,7 +25619,7 @@
       "description": "",
       "updated_at": "2024-03-22T18:48:39Z",
       "created_at": "2024-03-22T18:05:14Z",
-      "downloads": 6,
+      "downloads": 8,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25592,7 +25632,7 @@
       "description": "",
       "updated_at": "2024-03-21T20:54:51Z",
       "created_at": "2024-03-21T00:39:40Z",
-      "downloads": 18,
+      "downloads": 19,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25605,7 +25645,7 @@
       "description": "",
       "updated_at": "2024-03-21T20:54:33Z",
       "created_at": "2024-03-21T18:55:20Z",
-      "downloads": 14,
+      "downloads": 15,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25645,7 +25685,7 @@
       "description": "",
       "updated_at": "2024-03-20T03:31:47Z",
       "created_at": "2024-03-20T03:03:54Z",
-      "downloads": 97,
+      "downloads": 96,
       "likes": 4,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25671,7 +25711,7 @@
       "description": "",
       "updated_at": "2024-03-17T11:58:01Z",
       "created_at": "2023-10-10T13:01:50Z",
-      "downloads": 140,
+      "downloads": 128,
       "likes": 4,
       "pipeline_tag": null,
       "main": false
@@ -25712,7 +25752,7 @@
       "description": "",
       "updated_at": "2024-03-13T20:54:06Z",
       "created_at": "2024-03-13T20:37:23Z",
-      "downloads": 9,
+      "downloads": 11,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -25792,7 +25832,7 @@
       "description": "",
       "updated_at": "2024-03-09T10:34:37Z",
       "created_at": "2024-02-14T13:32:29Z",
-      "downloads": 63,
+      "downloads": 64,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -25832,7 +25872,7 @@
       "description": "",
       "updated_at": "2024-03-08T19:56:19Z",
       "created_at": "2024-03-08T18:59:51Z",
-      "downloads": 36,
+      "downloads": 39,
       "likes": 5,
       "pipeline_tag": "text-generation",
       "main": false
@@ -26028,7 +26068,7 @@
       "description": "",
       "updated_at": "2024-02-25T20:56:53Z",
       "created_at": "2024-01-29T10:35:07Z",
-      "downloads": 7232,
+      "downloads": 7255,
       "likes": 71,
       "pipeline_tag": "text-generation",
       "main": false
@@ -26148,7 +26188,7 @@
       "description": "",
       "updated_at": "2024-02-08T06:22:12Z",
       "created_at": "2024-02-01T22:50:25Z",
-      "downloads": 33,
+      "downloads": 34,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -26161,7 +26201,7 @@
       "description": "",
       "updated_at": "2024-02-08T06:13:02Z",
       "created_at": "2024-01-28T12:05:35Z",
-      "downloads": 28,
+      "downloads": 30,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -26226,7 +26266,7 @@
       "description": "",
       "updated_at": "2024-02-02T21:00:29Z",
       "created_at": "2024-02-02T20:51:27Z",
-      "downloads": 9,
+      "downloads": 10,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -26579,7 +26619,7 @@
       "description": "",
       "updated_at": "2023-12-24T15:29:06Z",
       "created_at": "2023-12-24T14:57:11Z",
-      "downloads": 5,
+      "downloads": 6,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -26592,7 +26632,7 @@
       "description": "",
       "updated_at": "2023-12-24T14:56:30Z",
       "created_at": "2023-12-24T14:54:40Z",
-      "downloads": 10,
+      "downloads": 11,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -26618,7 +26658,7 @@
       "description": "",
       "updated_at": "2023-12-24T14:52:24Z",
       "created_at": "2023-12-24T14:51:18Z",
-      "downloads": 5,
+      "downloads": 7,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -26631,7 +26671,7 @@
       "description": "",
       "updated_at": "2023-12-24T14:50:43Z",
       "created_at": "2023-12-24T14:49:43Z",
-      "downloads": 8,
+      "downloads": 10,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -26708,7 +26748,7 @@
       "description": "",
       "updated_at": "2023-12-16T09:49:23Z",
       "created_at": "2023-10-10T13:02:55Z",
-      "downloads": 48,
+      "downloads": 46,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -26721,7 +26761,7 @@
       "description": "",
       "updated_at": "2023-12-16T09:48:35Z",
       "created_at": "2023-10-10T13:03:07Z",
-      "downloads": 72,
+      "downloads": 69,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -26734,7 +26774,7 @@
       "description": "",
       "updated_at": "2023-12-16T09:48:06Z",
       "created_at": "2023-10-10T13:02:40Z",
-      "downloads": 85,
+      "downloads": 80,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -26918,7 +26958,7 @@
       "description": "",
       "updated_at": "2023-12-03T13:43:30Z",
       "created_at": "2023-11-24T09:08:18Z",
-      "downloads": 18,
+      "downloads": 19,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -27117,7 +27157,7 @@
       "description": "",
       "updated_at": "2023-11-18T07:42:43Z",
       "created_at": "2023-09-05T09:09:08Z",
-      "downloads": 89,
+      "downloads": 87,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -27130,7 +27170,7 @@
       "description": "",
       "updated_at": "2023-11-18T07:42:04Z",
       "created_at": "2023-09-05T08:46:20Z",
-      "downloads": 100,
+      "downloads": 99,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -27700,7 +27740,7 @@
       "description": "",
       "updated_at": "2023-10-24T03:41:09Z",
       "created_at": "2023-10-24T03:40:40Z",
-      "downloads": 11,
+      "downloads": 18,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -27713,7 +27753,7 @@
       "description": "",
       "updated_at": "2023-10-24T03:33:37Z",
       "created_at": "2023-10-24T03:33:10Z",
-      "downloads": 5,
+      "downloads": 11,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -27726,7 +27766,7 @@
       "description": "",
       "updated_at": "2023-10-23T11:40:57Z",
       "created_at": "2023-10-23T11:40:27Z",
-      "downloads": 11,
+      "downloads": 13,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -27739,7 +27779,7 @@
       "description": "",
       "updated_at": "2023-10-23T11:37:37Z",
       "created_at": "2023-10-23T11:37:00Z",
-      "downloads": 82,
+      "downloads": 79,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -27752,7 +27792,7 @@
       "description": "",
       "updated_at": "2023-10-23T11:17:34Z",
       "created_at": "2023-10-23T11:16:56Z",
-      "downloads": 9,
+      "downloads": 11,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -27765,7 +27805,7 @@
       "description": "",
       "updated_at": "2023-10-23T11:03:07Z",
       "created_at": "2023-07-20T14:13:08Z",
-      "downloads": 80,
+      "downloads": 75,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -27923,7 +27963,7 @@
       "description": "",
       "updated_at": "2023-10-15T09:55:54Z",
       "created_at": "2023-10-08T12:15:41Z",
-      "downloads": 13,
+      "downloads": 14,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -27936,7 +27976,7 @@
       "description": "",
       "updated_at": "2023-10-15T09:55:37Z",
       "created_at": "2023-10-08T12:29:18Z",
-      "downloads": 7,
+      "downloads": 6,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -27962,7 +28002,7 @@
       "description": "",
       "updated_at": "2023-10-15T09:55:02Z",
       "created_at": "2023-10-08T12:30:00Z",
-      "downloads": 8,
+      "downloads": 7,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -28094,7 +28134,7 @@
       "description": "",
       "updated_at": "2023-10-05T15:51:22Z",
       "created_at": "2023-05-07T05:09:47Z",
-      "downloads": 8609,
+      "downloads": 8506,
       "likes": 213,
       "pipeline_tag": "text-generation",
       "main": false
@@ -28107,7 +28147,7 @@
       "description": "",
       "updated_at": "2023-10-05T04:12:00Z",
       "created_at": "2023-09-27T04:15:33Z",
-      "downloads": 90,
+      "downloads": 89,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -28322,7 +28362,7 @@
       "description": "",
       "updated_at": "2023-09-14T04:19:16Z",
       "created_at": "2023-09-14T02:19:47Z",
-      "downloads": 66,
+      "downloads": 64,
       "likes": 3,
       "pipeline_tag": null,
       "main": false
@@ -28335,7 +28375,7 @@
       "description": "",
       "updated_at": "2023-09-14T02:18:52Z",
       "created_at": "2023-09-13T03:07:42Z",
-      "downloads": 74,
+      "downloads": 72,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -28415,7 +28455,7 @@
       "description": "",
       "updated_at": "2023-09-05T11:11:35Z",
       "created_at": "2023-09-05T09:48:55Z",
-      "downloads": 94,
+      "downloads": 92,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -28428,7 +28468,7 @@
       "description": "",
       "updated_at": "2023-09-05T09:59:27Z",
       "created_at": "2023-09-05T08:54:51Z",
-      "downloads": 105,
+      "downloads": 103,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -28441,7 +28481,7 @@
       "description": "",
       "updated_at": "2023-09-03T09:24:40Z",
       "created_at": "2023-09-03T08:32:52Z",
-      "downloads": 8,
+      "downloads": 11,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -28481,7 +28521,7 @@
       "description": "",
       "updated_at": "2023-08-27T13:47:26Z",
       "created_at": "2023-08-26T07:37:38Z",
-      "downloads": 11,
+      "downloads": 13,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -28561,7 +28601,7 @@
       "description": "",
       "updated_at": "2023-08-18T05:19:22Z",
       "created_at": "2023-08-14T10:39:19Z",
-      "downloads": 5,
+      "downloads": 6,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -28761,7 +28801,7 @@
       "description": "",
       "updated_at": "2023-07-31T13:09:03Z",
       "created_at": "2023-07-31T12:42:17Z",
-      "downloads": 11,
+      "downloads": 12,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -28852,7 +28892,7 @@
       "description": "",
       "updated_at": "2023-07-27T17:01:36Z",
       "created_at": "2023-07-19T22:19:49Z",
-      "downloads": 6,
+      "downloads": 7,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -28905,7 +28945,7 @@
       "description": "",
       "updated_at": "2023-07-24T09:31:51Z",
       "created_at": "2023-07-24T09:30:06Z",
-      "downloads": 13,
+      "downloads": 14,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -28918,7 +28958,7 @@
       "description": "",
       "updated_at": "2023-07-24T07:02:05Z",
       "created_at": "2023-07-24T07:01:08Z",
-      "downloads": 14,
+      "downloads": 16,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -28931,7 +28971,7 @@
       "description": "",
       "updated_at": "2023-07-24T05:33:52Z",
       "created_at": "2023-07-24T05:32:52Z",
-      "downloads": 7,
+      "downloads": 9,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -28944,7 +28984,7 @@
       "description": "",
       "updated_at": "2023-07-24T02:44:45Z",
       "created_at": "2023-07-24T02:42:13Z",
-      "downloads": 5,
+      "downloads": 7,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -29022,7 +29062,7 @@
       "description": "",
       "updated_at": "2023-07-19T14:52:27Z",
       "created_at": "2023-07-19T14:49:34Z",
-      "downloads": 78,
+      "downloads": 75,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -29087,7 +29127,7 @@
       "description": "",
       "updated_at": "2023-07-17T16:43:09Z",
       "created_at": "2023-07-17T15:16:30Z",
-      "downloads": 81,
+      "downloads": 77,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -29100,7 +29140,7 @@
       "description": "",
       "updated_at": "2023-07-17T14:48:51Z",
       "created_at": "2023-07-17T13:44:36Z",
-      "downloads": 67,
+      "downloads": 65,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -29126,7 +29166,7 @@
       "description": "",
       "updated_at": "2023-07-17T07:11:34Z",
       "created_at": "2023-05-22T07:58:07Z",
-      "downloads": 16,
+      "downloads": 17,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -29139,7 +29179,7 @@
       "description": "",
       "updated_at": "2023-07-17T07:11:11Z",
       "created_at": "2023-07-17T02:07:03Z",
-      "downloads": 64,
+      "downloads": 65,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -29152,7 +29192,7 @@
       "description": "",
       "updated_at": "2023-07-17T06:40:37Z",
       "created_at": "2023-06-26T00:32:37Z",
-      "downloads": 7,
+      "downloads": 9,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -29165,7 +29205,7 @@
       "description": "",
       "updated_at": "2023-07-17T06:33:26Z",
       "created_at": "2023-07-17T01:08:57Z",
-      "downloads": 7,
+      "downloads": 8,
       "likes": 7,
       "pipeline_tag": null,
       "main": false
@@ -29178,7 +29218,7 @@
       "description": "",
       "updated_at": "2023-07-17T06:31:33Z",
       "created_at": "2023-07-17T00:40:44Z",
-      "downloads": 8,
+      "downloads": 9,
       "likes": 0,
       "pipeline_tag": null,
       "main": false
@@ -29191,7 +29231,7 @@
       "description": "",
       "updated_at": "2023-07-17T06:16:24Z",
       "created_at": "2023-05-23T01:26:32Z",
-      "downloads": 8,
+      "downloads": 11,
       "likes": 6,
       "pipeline_tag": null,
       "main": false
@@ -29245,7 +29285,7 @@
       "description": "",
       "updated_at": "2023-07-16T16:25:33Z",
       "created_at": "2023-07-16T14:47:37Z",
-      "downloads": 69,
+      "downloads": 67,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -29338,7 +29378,7 @@
       "description": "",
       "updated_at": "2023-07-11T14:39:48Z",
       "created_at": "2023-07-11T14:16:17Z",
-      "downloads": 5,
+      "downloads": 10,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -29392,7 +29432,7 @@
       "description": "",
       "updated_at": "2023-06-30T16:54:18Z",
       "created_at": "2023-04-01T17:49:02Z",
-      "downloads": 12102,
+      "downloads": 12072,
       "likes": 497,
       "pipeline_tag": "text-generation",
       "main": false
@@ -29646,7 +29686,7 @@
       "description": "",
       "updated_at": "2023-06-15T21:55:18Z",
       "created_at": "2022-09-14T14:04:38Z",
-      "downloads": 20082,
+      "downloads": 19857,
       "likes": 157,
       "pipeline_tag": "text-generation",
       "main": false
@@ -29659,7 +29699,7 @@
       "description": "",
       "updated_at": "2023-06-15T21:55:03Z",
       "created_at": "2022-10-20T11:47:59Z",
-      "downloads": 40969,
+      "downloads": 40886,
       "likes": 169,
       "pipeline_tag": "text-generation",
       "main": false
@@ -29779,7 +29819,7 @@
       "description": "",
       "updated_at": "2023-06-08T20:21:17Z",
       "created_at": "2023-06-08T19:01:00Z",
-      "downloads": 10,
+      "downloads": 11,
       "likes": 1,
       "pipeline_tag": "text-generation",
       "main": false
@@ -29974,7 +30014,7 @@
       "description": "",
       "updated_at": "2023-06-08T13:29:28Z",
       "created_at": "2023-06-07T23:03:17Z",
-      "downloads": 8,
+      "downloads": 9,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30145,7 +30185,7 @@
       "description": "",
       "updated_at": "2023-05-26T09:59:37Z",
       "created_at": "2023-04-09T22:06:55Z",
-      "downloads": 368,
+      "downloads": 342,
       "likes": 74,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30199,7 +30239,7 @@
       "description": "",
       "updated_at": "2023-05-24T23:36:26Z",
       "created_at": "2023-05-24T21:54:53Z",
-      "downloads": 13,
+      "downloads": 14,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30383,7 +30423,7 @@
       "description": "",
       "updated_at": "2023-05-15T10:09:50Z",
       "created_at": "2023-05-05T12:24:03Z",
-      "downloads": 199,
+      "downloads": 196,
       "likes": 57,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30396,7 +30436,7 @@
       "description": "",
       "updated_at": "2023-05-15T10:09:24Z",
       "created_at": "2023-05-05T12:50:19Z",
-      "downloads": 163,
+      "downloads": 160,
       "likes": 19,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30409,7 +30449,7 @@
       "description": "",
       "updated_at": "2023-05-15T10:08:58Z",
       "created_at": "2023-05-04T14:57:11Z",
-      "downloads": 189,
+      "downloads": 183,
       "likes": 12,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30422,7 +30462,7 @@
       "description": "",
       "updated_at": "2023-05-15T10:08:27Z",
       "created_at": "2023-05-04T15:25:05Z",
-      "downloads": 134,
+      "downloads": 130,
       "likes": 8,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30435,7 +30475,7 @@
       "description": "",
       "updated_at": "2023-05-15T10:06:18Z",
       "created_at": "2023-05-05T11:51:43Z",
-      "downloads": 214,
+      "downloads": 207,
       "likes": 3,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30448,7 +30488,7 @@
       "description": "",
       "updated_at": "2023-05-15T10:05:07Z",
       "created_at": "2023-05-05T11:18:03Z",
-      "downloads": 208,
+      "downloads": 199,
       "likes": 0,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30461,7 +30501,7 @@
       "description": "",
       "updated_at": "2023-05-15T10:04:11Z",
       "created_at": "2023-05-04T13:49:10Z",
-      "downloads": 284,
+      "downloads": 276,
       "likes": 2,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30474,7 +30514,7 @@
       "description": "",
       "updated_at": "2023-05-15T10:01:06Z",
       "created_at": "2023-05-04T13:42:33Z",
-      "downloads": 532,
+      "downloads": 542,
       "likes": 6,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30487,7 +30527,7 @@
       "description": "",
       "updated_at": "2023-05-15T10:00:20Z",
       "created_at": "2023-05-04T13:38:41Z",
-      "downloads": 608,
+      "downloads": 600,
       "likes": 7,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30500,7 +30540,7 @@
       "description": "",
       "updated_at": "2023-05-15T09:59:20Z",
       "created_at": "2023-05-04T13:36:31Z",
-      "downloads": 2846,
+      "downloads": 2859,
       "likes": 9,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30619,7 +30659,7 @@
       "description": "",
       "updated_at": "2023-05-03T14:06:12Z",
       "created_at": "2023-04-27T21:09:05Z",
-      "downloads": 1359,
+      "downloads": 1445,
       "likes": 2,
       "pipeline_tag": null,
       "main": false
@@ -30671,7 +30711,7 @@
       "description": "",
       "updated_at": "2023-04-27T17:49:19Z",
       "created_at": "2023-04-26T10:53:55Z",
-      "downloads": 11,
+      "downloads": 12,
       "likes": 3,
       "pipeline_tag": null,
       "main": false
@@ -30874,7 +30914,7 @@
       "description": "",
       "updated_at": "2023-03-13T12:19:44Z",
       "created_at": "2022-08-17T17:42:56Z",
-      "downloads": 391,
+      "downloads": 387,
       "likes": 14,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30887,7 +30927,7 @@
       "description": "",
       "updated_at": "2023-03-13T12:19:34Z",
       "created_at": "2022-09-14T14:04:13Z",
-      "downloads": 32899,
+      "downloads": 32822,
       "likes": 41,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30900,7 +30940,7 @@
       "description": "",
       "updated_at": "2023-03-13T12:19:24Z",
       "created_at": "2022-08-20T14:56:55Z",
-      "downloads": 438,
+      "downloads": 431,
       "likes": 27,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30913,7 +30953,7 @@
       "description": "",
       "updated_at": "2023-03-13T12:19:10Z",
       "created_at": "2022-07-28T08:36:14Z",
-      "downloads": 888,
+      "downloads": 889,
       "likes": 12,
       "pipeline_tag": "text-generation",
       "main": false
@@ -30993,7 +31033,7 @@
       "description": "",
       "updated_at": "2023-02-14T23:00:19Z",
       "created_at": "2023-02-14T22:47:23Z",
-      "downloads": 12,
+      "downloads": 11,
       "likes": 1,
       "pipeline_tag": null,
       "main": false
@@ -31085,7 +31125,7 @@
       "description": "",
       "updated_at": "2022-09-14T13:54:48Z",
       "created_at": "2022-06-23T11:44:36Z",
-      "downloads": 105,
+      "downloads": 107,
       "likes": 7,
       "pipeline_tag": "text-generation",
       "main": false
@@ -31098,7 +31138,7 @@
       "description": "",
       "updated_at": "2022-09-14T13:54:31Z",
       "created_at": "2022-07-20T01:53:29Z",
-      "downloads": 11,
+      "downloads": 14,
       "likes": 4,
       "pipeline_tag": "text-generation",
       "main": false
@@ -31111,7 +31151,7 @@
       "description": "",
       "updated_at": "2022-09-14T13:54:23Z",
       "created_at": "2022-06-23T03:09:51Z",
-      "downloads": 62,
+      "downloads": 65,
       "likes": 5,
       "pipeline_tag": "text-generation",
       "main": false
@@ -31124,7 +31164,7 @@
       "description": "",
       "updated_at": "2022-09-14T13:54:15Z",
       "created_at": "2022-07-06T09:16:20Z",
-      "downloads": 96,
+      "downloads": 92,
       "likes": 6,
       "pipeline_tag": "text-generation",
       "main": false

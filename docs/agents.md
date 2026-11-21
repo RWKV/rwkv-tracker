@@ -2,17 +2,17 @@
 
 All projects from the RWKV agent catalog, ordered by catalog update time.
 
-**Records:** 48 · **Snapshot:** 2026-11-20T13:15:48.188679Z · **[Source](https://agent.objects.rwkvos.com/en)**
+**Records:** 48 · **Snapshot:** 2026-11-21T12:50:52.942700Z · **[Source](https://agent.objects.rwkvos.com/en)**
 
 | Project | Updated | Stars | Classification |
 |---|---|---|---|
+| [ai00-x-client](https://github.com/cgisky1980/ai00-x-client) | 2026-11-21 | 5 | Strict Agent |
+| [noesis](https://github.com/Vaniell0/noesis) | 2026-11-21 | 4 | Agent boundary project |
+| [RWKV-AgenticLearning](https://github.com/Fantasia-Infinity/RWKV-AgenticLearning) | 2026-11-20 | 0 | Research Agent and evaluation |
 | [dsh-rwkv-plugin](https://github.com/No-22-Github/dsh-rwkv-plugin) | 2026-11-20 | 3 | Strict Agent |
-| [ai00-x-client](https://github.com/cgisky1980/ai00-x-client) | 2026-11-20 | 5 | Strict Agent |
-| [RWKV-AgenticLearning](https://github.com/Fantasia-Infinity/RWKV-AgenticLearning) | 2026-11-19 | 0 | Research Agent and evaluation |
 | [RWKV-SearchReader](https://github.com/w1c2j3/RWKV-SearchReader) | 2026-11-19 | 2 | Agent-related research assistant |
 | [memopet](https://github.com/Nice0o0/memopet) | 2026-11-15 | 0 | Agent companion application |
 | [stateswap](https://github.com/Nice0o0/stateswap) | 2026-11-15 | 1 | Agent persona and state infrastructure |
-| [noesis](https://github.com/Vaniell0/noesis) | 2026-11-12 | 4 | Agent boundary project |
 | [RWKV-ECRA](https://github.com/ehooon/RWKV-ECRA) | 2026-11-12 | 7 | Strict Agent |
 | [RWKV-Agent](https://github.com/No-22-Github/RWKV-Agent) | 2026-11-03 | 4 | Strict Agent |
 | [RWKV-LH](https://github.com/rwkv-rs/RWKV-LH) | 2026-11-03 | 4 | Strict Agent |
