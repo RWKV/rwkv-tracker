@@ -1,6 +1,6 @@
 {
   "history_start": "2026-11-04T01:40:02.878390Z",
-  "last_success_started_at": "2026-11-21T12:50:52.942700Z",
+  "last_success_started_at": "2026-11-22T12:43:08.096367Z",
   "scanned_repositories": [
     "00ffcc/chunkRWKV6",
     "00ffcc/conRWKV",
@@ -359,6 +359,7 @@
     "RafaelUI/rwkv-quant_ARTICLE",
     "RawWang/RWKVO-OC",
     "Readyandwaiting-launchingsite438/Visual-Enhancement",
+    "Rhy0lite/kioku-rwkv",
     "RichardErkhov/RWKV-LM-pile-dataset",
     "Ritanlisa/RWKV-MIDI-WebUI",
     "RodkinIvan/recurrent-armt",

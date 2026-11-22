@@ -1,4 +1,3 @@
-{"counts": {"agent": 0, "change": 0, "commit": 0, "model": 0, "paper": 0, "repository": 3}, "date": "2026-10-23"}
 {"counts": {"agent": 0, "change": 0, "commit": 0, "model": 0, "paper": 0, "repository": 6}, "date": "2026-10-24"}
 {"counts": {"agent": 0, "change": 0, "commit": 0, "model": 0, "paper": 0, "repository": 4}, "date": "2026-10-25"}
 {"counts": {"agent": 0, "change": 0, "commit": 0, "model": 0, "paper": 0, "repository": 10}, "date": "2026-10-26"}
@@ -22,9 +21,10 @@
 {"counts": {"agent": 0, "change": 406, "commit": 104, "model": 5, "paper": 0, "repository": 3}, "date": "2026-11-13"}
 {"counts": {"agent": 0, "change": 390, "commit": 66, "model": 0, "paper": 0, "repository": 6}, "date": "2026-11-14"}
 {"counts": {"agent": 2, "change": 384, "commit": 70, "model": 0, "paper": 0, "repository": 3}, "date": "2026-11-15"}
-{"counts": {"agent": 0, "change": 423, "commit": 44, "model": 2, "paper": 0, "repository": 6}, "date": "2026-11-16"}
+{"counts": {"agent": 0, "change": 423, "commit": 44, "model": 2, "paper": 0, "repository": 4}, "date": "2026-11-16"}
 {"counts": {"agent": 0, "change": 358, "commit": 137, "model": 0, "paper": 0, "repository": 4}, "date": "2026-11-17"}
 {"counts": {"agent": 0, "change": 402, "commit": 140, "model": 1, "paper": 0, "repository": 4}, "date": "2026-11-18"}
-{"counts": {"agent": 1, "change": 398, "commit": 105, "model": 1, "paper": 0, "repository": 15}, "date": "2026-11-19"}
-{"counts": {"agent": 2, "change": 392, "commit": 61, "model": 1, "paper": 0, "repository": 6}, "date": "2026-11-20"}
-{"counts": {"agent": 2, "change": 425, "commit": 63, "model": 2, "paper": 0, "repository": 15}, "date": "2026-11-21"}
+{"counts": {"agent": 1, "change": 398, "commit": 105, "model": 1, "paper": 0, "repository": 12}, "date": "2026-11-19"}
+{"counts": {"agent": 2, "change": 392, "commit": 61, "model": 1, "paper": 0, "repository": 4}, "date": "2026-11-20"}
+{"counts": {"agent": 2, "change": 425, "commit": 133, "model": 2, "paper": 0, "repository": 16}, "date": "2026-11-21"}
+{"counts": {"agent": 0, "change": 400, "commit": 55, "model": 0, "paper": 0, "repository": 9}, "date": "2026-11-22"}
