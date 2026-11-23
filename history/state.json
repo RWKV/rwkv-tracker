@@ -1,6 +1,6 @@
 {
   "history_start": "2026-11-04T01:40:02.878390Z",
-  "last_success_started_at": "2026-11-22T12:43:08.096367Z",
+  "last_success_started_at": "2026-11-23T14:59:28.129329Z",
   "scanned_repositories": [
     "00ffcc/chunkRWKV6",
     "00ffcc/conRWKV",
@@ -715,6 +715,7 @@
     "laixiaolaigo/rwkv-team-plugins",
     "laixiaolaigo/rwkvAgentObjects",
     "latestissue/AltaeraAI",
+    "lbt81957/molt",
     "leeroopedia/workflow-blinkdl-rwkv-lm-data-preparation",
     "leeroopedia/workflow-blinkdl-rwkv-lm-mmlu-evaluation",
     "leeroopedia/workflow-blinkdl-rwkv-lm-text-generation-inference",
@@ -783,6 +784,7 @@
     "ms-KuroNeko/RWKV-Drama",
     "mxdlzg/RWKV-v4neo",
     "mymyid/rwkv",
+    "nameoverflow/juxu",
     "neardws/llm-arch-bench",
     "nekocross233/st-convert",
     "nenkoru/serverless-rwkv",

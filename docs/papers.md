@@ -2,7 +2,7 @@
 
 All papers matching the RWKV title/abstract query, ordered by first arXiv submission.
 
-**Records:** 147 · **Snapshot:** 2026-11-22T12:43:08.096367Z · **[Source](https://arxiv.org/search/?query=RWKV&searchtype=all)**
+**Records:** 147 · **Snapshot:** 2026-11-23T14:59:28.129329Z · **[Source](https://arxiv.org/search/?query=RWKV&searchtype=all)**
 
 | Project | Published | Updated | Authors |
 |---|---|---|---|
