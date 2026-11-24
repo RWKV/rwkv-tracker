@@ -1,6 +1,6 @@
 {
   "history_start": "2026-11-04T01:40:02.878390Z",
-  "last_success_started_at": "2026-11-23T14:59:28.129329Z",
+  "last_success_started_at": "2026-11-24T15:00:25.681342Z",
   "scanned_repositories": [
     "00ffcc/chunkRWKV6",
     "00ffcc/conRWKV",
@@ -58,6 +58,7 @@
     "Alic-Li/ModRWKV_Next",
     "Alic-Li/RWKV-LM-AMD-Radeon-ROCm-hip",
     "Alic-Li/RWKV-LM-V7-AMD-ROCm",
+    "Alic-Li/RWKV-LM-V7-CUDA",
     "Alic-Li/RWKV-Theseus",
     "Alic-Li/RWKVInside_vl",
     "Alic-Li/RWKV_7_on_AMD_Radeon-Instinct",
@@ -144,7 +145,6 @@
     "Erland366/RWKV-FSDL",
     "Eternalyze0/improved_nanoRWKV",
     "Expertium/rwkv-anki-autoresearch",
-    "Expertium/rwkv-state-quant",
     "FBB123571/Restore-RWKV",
     "FZU-N/URWKV",
     "Fan12ya/DMA-Network",
@@ -157,6 +157,7 @@
     "Gonanf/kateto-train",
     "Gunale0926/SORSA",
     "HHC-QC/RWKV-WCODE",
+    "HHepan/RWKV-Foundry",
     "HSI-Lab/Hi-RWKV",
     "HaimingSam/RWKVASR-Eva",
     "Hakureirm/rwkv-hf-kernels",

@@ -1,4 +1,3 @@
-{"counts": {"agent": 0, "change": 0, "commit": 0, "model": 0, "paper": 0, "repository": 4}, "date": "2026-10-25"}
 {"counts": {"agent": 0, "change": 0, "commit": 0, "model": 0, "paper": 0, "repository": 10}, "date": "2026-10-26"}
 {"counts": {"agent": 0, "change": 0, "commit": 0, "model": 0, "paper": 0, "repository": 2}, "date": "2026-10-27"}
 {"counts": {"agent": 0, "change": 0, "commit": 0, "model": 0, "paper": 0, "repository": 4}, "date": "2026-10-28"}
@@ -16,15 +15,16 @@
 {"counts": {"agent": 0, "change": 0, "commit": 109, "model": 1, "paper": 0, "repository": 4}, "date": "2026-11-09"}
 {"counts": {"agent": 0, "change": 0, "commit": 185, "model": 0, "paper": 1, "repository": 4}, "date": "2026-11-10"}
 {"counts": {"agent": 0, "change": 414, "commit": 167, "model": 2, "paper": 0, "repository": 5}, "date": "2026-11-11"}
-{"counts": {"agent": 1, "change": 417, "commit": 107, "model": 1, "paper": 1, "repository": 18}, "date": "2026-11-12"}
+{"counts": {"agent": 1, "change": 417, "commit": 107, "model": 1, "paper": 1, "repository": 16}, "date": "2026-11-12"}
 {"counts": {"agent": 0, "change": 406, "commit": 104, "model": 5, "paper": 0, "repository": 3}, "date": "2026-11-13"}
 {"counts": {"agent": 0, "change": 390, "commit": 66, "model": 0, "paper": 0, "repository": 6}, "date": "2026-11-14"}
 {"counts": {"agent": 2, "change": 384, "commit": 70, "model": 0, "paper": 0, "repository": 3}, "date": "2026-11-15"}
 {"counts": {"agent": 0, "change": 423, "commit": 44, "model": 2, "paper": 0, "repository": 4}, "date": "2026-11-16"}
 {"counts": {"agent": 0, "change": 358, "commit": 144, "model": 0, "paper": 0, "repository": 4}, "date": "2026-11-17"}
-{"counts": {"agent": 0, "change": 402, "commit": 153, "model": 1, "paper": 0, "repository": 4}, "date": "2026-11-18"}
-{"counts": {"agent": 1, "change": 398, "commit": 120, "model": 1, "paper": 0, "repository": 11}, "date": "2026-11-19"}
+{"counts": {"agent": 0, "change": 402, "commit": 155, "model": 1, "paper": 0, "repository": 3}, "date": "2026-11-18"}
+{"counts": {"agent": 1, "change": 398, "commit": 121, "model": 1, "paper": 0, "repository": 9}, "date": "2026-11-19"}
 {"counts": {"agent": 2, "change": 392, "commit": 134, "model": 1, "paper": 0, "repository": 3}, "date": "2026-11-20"}
-{"counts": {"agent": 2, "change": 425, "commit": 181, "model": 2, "paper": 0, "repository": 11}, "date": "2026-11-21"}
-{"counts": {"agent": 0, "change": 400, "commit": 151, "model": 0, "paper": 0, "repository": 8}, "date": "2026-11-22"}
-{"counts": {"agent": 0, "change": 365, "commit": 148, "model": 0, "paper": 0, "repository": 14}, "date": "2026-11-23"}
+{"counts": {"agent": 2, "change": 425, "commit": 182, "model": 2, "paper": 0, "repository": 11}, "date": "2026-11-21"}
+{"counts": {"agent": 0, "change": 400, "commit": 151, "model": 0, "paper": 0, "repository": 5}, "date": "2026-11-22"}
+{"counts": {"agent": 0, "change": 365, "commit": 185, "model": 0, "paper": 1, "repository": 12}, "date": "2026-11-23"}
+{"counts": {"agent": 0, "change": 414, "commit": 118, "model": 0, "paper": 0, "repository": 17}, "date": "2026-11-24"}
