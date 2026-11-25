@@ -2,7 +2,7 @@
 
 All projects from the RWKV agent catalog, ordered by catalog update time.
 
-**Records:** 48 · **Snapshot:** 2026-11-24T15:00:25.681342Z · **[Source](https://agent.objects.rwkvos.com/en)**
+**Records:** 48 · **Snapshot:** 2026-11-25T14:40:10.881607Z · **[Source](https://agent.objects.rwkvos.com/en)**
 
 | Project | Updated | Stars | Classification |
 |---|---|---|---|

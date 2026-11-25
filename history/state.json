@@ -1,6 +1,6 @@
 {
   "history_start": "2026-11-04T01:40:02.878390Z",
-  "last_success_started_at": "2026-11-24T15:00:25.681342Z",
+  "last_success_started_at": "2026-11-25T14:40:10.881607Z",
   "scanned_repositories": [
     "00ffcc/chunkRWKV6",
     "00ffcc/conRWKV",
@@ -173,6 +173,7 @@
     "HighCWu/rwkv-paddle",
     "Hobbes-Le-Chat/RWKV_v5_rocm",
     "IanPTan/simple-rwkv-text-embedding",
+    "ItlaStudent/FluencyLLM",
     "JRBonilla/RWKV-MedSAM2",
     "JSchoreels/anki-rwkv",
     "JacquesGariepy/engrammics",
@@ -834,6 +835,7 @@
     "rozek/rwkv-pth-to-bin-converter",
     "rui-ay11y/RWKV7-based-image-enhancement",
     "rwkv-org/F-rwkv",
+    "rwkv-org/hf_rwkv",
     "rwkv-org/rwkv-agent-eval",
     "rwkv-rs/FlashRWKV2",
     "rwkv-rs/RWKV-LH",
