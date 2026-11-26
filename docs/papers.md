@@ -2,10 +2,11 @@
 
 All papers matching the RWKV title/abstract query, ordered by first arXiv submission.
 
-**Records:** 148 · **Snapshot:** 2026-11-25T14:40:10.881607Z · **[Source](https://arxiv.org/search/?query=RWKV&searchtype=all)**
+**Records:** 149 · **Snapshot:** 2026-11-26T14:03:52.790064Z · **[Source](https://arxiv.org/search/?query=RWKV&searchtype=all)**
 
 | Project | Published | Updated | Authors |
 |---|---|---|---|
+| [TAT-Det: A Dataset for Testicular Appendage Torsion Detection and Segmentation in Ultrasound Images](https://arxiv.org/abs/2611.33940) | 2026-11-25 | 2026-11-25 | Ying Jiang, Juntao Jiang, Linxuan Fan et al. |
 | [PestWeave: Linking Semantic Modeling and Evidence-Guided Text Modulation through Visual Prototypes for Fine-Grained Pest Learning](https://arxiv.org/abs/2611.30796) | 2026-11-23 | 2026-11-23 | Xueheng Li, Yu Wang, Yuxiang Shen et al. |
 | [MusicRWKV: A Multimodal RWKV Framework for Music Representation Learning](https://arxiv.org/abs/2611.16718) | 2026-11-12 | 2026-11-12 | Terry Tan |
 | [DAPointRWKV: Domain Adaptive Vision RWKV for Point Cloud Completion](https://arxiv.org/abs/2611.10353) | 2026-11-07 | 2026-11-07 | Yinghui Li, Qianyu Zhou, Hao Yang et al. |

@@ -1,6 +1,6 @@
 {
   "history_start": "2026-11-04T01:40:02.878390Z",
-  "last_success_started_at": "2026-11-25T14:40:10.881607Z",
+  "last_success_started_at": "2026-11-26T14:03:52.790064Z",
   "scanned_repositories": [
     "00ffcc/chunkRWKV6",
     "00ffcc/conRWKV",
@@ -726,6 +726,7 @@
     "leonsama/chirrup",
     "lexus-x/RCAR-vla",
     "lexus-x/RMKV",
+    "limiteinductive/myelin",
     "limoncc/understand_rwkv",
     "lithiumfleet/rwkv6_simple",
     "little-ruffy/Hunting-for-Exoplanets",

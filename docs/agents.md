@@ -2,23 +2,24 @@
 
 All projects from the RWKV agent catalog, ordered by catalog update time.
 
-**Records:** 48 · **Snapshot:** 2026-11-25T14:40:10.881607Z · **[Source](https://agent.objects.rwkvos.com/en)**
+**Records:** 49 · **Snapshot:** 2026-11-26T14:03:52.790064Z · **[Source](https://agent.objects.rwkvos.com/en)**
 
 | Project | Updated | Stars | Classification |
 |---|---|---|---|
-| [ai00-x-client](https://github.com/cgisky1980/ai00-x-client) | 2026-11-21 | 5 | Strict Agent |
-| [noesis](https://github.com/Vaniell0/noesis) | 2026-11-21 | 4 | Agent boundary project |
-| [RWKV-AgenticLearning](https://github.com/Fantasia-Infinity/RWKV-AgenticLearning) | 2026-11-20 | 0 | Research Agent and evaluation |
-| [dsh-rwkv-plugin](https://github.com/No-22-Github/dsh-rwkv-plugin) | 2026-11-20 | 3 | Strict Agent |
+| [ai00-x-client](https://github.com/cgisky1980/ai00-x-client) | 2026-11-26 | 5 | Strict Agent |
+| [dsh-rwkv-plugin](https://github.com/No-22-Github/dsh-rwkv-plugin) | 2026-11-26 | 3 | Strict Agent |
+| [stateswap](https://github.com/Nice0o0/stateswap) | 2026-11-25 | 1 | Agent persona and state infrastructure |
+| [noesis](https://github.com/Vaniell0/noesis) | 2026-11-24 | 4 | Agent boundary project |
+| [RWKV-AgenticLearning](https://github.com/Fantasia-Infinity/RWKV-AgenticLearning) | 2026-11-23 | 0 | Research Agent and evaluation |
 | [RWKV-SearchReader](https://github.com/w1c2j3/RWKV-SearchReader) | 2026-11-19 | 2 | Agent-related research assistant |
 | [memopet](https://github.com/Nice0o0/memopet) | 2026-11-15 | 0 | Agent companion application |
-| [stateswap](https://github.com/Nice0o0/stateswap) | 2026-11-15 | 1 | Agent persona and state infrastructure |
 | [RWKV-ECRA](https://github.com/ehooon/RWKV-ECRA) | 2026-11-12 | 7 | Strict Agent |
 | [RWKV-Agent](https://github.com/No-22-Github/RWKV-Agent) | 2026-11-03 | 4 | Strict Agent |
 | [RWKV-LH](https://github.com/rwkv-rs/RWKV-LH) | 2026-11-03 | 4 | Strict Agent |
 | [rwkv-agent](https://github.com/123123213weqw/rwkv-agent) | 2026-11-01 | 9 | Strict Agent |
 | [HTMLNLM](https://github.com/ConsciousNode/HTMLNLM) | 2026-10-29 | 2 | Agent companion research |
 | [rwkv-prompt-format](https://github.com/Ai00-X/rwkv-prompt-format) | 2026-10-22 | 3 | Agent supporting tools |
+| [Helix-AGI](https://github.com/munch2u-a11y/Helix-AGI) | 2026-10-21 | 64 | Agent-related project |
 | [rwkv-toolcaller-bench](https://codeberg.org/scarletwolf_ai/rwkv-toolcaller-bench) | 2026-10-19 | 0 | Agent benchmark and training upstream |
 | [rwkv-router](https://github.com/cgisky1980/rwkv-router) | 2026-10-12 | 4 | Agent routing infrastructure |
 | [rwkv-statetrace-agent](https://github.com/wangkeyu-u/rwkv-statetrace-agent) | 2026-10-07 | 0 | Strict Agent |
