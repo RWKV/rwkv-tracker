@@ -1,6 +1,6 @@
 {
   "history_start": "2026-11-04T01:40:02.878390Z",
-  "last_success_started_at": "2026-11-26T14:03:52.790064Z",
+  "last_success_started_at": "2026-11-27T14:02:14.973308Z",
   "scanned_repositories": [
     "00ffcc/chunkRWKV6",
     "00ffcc/conRWKV",
@@ -761,6 +761,7 @@
     "mechuchuchu/rwkv_doomloop_experiment",
     "mechuchuchu/rwkv_post_train",
     "meijiawen/RWKV-CHN",
+    "mel0k1/Noxl",
     "mel0k1/Sputnik-AI",
     "meraline/poker-ai-rwkv",
     "mgustineli/scalable-RWKV",
@@ -788,6 +789,7 @@
     "mxdlzg/RWKV-v4neo",
     "mymyid/rwkv",
     "nameoverflow/juxu",
+    "nameoverflow/juxu-core",
     "neardws/llm-arch-bench",
     "nekocross233/st-convert",
     "nenkoru/serverless-rwkv",
@@ -947,6 +949,7 @@
     "w1c2j3/rwkv-android-notes",
     "w1c2j3/rwkv-gepa-distill",
     "w1c2j3/rwkv-gepa-rust",
+    "w1c2j3/rwkv-pi",
     "w2404/rwkv-examples",
     "wangkeyu-u/rwkv-statetrace-agent",
     "waterhigh/RWKV-VLA",

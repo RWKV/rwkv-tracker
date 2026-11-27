@@ -2,14 +2,14 @@
 
 A daily summary of RWKV projects, model updates, agent projects, papers, and development activity.
 
-**Last fetched:** 2026-11-26T14:03:52.790064Z · **[Complete JSON data](data.json)**
+**Last fetched:** 2026-11-27T14:02:14.973308Z · **[Complete JSON data](data.json)**
 
 ## Overview
 
 | Type | Records | Complete Markdown list |
 |---|---:|---|
-| GitHub projects | 1,031 | [github.md](docs/github.md) |
-| Model updates | 977 | [models.md](docs/models.md) |
+| GitHub projects | 1,034 | [github.md](docs/github.md) |
+| Model updates | 978 | [models.md](docs/models.md) |
 | Agent projects | 49 | [agents.md](docs/agents.md) |
 | arXiv papers | 149 | [papers.md](docs/papers.md) |
 
@@ -25,31 +25,31 @@ The 25 most recent events across all sources. GitHub Pages shows the latest 100;
 
 | Date (UTC) | Type | Activity | Details |
 |---|---|---|---|
-| 2026-11-26 14:03 | Change | [zhiyuan8/RWKV-v7-7.2B-G0-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-7.2B-G0-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-7.2B-G0-GGUF |
-| 2026-11-26 14:03 | Change | [zhiyuan8/RWKV-v7-2.9B-World-v3-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-2.9B-World-v3-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-2.9B-World-v3-GGUF |
-| 2026-11-26 14:03 | Change | [zhiyuan8/RWKV-v7-2.9B-G1-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-2.9B-G1-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-2.9B-G1-GGUF |
-| 2026-11-26 14:03 | Change | [zhiyuan8/RWKV-v7-1.5B-World-v3-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-1.5B-World-v3-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-1.5B-World-v3-GGUF |
-| 2026-11-26 14:03 | Change | [zhiyuan8/RWKV-v7-1.5B-G1-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-1.5B-G1-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-1.5B-G1-GGUF |
-| 2026-11-26 14:03 | Change | [zhiyuan8/RWKV-v7-0.4B-World-v3-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-0.4B-World-v3-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-0.4B-World-v3-GGUF |
-| 2026-11-26 14:03 | Change | [zhiyuan8/RWKV-v7-0.4B-G1-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-0.4B-G1-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-0.4B-G1-GGUF |
-| 2026-11-26 14:03 | Change | [zhiyuan8/RWKV-v7-0.1B-World-v3-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-0.1B-World-v3-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-0.1B-World-v3-GGUF |
-| 2026-11-26 14:03 | Change | [zhiyuan8/RWKV-v7-0.1B-G1-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-0.1B-G1-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-0.1B-G1-GGUF |
-| 2026-11-26 14:03 | Change | [zhiyuan8/RWKV-v6-7B-World-v3-HF](https://huggingface.co/zhiyuan8/RWKV-v6-7B-World-v3-HF) | Changed downloads · model · zhiyuan8/RWKV-v6-7B-World-v3-HF |
-| 2026-11-26 14:03 | Change | [zhiyuan8/RWKV-v6-3B-World-v2.1-GGUF](https://huggingface.co/zhiyuan8/RWKV-v6-3B-World-v2.1-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v6-3B-World-v2.1-GGUF |
-| 2026-11-26 14:03 | Change | [zhiyuan8/RWKV-v6-1.6B-World-v2.1-GGUF](https://huggingface.co/zhiyuan8/RWKV-v6-1.6B-World-v2.1-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v6-1.6B-World-v2.1-GGUF |
-| 2026-11-26 14:03 | Change | [zaguk/RWKV4Anki](https://github.com/zaguk/RWKV4Anki) | Changed stars, updated_at · repository · zaguk/RWKV4Anki |
-| 2026-11-26 14:03 | Change | [yimeiyang/rwkv-4-169m-pile-finetuned-wikitext2](https://huggingface.co/yimeiyang/rwkv-4-169m-pile-finetuned-wikitext2) | Changed downloads · model · yimeiyang/rwkv-4-169m-pile-finetuned-wikitext2 |
-| 2026-11-26 14:03 | Change | [xiaol/RWKV-v4-raven-14B-one-state](https://huggingface.co/xiaol/RWKV-v4-raven-14B-one-state) | Changed downloads · model · xiaol/RWKV-v4-raven-14B-one-state |
-| 2026-11-26 14:03 | Change | [xiaol/Huggingface-RWKV-claude-for-mobile-v4-world-1.5B-16k](https://huggingface.co/xiaol/Huggingface-RWKV-claude-for-mobile-v4-world-1.5B-16k) | Changed downloads · model · xiaol/Huggingface-RWKV-claude-for-mobile-v4-world-1.5B-16k |
-| 2026-11-26 14:03 | Change | [xiaol/HF-RWKV-world-v4-claude-65k](https://huggingface.co/xiaol/HF-RWKV-world-v4-claude-65k) | Changed downloads · model · xiaol/HF-RWKV-world-v4-claude-65k |
-| 2026-11-26 14:03 | Change | [wenda-LLM/wenda](https://github.com/wenda-LLM/wenda) | Changed forks · repository · wenda-LLM/wenda |
-| 2026-11-26 14:03 | Change | [weili-0234/AuroraLong-RWKV-VID-2B-xtuner](https://huggingface.co/weili-0234/AuroraLong-RWKV-VID-2B-xtuner) | Changed downloads · model · weili-0234/AuroraLong-RWKV-VID-2B-xtuner |
-| 2026-11-26 14:03 | Change | [umuthopeyildirim/fin-rwkv-430m](https://huggingface.co/umuthopeyildirim/fin-rwkv-430m) | Changed downloads · model · umuthopeyildirim/fin-rwkv-430m |
-| 2026-11-26 14:03 | Change | [umuthopeyildirim/fin-rwkv-1b5](https://huggingface.co/umuthopeyildirim/fin-rwkv-1b5) | Changed downloads · model · umuthopeyildirim/fin-rwkv-1b5 |
-| 2026-11-26 14:03 | Change | [umuthopeyildirim/fin-rwkv-169M](https://huggingface.co/umuthopeyildirim/fin-rwkv-169M) | Changed downloads · model · umuthopeyildirim/fin-rwkv-169M |
-| 2026-11-26 14:03 | Change | [toughdata/RWKV-ELI5-7500-examples](https://huggingface.co/toughdata/RWKV-ELI5-7500-examples) | Changed downloads · model · toughdata/RWKV-ELI5-7500-examples |
-| 2026-11-26 14:03 | Change | [tensorblock/RWKV_v6-Finch-14B-HF-GGUF](https://huggingface.co/tensorblock/RWKV_v6-Finch-14B-HF-GGUF) | Changed downloads · model · tensorblock/RWKV_v6-Finch-14B-HF-GGUF |
-| 2026-11-26 14:03 | Change | [takara-ai/qwen_rwkv_projection](https://huggingface.co/takara-ai/qwen_rwkv_projection) | Changed downloads · model · takara-ai/qwen_rwkv_projection |
+| 2026-11-27 14:02 | Change | [zhiyuan8/RWKV-v7-7.2B-G0-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-7.2B-G0-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-7.2B-G0-GGUF |
+| 2026-11-27 14:02 | Change | [zhiyuan8/RWKV-v7-2.9B-World-v3-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-2.9B-World-v3-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-2.9B-World-v3-GGUF |
+| 2026-11-27 14:02 | Change | [zhiyuan8/RWKV-v7-2.9B-G1-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-2.9B-G1-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-2.9B-G1-GGUF |
+| 2026-11-27 14:02 | Change | [zhiyuan8/RWKV-v7-1.5B-World-v3-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-1.5B-World-v3-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-1.5B-World-v3-GGUF |
+| 2026-11-27 14:02 | Change | [zhiyuan8/RWKV-v7-1.5B-G1-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-1.5B-G1-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-1.5B-G1-GGUF |
+| 2026-11-27 14:02 | Change | [zhiyuan8/RWKV-v7-0.4B-G1-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-0.4B-G1-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-0.4B-G1-GGUF |
+| 2026-11-27 14:02 | Change | [zhiyuan8/RWKV-v7-0.1B-World-v3-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-0.1B-World-v3-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-0.1B-World-v3-GGUF |
+| 2026-11-27 14:02 | Change | [zhiyuan8/RWKV-v7-0.1B-G1-GGUF](https://huggingface.co/zhiyuan8/RWKV-v7-0.1B-G1-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v7-0.1B-G1-GGUF |
+| 2026-11-27 14:02 | Change | [zhiyuan8/RWKV-v6-7B-World-v3-GGUF](https://huggingface.co/zhiyuan8/RWKV-v6-7B-World-v3-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v6-7B-World-v3-GGUF |
+| 2026-11-27 14:02 | Change | [zhiyuan8/RWKV-v6-3B-World-v2.1-GGUF](https://huggingface.co/zhiyuan8/RWKV-v6-3B-World-v2.1-GGUF) | Changed downloads · model · zhiyuan8/RWKV-v6-3B-World-v2.1-GGUF |
+| 2026-11-27 14:02 | Change | [ybgwon96/llamacpp-rwkv-nul-oob-poc](https://huggingface.co/ybgwon96/llamacpp-rwkv-nul-oob-poc) | Changed downloads · model · ybgwon96/llamacpp-rwkv-nul-oob-poc |
+| 2026-11-27 14:02 | Change | [yashmahe2018/vanilla-skip-rwkv7-strict-small-babylm2026](https://huggingface.co/yashmahe2018/vanilla-skip-rwkv7-strict-small-babylm2026) | Changed downloads · model · yashmahe2018/vanilla-skip-rwkv7-strict-small-babylm2026 |
+| 2026-11-27 14:02 | Change | [yashmahe2018/rwkv7-halfclm-strict-small](https://huggingface.co/yashmahe2018/rwkv7-halfclm-strict-small) | Changed downloads · model · yashmahe2018/rwkv7-halfclm-strict-small |
+| 2026-11-27 14:02 | Change | [xiaol/gemma-4-e4B-hybrid-rnn-mem-rwkv-fable5-gpt5.5-v1-GGUF](https://huggingface.co/xiaol/gemma-4-e4B-hybrid-rnn-mem-rwkv-fable5-gpt5.5-v1-GGUF) | Changed downloads · model · xiaol/gemma-4-e4B-hybrid-rnn-mem-rwkv-fable5-gpt5.5-v1-GGUF |
+| 2026-11-27 14:02 | Change | [xiaol/RWKV-v4-raven-14B-one-state](https://huggingface.co/xiaol/RWKV-v4-raven-14B-one-state) | Changed downloads · model · xiaol/RWKV-v4-raven-14B-one-state |
+| 2026-11-27 14:02 | Change | [xiaol/Huggingface-RWKV-claude-for-mobile-v4-world-1.5B-16k](https://huggingface.co/xiaol/Huggingface-RWKV-claude-for-mobile-v4-world-1.5B-16k) | Changed downloads · model · xiaol/Huggingface-RWKV-claude-for-mobile-v4-world-1.5B-16k |
+| 2026-11-27 14:02 | Change | [xiaol/HF-RWKV-world-v4-claude-65k](https://huggingface.co/xiaol/HF-RWKV-world-v4-claude-65k) | Changed downloads · model · xiaol/HF-RWKV-world-v4-claude-65k |
+| 2026-11-27 14:02 | Change | [win10/RWKV7-Ling-MoE-21.58B-A9.69B](https://huggingface.co/win10/RWKV7-Ling-MoE-21.58B-A9.69B) | Changed downloads · model · win10/RWKV7-Ling-MoE-21.58B-A9.69B |
+| 2026-11-27 14:02 | Change | [win10/RWKV7-G1j-10B-A1B](https://huggingface.co/win10/RWKV7-G1j-10B-A1B) | Changed downloads · model · win10/RWKV7-G1j-10B-A1B |
+| 2026-11-27 14:02 | Change | [win10/Gemma4-HRM-RWKV-7-Untrained](https://huggingface.co/win10/Gemma4-HRM-RWKV-7-Untrained) | Changed downloads · model · win10/Gemma4-HRM-RWKV-7-Untrained |
+| 2026-11-27 14:02 | Change | [wenda-LLM/wenda](https://github.com/wenda-LLM/wenda) | Changed stars, updated_at · repository · wenda-LLM/wenda |
+| 2026-11-27 14:02 | Change | [wangyue114514/rwkv7-g1g-7.2b-hf](https://huggingface.co/wangyue114514/rwkv7-g1g-7.2b-hf) | Changed downloads · model · wangyue114514/rwkv7-g1g-7.2b-hf |
+| 2026-11-27 14:02 | Change | [wangyue114514/rwkv7-g1g-2.9b-hf](https://huggingface.co/wangyue114514/rwkv7-g1g-2.9b-hf) | Changed downloads · model · wangyue114514/rwkv7-g1g-2.9b-hf |
+| 2026-11-27 14:02 | Change | [wangyue114514/rwkv7-g1g-13.3b-hf](https://huggingface.co/wangyue114514/rwkv7-g1g-13.3b-hf) | Changed downloads · model · wangyue114514/rwkv7-g1g-13.3b-hf |
+| 2026-11-27 14:02 | Change | [wangyue114514/rwkv7-g1g-1.5b-hf](https://huggingface.co/wangyue114514/rwkv7-g1g-1.5b-hf) | Changed downloads · model · wangyue114514/rwkv7-g1g-1.5b-hf |
 
 ## Main model
 
